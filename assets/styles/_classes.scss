@@ -1,0 +1,62 @@
+.point-bleu-avec-trait {
+
+    /* Style pour le conteneur de point et de trait */
+    .point-et-trait {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+
+        /* Style pour la ligne grise */
+        .trait {
+            width: 3rem;
+            height: 1px;
+            background-color: var(--input-border-color);
+            margin-left: 1rem;
+
+            &-column {
+                width: 1px;
+                height: 3rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                margin-left: 0;
+            }
+        }
+
+        /* Style pour le point bleu */
+        .point-bleu {
+            min-width: 10px;
+            min-height: 10px;
+            background-color: var(--blue-primary);
+            border-radius: 50%;
+            margin-left: 1rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .column {
+        flex-direction: column;
+
+        .point-bleu {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+
+        &>p {
+            // writing-mode: vertical-rl;
+            rotate: -90deg;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+
+.blue-word {
+    color: var(--blue-primary);
+}
