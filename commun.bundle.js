@@ -4387,7 +4387,7 @@ const createSousMenuMobilHTML = elementId => {
     //
     const spanIconElement = document.createElement("span");
     spanIconElement.classList.add("span-icon");
-    spanIconElement.style.background = "url(\"../assets/icons/".concat(cat.icon, "\") center/contain no-repeat");
+    spanIconElement.style.background = "url(\"assets/icons/".concat(cat.icon, "\") center/contain no-repeat");
     const iconContainerDivElement = document.createElement("div");
     iconContainerDivElement.classList.add("icon-container");
     iconContainerDivElement.append(spanIconElement);
