@@ -60,7 +60,7 @@
 
                     img {
                         cursor: pointer;
-                        max-height: 70px;
+
                     }
                 }
 
@@ -229,6 +229,7 @@
         // content
         .content {
 
+
             // titres
             h1,
             h2,
@@ -269,6 +270,9 @@
                     }
                 }
             }
+
+            // sections
+            section {}
         }
 
         // footer
@@ -295,7 +299,7 @@
                 .footer-register {
                     h3 {
                         text-align: center;
-                        font-size: 45px;
+                        font-size: 65px;
                     }
 
                     p:not([id="footer-submit"]) {
@@ -303,7 +307,8 @@
                     }
 
                     input {
-                        width: 99%;
+                        display: block;
+
                         background-color: var(--background-color-general);
                         border: none;
                         border-bottom: var(--input-border-color) solid 1px;

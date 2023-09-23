@@ -11,7 +11,7 @@ header {
             align-items: center;
 
             img {
-
+                max-height: 70px;
                 width: 110%;
             }
         }
@@ -157,9 +157,7 @@ header {
     }
 }
 
-.content {
-    margin-top: 20rem;
-}
+
 
 footer {
     margin-top: 60px;
@@ -179,10 +177,13 @@ footer {
             p:not([id="footer-submit"]) {}
 
             input {
-                margin: 20px 0 20px 0;
+                margin: 100px 0 20px 0;
+                width: 99%;
             }
 
-            p#footer-submit {}
+            p#footer-submit {
+                width: 99%;
+            }
         }
 
         .footer-coordonnees {

@@ -12,7 +12,7 @@ header {
             align-items: center;
 
             img {
-
+                max-height: 70px;
                 width: 110%;
             }
         }
@@ -170,12 +170,8 @@ header {
 }
 
 
-
-.content {
-    margin-top: 10rem;
-}
-
 footer {
+    margin-top: 60px;
 
     h3 {}
 
@@ -191,38 +187,83 @@ footer {
 
             p:not([id="footer-submit"]) {}
 
-            input {}
+            input {
+                margin: 100px auto 20px auto;
+                width: 95%;
+            }
 
-            p#footer-submit {}
+            p#footer-submit {
+                margin: 0 auto 0 auto;
+                width: 80%;
+            }
         }
 
         .footer-coordonnees {
-            h3 {}
+            margin-top: 60px;
+
+            h3 {
+                font-size: 30px;
+            }
 
 
             span {
+                margin: 10px 0 10px 0;
+
                 p {}
             }
 
         }
 
         .footer-services {
-            h3 {}
+            margin-top: 60px;
+
+            h3 {
+                font-size: 30px;
+            }
 
             ul {
-                li {}
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    margin: 10px 0 10px 0;
+                    width: max-content;
+                    min-height: 48px;
+                    min-width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
         }
     }
 
-    .footer-separator {}
+    .footer-separator {
+        margin: 40px 0;
+    }
 
     .footer-container2 {
         .footer-links {
-            p {}
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: max-content;
+                min-height: 48px;
+                min-width: 50%;
+            }
         }
 
         .footer-icons {
+            justify-content: space-evenly;
+            margin: 60px 0 60px 0;
+
             img {}
         }
 
