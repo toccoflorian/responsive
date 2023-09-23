@@ -2531,24 +2531,40 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   background-color: var(--background-color-primary-opacity);
   filter: blur(10px);
 }
+:root body.header-menu-open {
+  overflow: hidden;
+}
 :root body header {
   z-index: 1;
   color: white;
   position: fixed;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);
   width: 100%;
+  max-height: 100vh;
 }
 :root body header .active {
   color: var(--blue-primary);
 }
 :root body header .header-container-1 {
   display: flex;
+  max-height: 75px;
 }
 :root body header .header-container-1 .logo-container img {
   cursor: pointer;
+  max-height: 70px;
 }
 :root body header .header-container-1 .menu-container .span-icon {
   cursor: pointer;
+}
+:root body header .header-container-1 .menu-container .span-icon .bar {
+  height: 10px;
+  width: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+:root body header .header-container-1 .menu-container .span-icon .bar.milieu {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 :root body header .header-container-1 .menu-container .span-icon.active * {
   background-color: var(--blue-primary);
@@ -2589,9 +2605,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   position: fixed;
   top: 0px;
   width: 100%;
-  transition: top 0.3s;
+  transition: top 0.5s ease-out;
   background-color: var(--background-color-primary-opacity);
   backdrop-filter: blur(5px);
+}
+:root body header.mobil-menu-open {
+  overflow: scroll;
 }
 :root body header.open .header-container-mobil {
   background-color: black;
@@ -2644,6 +2663,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 :root body .content ul.with-blue-puce li::marker {
   color: var(--blue-primary);
 }
+:root body footer {
+  padding: 1vh 1vh;
+}
 :root body footer h3 {
   color: white;
 }
@@ -2656,9 +2678,63 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   list-style-type: none;
   padding-left: 0;
 }
+:root body footer .footer-container .footer-register h3 {
+  text-align: center;
+  font-size: 45px;
+}
+:root body footer .footer-container .footer-register p:not([id=footer-submit]) {
+  text-align: center;
+}
+:root body footer .footer-container .footer-register input {
+  width: 99%;
+  background-color: var(--background-color-general);
+  border: none;
+  border-bottom: var(--input-border-color) solid 1px;
+  font-size: 20px;
+  color: var(--text-color-primary);
+  text-align: center;
+}
+:root body footer .footer-container .footer-register input:focus {
+  outline: none;
+}
+:root body footer .footer-container .footer-register p#footer-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-primary);
+  border-radius: 15px;
+  min-height: 48px;
+}
+:root body footer .footer-container .footer-coordonnees {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+:root body footer .footer-container .footer-coordonnees span p:first-child {
+  color: white;
+}
+:root body footer .footer-container .footer-coordonnees span p {
+  margin: 0 0 0 0;
+}
+:root body footer .footer-container .footer-services {
+  text-align: center;
+}
 :root body footer .footer-separator {
   height: 2px;
   background-color: var(--text-color-primary);
+}
+:root body footer .footer-container2 .footer-links {
+  text-align: center;
+}
+:root body footer .footer-container2 .footer-icons {
+  display: flex;
+}
+:root body footer .footer-container2 .footer-icons img {
+  height: 48px;
+}
+:root body footer .footer-container2 .footer-mention {
+  color: white;
+  text-align: center;
 }
 
 /* Large desktop */
@@ -2708,6 +2784,60 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   }
   .loading-screen .section-0 .span-icon * {
     height: 2.5rem;
+  }
+  header .header-container-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    letter-spacing: 3px;
+    justify-content: space-between;
+  }
+  header .header-container-1 img {
+    cursor: pointer;
+    height: 2.75rem;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+    transition: transform 0.3s;
+  }
+  header .header-container-1 img:hover {
+    transform: scale(1.05);
+  }
+  header .header-container-1 .menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header .header-container-1 .menu-container p {
+    width: fit-content;
+    padding: 0 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-size: 0.65rem;
+  }
+  header .header-container-1 .menu-container p a {
+    margin: 0;
+  }
+  header .header-container-1 .menu-container p a:hover {
+    transition: 0.5s;
+    color: var(--blue-primary);
+  }
+  header .header-container-1 .menu-container .span-icon {
+    display: none;
+  }
+  header .header-container-1 .nous-rejoindre {
+    padding: 0 2rem 0 2rem;
+    margin: auto 3rem auto 1.5rem;
+    letter-spacing: normal;
+  }
+  header .header-container-1 .nous-rejoindre p {
+    min-width: 8rem;
+    margin: 0;
+    font-size: 0.65rem;
+  }
+  header .header-container-mobil {
+    display: none;
   }
   header.open div {
     background-color: black;
@@ -2820,57 +2950,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     color: var(--blue-primary);
     text-shadow: 5px 5px 2px blue;
     opacity: 1;
-  }
-  header .header-container-1 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    letter-spacing: 3px;
-    justify-content: space-between;
-  }
-  header .header-container-1 img {
-    cursor: pointer;
-    height: 2.75rem;
-    margin-top: 0.8rem;
-    margin-left: 3rem;
-    transition: transform 0.3s;
-  }
-  header .header-container-1 img:hover {
-    transform: scale(1.05);
-  }
-  header .header-container-1 .menu-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  header .header-container-1 .menu-container p {
-    width: fit-content;
-    padding: 0 15px;
-    margin: 0.5rem 0;
-    cursor: pointer;
-    font-size: 0.65rem;
-  }
-  header .header-container-1 .menu-container p a {
-    margin: 0;
-  }
-  header .header-container-1 .menu-container p a:hover {
-    transition: 0.5s;
-    color: var(--blue-primary);
-  }
-  header .header-container-1 .nous-rejoindre {
-    padding: 0 2rem 0 2rem;
-    margin: auto 3rem auto 1.5rem;
-    letter-spacing: normal;
-  }
-  header .header-container-1 .nous-rejoindre p {
-    min-width: 8rem;
-    margin: 0;
-    font-size: 0.65rem;
-  }
-  header .header-container-mobil {
-    display: none;
   }
   .content {
     padding: 0 2.5rem 4rem 2.5rem;
@@ -2992,7 +3071,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   }
 }
 /*  desktop */
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199.9px) {
   .loading-screen {
     position: fixed;
     height: 100%;
@@ -3038,6 +3117,60 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   }
   .loading-screen .section-0 .span-icon * {
     height: 2.5rem;
+  }
+  header .header-container-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    letter-spacing: 3px;
+    justify-content: space-between;
+  }
+  header .header-container-1 img {
+    cursor: pointer;
+    height: 2.75rem;
+    margin-top: 0.8rem;
+    margin-left: 3rem;
+    transition: transform 0.3s;
+  }
+  header .header-container-1 img:hover {
+    transform: scale(1.05);
+  }
+  header .header-container-1 .menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header .header-container-1 .menu-container p {
+    width: fit-content;
+    padding: 0 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    font-size: 0.65rem;
+  }
+  header .header-container-1 .menu-container p a {
+    margin: 0;
+  }
+  header .header-container-1 .menu-container p a:hover {
+    transition: 0.5s;
+    color: var(--blue-primary);
+  }
+  header .header-container-1 .menu-container .span-icon {
+    display: none;
+  }
+  header .header-container-1 .nous-rejoindre {
+    padding: 0 2rem 0 2rem;
+    margin: auto 3rem auto 1.5rem;
+    letter-spacing: normal;
+  }
+  header .header-container-1 .nous-rejoindre p {
+    min-width: 8rem;
+    margin: 0;
+    font-size: 0.65rem;
+  }
+  header .header-container-mobil {
+    display: none;
   }
   header.open div {
     background-color: black;
@@ -3150,57 +3283,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     color: var(--blue-primary);
     text-shadow: 5px 5px 2px blue;
     opacity: 1;
-  }
-  header .header-container-1 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    letter-spacing: 3px;
-    justify-content: space-between;
-  }
-  header .header-container-1 img {
-    cursor: pointer;
-    height: 2.75rem;
-    margin-top: 0.8rem;
-    margin-left: 3rem;
-    transition: transform 0.3s;
-  }
-  header .header-container-1 img:hover {
-    transform: scale(1.05);
-  }
-  header .header-container-1 .menu-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  header .header-container-1 .menu-container p {
-    width: fit-content;
-    padding: 0 15px;
-    margin: 0.5rem 0;
-    cursor: pointer;
-    font-size: 0.65rem;
-  }
-  header .header-container-1 .menu-container p a {
-    margin: 0;
-  }
-  header .header-container-1 .menu-container p a:hover {
-    transition: 0.5s;
-    color: var(--blue-primary);
-  }
-  header .header-container-1 .nous-rejoindre {
-    padding: 0 2rem 0 2rem;
-    margin: auto 3rem auto 1.5rem;
-    letter-spacing: normal;
-  }
-  header .header-container-1 .nous-rejoindre p {
-    min-width: 8rem;
-    margin: 0;
-    font-size: 0.65rem;
-  }
-  header .header-container-mobil {
-    display: none;
   }
   .content {
     padding: 0 2.5rem 4rem 2.5rem;
@@ -3322,10 +3404,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   }
 }
 /* Portrait tablet to landscape and desktop */
-/* Landscape phone to portrait tablet */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 767px) and (max-width: 979.9px) {
   header .header-container-1 {
-    display: flex;
     margin-top: 1rem;
   }
   header .header-container-1 div {
@@ -3343,15 +3423,117 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     justify-content: center;
     align-items: center;
   }
-  header .header-container-1 .menu-container .span-icon .bar {
-    height: 10px;
-    width: 50px;
-    background-color: white;
-    border-radius: 5px;
+  header .header-container-1 .menu-container p {
+    display: none;
   }
-  header .header-container-1 .menu-container .span-icon .bar.milieu {
-    margin-top: 8px;
-    margin-bottom: 8px;
+  header .header-container-1 .nous-rejoindre {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 1rem auto 0;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  header .header-container-1 .nous-rejoindre p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  header .header-container-2 {
+    display: none;
+  }
+  header.open .header-container-mobil.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header.open .header-container-mobil.menu .menu-mobil {
+    width: 75%;
+    margin: 0;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    margin: 1rem 0;
+    border-radius: 15px;
+  }
+  header.open .header-container-mobil.menu .menu-mobil p {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  header.open .header-container-mobil.sous-menu .span-icon {
+    display: block;
+  }
+  header.open .header-container-mobil.sous-menu .span-icon.retour {
+    position: absolute;
+    right: 1rem;
+    width: 60px;
+    height: 60px;
+    margin-right: 7.5%;
+    margin-left: auto;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil {
+    margin: 1.5rem 0 0.5rem 0;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container {
+    display: flex;
+    align-items: center;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .icon-container {
+    padding: 0 5px;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .icon-container .span-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container p {
+    color: var(--blue-primary);
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .nouveau {
+    margin-top: -3rem;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .green-word {
+    margin: 0 8px 0 8px;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .span-image {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 3rem;
+  }
+  header.open .header-container-mobil.sous-menu .sous-menu-mobil nav a {
+    width: max-content;
+    min-width: 50%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin: 2.5px 0 2.5px 0;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767.9px) {
+  header .header-container-1 {
+    margin-top: 1rem;
+  }
+  header .header-container-1 div {
+    flex: 1;
+  }
+  header .header-container-1 .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  header .header-container-1 .logo-container img {
+    width: 110%;
+  }
+  header .header-container-1 .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   header .header-container-1 .menu-container p {
     display: none;
@@ -3449,10 +3631,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   }
 }
 /* portrait phones and down */
-@media (max-width: 480px) {
-  header .header-container-1 {
-    display: flex;
-  }
+@media (max-width: 480.9px) {
   header .header-container-1 div {
     flex: 1;
   }
@@ -3467,16 +3646,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  header .header-container-1 .menu-container .span-icon .bar {
-    height: 10px;
-    width: 50px;
-    background-color: white;
-    border-radius: 5px;
-  }
-  header .header-container-1 .menu-container .span-icon .bar.milieu {
-    margin-top: 8px;
-    margin-bottom: 8px;
   }
   header .header-container-1 .menu-container p {
     display: none;
@@ -3544,7 +3713,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   }
   header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .nouveau {
     margin-top: -3rem;
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
   header.open .header-container-mobil.sous-menu .sous-menu-mobil .titre-container .green-word {
     margin: 0 8px 0 8px;
@@ -3569,7 +3738,63 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   .content {
     margin-top: 20rem;
   }
-}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./assets/styles/_variables.scss","webpack://./assets/styles/responsive-styles.scss","webpack://./assets/styles/_classes.scss","webpack://./assets/styles/responsive/all.scss","webpack://./assets/styles/responsive/_standard-styles.scss","webpack://./assets/styles/responsive/_sm-styles.scss","webpack://./assets/styles/responsive/_xs-styles.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;AC5BA;EACI,mCAAA;EACA,6CAAA;EACA,+CAAA;EACA,6BAAA;EACA,uBAAA;ACMJ;;ACXA;EAEI,iDAAA;ADaJ;;ACZI;EACI,mBAAA;EACA,aAAA;EACA,mBAAA;EAEA,8BAAA;EAgBA,6BAAA;ADDR;;ACdQ;EACI,WAAA;EACA,WAAA;EACA,2CAAA;EACA,iBAAA;ADiBZ;;ACfY;EACI,UAAA;EACA,YAAA;EACA,gBAAA;EACA,mBAAA;EACA,cAAA;ADkBhB;;ACbQ;EACI,eAAA;EACA,gBAAA;EACA,qCAAA;EACA,kBAAA;EACA,iBAAA;ADgBZ;;ACbQ;EACI,iBAAA;EACA,iBAAA;ADgBZ;;ACZI;EACI,sBAAA;ADeR;;ACbQ;EACI,cAAA;EACA,gBAAA;ADgBZ;;ACbQ;EAEI,cAAA;EACA,gBAAA;EACA,iBAAA;EACA,kBAAA;ADeZ;;ACRA;EACI,0BAAA;ADWJ;;AEnEA,SAAA;AACA,UAAA;AACA;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,4DAAA;EACA,iMAAA;AFsEJ;AEhEA;EACI,qBAAA;EACA,mBAAA;EACA,eAAA;AFkEJ;AEhEI;EACI,SAAA;EACA,aAAA;EACA,iDAAA;AFkER;AEhEQ;EACI,gBAAA;EACA,yDAAA;EACA,kBAAA;AFkEZ;AE9DQ;EACI,UAAA;EACA,YAAA;EACA,eAAA;EACA,2CAAA;EACA,WAAA;AFgEZ;AE7DY;EACI,0BAAA;AF+DhB;AE5DY;EACI,aAAA;AF8DhB;AExDoB;EACI,eAAA;AF0DxB;AErDoB;EACI,eAAA;AFuDxB;AEpD4B;EAEI,qCAAA;AFqDhC;AElD4B;EACI,mBAAA;AFoDhC;AE5CgB;EACI,yCAAA;EACA,0CAAA;EACA,gCAAA;EACA,+BAAA;EACA,kBAAA;EACA,aAAA;AF8CpB;AE1CoB;EACI,qCAAA;EACA,kBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AF4CxB;AEvCoB;EACI,gBAAA;EACA,qCAAA;EACA,0BAAA;AFyCxB;AEvCwB;EACI,gBAAA;EACA,uBAAA;AFyC5B;AErCoB;EAEI,eAAA;AFsCxB;AEjCY;EAEI,eAAA;EACA,QAAA;EACA,WAAA;EACA,oBAAA;EACA,yDAAA;EACA,0BAAA;AFkChB;AE7BgB;EACI,uBAAA;EACA,2BAAA;EACA,eAAA;AF+BpB;AEAgC;EACI,aAAA;EACA,mBAAA;AFEpC;AEEgC;EACI,kBAAA;EACA,YAAA;EACA,8BAAA;EACA,aAAA;AFApC;AEGgC;EACI,cAAA;EACA,gCAAA;EACA,aAAA;AFDpC;AEIgC;EACI,4EAAA;EACA,cAAA;AFFpC;AEsBY;;;EAGI,YAAA;AFpBhB;AEwBY;;EAEI,kBAAA;AFtBhB;AE0BY;;;EAGI,gCAAA;AFxBhB;AE4BY;EACI,qBAAA;EACA,gBAAA;AF1BhB;AE4BgB;EAEI,qBAAA;AF3BpB;AE+BoB;EACI,qBAAA;AF7BxB;AEgCoB;EACI,0BAAA;AF9BxB;AEuCY;EACI,YAAA;AFrChB;AEwCY;;;EAGI,gCAAA;AFtChB;AE0CY;EACI,qBAAA;EACA,eAAA;AFxChB;AE2CY;EACI,WAAA;EACA,2CAAA;AFzChB;;AA/NA,kBAAA;AF2BI;EK7BJ;IACI,eAAA;IACA,YAAA;IACA,WAAA;IACA,WAAA;EHsOF;EGpOE;IACI,WAAA;IACA,YAAA;IACA,uBAAA;IACA,uBAAA;IACA,aAAA;IACA,sBAAA;IACA,mBAAA;EHsON;EGnOM;IACI,6DAAA;IACA,wBAAA;IACA,cAAA;IACA,eAAA;IACA,YAAA;IACA,wBAAA;IACA,gBAAA;EHqOV;EGlOM;IACI,8EAAA;IACA,6BAAA;IACA,kBAAA;IACA,iBAAA;IACA,SAAA;EHoOV;EGjOM;IACI,UAAA;IAEA,kBAAA;IACA,iBAAA;IACA,YAAA;EHkOV;EG/NM;IAEI,gBAAA;IACA,aAAA;IACA,6BAAA;IACA,UAAA;EHgOV;EG9NU;IACI,cAAA;EHgOd;EG9MM;IACI,uBAAA;IACA,UAAA;IAEA,6BAAA;IACA,wBAAA;EH+MV;EG3MM;IACI,iDAAA;EH6MV;EGzMM;IACI,mBAAA;IACA,kBAAA;IACA,WAAA;IACA,2CAAA;IACA,aAAA;EH2MV;EGzMU;IAEI,OAAA;EH0Md;EGvMc;IACI,cAAA;IACA,YAAA;IACA,cAAA;IACA,2BAAA;EHyMlB;EGrMc;IACI,kBAAA;IACA,aAAA;IACA,mBAAA;EHuMlB;EGrMkB;IACI,eAAA;IACA,UAAA;EHuMtB;EGlMU;IACI,OAAA;IACA,4BAAA;IAEA,iBAAA;IAEA,aAAA;IACA,oBAAA;IACA,eAAA;IAEA,mCAAA;IACA,wBAAA;EHiMd;EG7Lc;IACI,OAAA;IACA,sBAAA;IACA,kBAAA;EH+LlB;EG3LkB;IACI,aAAA;IACA,sBAAA;EH6LtB;EG3LsB;IACI,YAAA;IACA,WAAA;IACA,YAAA;IACA,gBAAA;EH6L1B;EGvL0B;IACI,kBAAA;IACA,WAAA;IACA,YAAA;IACA,cAAA;IACA,yBAAA;EHyL9B;EGpLsB;IACI,kBAAA;IAEA,kBAAA;IACA,kBAAA;IACA,sBAAA;IACA,aAAA;EHqL1B;EGnL0B;IACI,cAAA;IACA,gCAAA;IACA,aAAA;IACA,mBAAA;EHqL9B;EGlL0B;IACI,kBAAA;IACA,mBAAA;IACA,iBAAA;IACA,8BAAA;IACA,aAAA;EHoL9B;EGjL0B;IACI,4EAAA;IACA,cAAA;IACA,WAAA;IACA,YAAA;EHmL9B;EG5Kc;IACI,aAAA;IACA,sBAAA;EH8KlB;EG5KkB;IACI,eAAA;IACA,YAAA;IACA,kBAAA;IACA,eAAA;IACA,aAAA;IACA,mBAAA;IACA,aAAA;IACA,iBAAA;IACA,oBAAA;EH8KtB;EG5KsB;IACI,0BAAA;IACA,6BAAA;IACA,UAAA;EH8K1B;EGnKE;IACI,YAAA;IACA,WAAA;IACA,aAAA;IACA,mBAAA;IACA,8BAAA;EHqKN;EGlKM;IACI,eAAA;IACA,eAAA;IACA,kBAAA;IACA,iBAAA;IACA,0BAAA;EHoKV;EGlKU;IACI,sBAAA;EHoKd;EGhKM;IAEI,WAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;IACA,eAAA;EHiKV;EG9JU;IACI,kBAAA;IACA,eAAA;IACA,gBAAA;IACA,eAAA;IACA,kBAAA;EHgKd;EG9Jc;IACI,SAAA;EHgKlB;EG5Jc;IACI,gBAAA;IACA,0BAAA;EH8JlB;EGzJM;IAEI,sBAAA;IACA,6BAAA;IACA,sBAAA;EH0JV;EGlJU;IACI,eAAA;IACA,SAAA;IACA,kBAAA;EHoJd;EG7IE;IACI,aAAA;EH+IN;EGtIF;IACI,6BAAA;IACA,iBAAA;EHwIF;EGrIE;IACI,eAAA;IACA,gBAAA;IACA,kBAAA;EHuIN;EGpIE;IACI,kBAAA;EHsIN;EGnIE;IACI,iBAAA;EHqIN;EGlIE;;;IAGI,sBAAA;EHoIN;EG9HE;;;IAGI,mBAAA;IACA,kBAAA;EHgIN;EG1HE;IACI,gBAAA;IACA,oBAAA;EH4HN;EG1HM;IACI,kBAAA;EH4HV;EGzHM;IACI,kBAAA;EH2HV;EGrHF;IACI,kBAAA;EHuHF;EGjHE;IACI,eAAA;IACA,aAAA;IACA,eAAA;EHmHN;EGhHM;IACI,kBAAA;EHkHV;EG/GM;IACI,iBAAA;IACA,eAAA;EHiHV;EG7GM;IACI,SAAA;EH+GV;EG7GU;IACI,UAAA;IACA,iDAAA;IACA,YAAA;IACA,kDAAA;IACA,eAAA;IACA,kBAAA;IACA,gCAAA;EH+Gd;EG7Gc;IACI,aAAA;EH+GlB;EG3GU;IACI,qCAAA;IACA,sBAAA;IACA,mBAAA;IACA,kBAAA;EH6Gd;EGzGM;IACI,SAAA;EH2GV;EGzGU;IACI,mBAAA;EH2Gd;EGvGkB;IACI,SAAA;EHyGtB;EGlGM;IACI,SAAA;EHoGV;EGlGU;IACI,gBAAA;IACA,oBAAA;EHoGd;EG3FE;IACI,aAAA;IACA,iBAAA;EH6FN;EG3FM;IACI,SAAA;IACA,aAAA;IACA,yBAAA;IACA,eAAA;EH6FV;EG3FU;IACI,SAAA;IACA,eAAA;EH6Fd;EGzFM;IACI,SAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;EH2FV;EGzFU;IACI,YAAA;IACA,WAAA;EH2Fd;EGtFM;IACI,SAAA;IACA,kBAAA;IACA,gBAAA;IACA,mBAAA;EHwFV;AACF;AAriBA,aAAA;AFeI;EKtBJ;IACI,eAAA;IACA,YAAA;IACA,WAAA;IACA,WAAA;EHgjBF;EG9iBE;IACI,WAAA;IACA,YAAA;IACA,uBAAA;IACA,uBAAA;IACA,aAAA;IACA,sBAAA;IACA,mBAAA;EHgjBN;EG7iBM;IACI,6DAAA;IACA,wBAAA;IACA,cAAA;IACA,eAAA;IACA,YAAA;IACA,wBAAA;IACA,gBAAA;EH+iBV;EG5iBM;IACI,8EAAA;IACA,6BAAA;IACA,kBAAA;IACA,iBAAA;IACA,SAAA;EH8iBV;EG3iBM;IACI,UAAA;IAEA,kBAAA;IACA,iBAAA;IACA,YAAA;EH4iBV;EGziBM;IAEI,gBAAA;IACA,aAAA;IACA,6BAAA;IACA,UAAA;EH0iBV;EGxiBU;IACI,cAAA;EH0iBd;EGxhBM;IACI,uBAAA;IACA,UAAA;IAEA,6BAAA;IACA,wBAAA;EHyhBV;EGrhBM;IACI,iDAAA;EHuhBV;EGnhBM;IACI,mBAAA;IACA,kBAAA;IACA,WAAA;IACA,2CAAA;IACA,aAAA;EHqhBV;EGnhBU;IAEI,OAAA;EHohBd;EGjhBc;IACI,cAAA;IACA,YAAA;IACA,cAAA;IACA,2BAAA;EHmhBlB;EG/gBc;IACI,kBAAA;IACA,aAAA;IACA,mBAAA;EHihBlB;EG/gBkB;IACI,eAAA;IACA,UAAA;EHihBtB;EG5gBU;IACI,OAAA;IACA,4BAAA;IAEA,iBAAA;IAEA,aAAA;IACA,oBAAA;IACA,eAAA;IAEA,mCAAA;IACA,wBAAA;EH2gBd;EGvgBc;IACI,OAAA;IACA,sBAAA;IACA,kBAAA;EHygBlB;EGrgBkB;IACI,aAAA;IACA,sBAAA;EHugBtB;EGrgBsB;IACI,YAAA;IACA,WAAA;IACA,YAAA;IACA,gBAAA;EHugB1B;EGjgB0B;IACI,kBAAA;IACA,WAAA;IACA,YAAA;IACA,cAAA;IACA,yBAAA;EHmgB9B;EG9fsB;IACI,kBAAA;IAEA,kBAAA;IACA,kBAAA;IACA,sBAAA;IACA,aAAA;EH+f1B;EG7f0B;IACI,cAAA;IACA,gCAAA;IACA,aAAA;IACA,mBAAA;EH+f9B;EG5f0B;IACI,kBAAA;IACA,mBAAA;IACA,iBAAA;IACA,8BAAA;IACA,aAAA;EH8f9B;EG3f0B;IACI,4EAAA;IACA,cAAA;IACA,WAAA;IACA,YAAA;EH6f9B;EGtfc;IACI,aAAA;IACA,sBAAA;EHwflB;EGtfkB;IACI,eAAA;IACA,YAAA;IACA,kBAAA;IACA,eAAA;IACA,aAAA;IACA,mBAAA;IACA,aAAA;IACA,iBAAA;IACA,oBAAA;EHwftB;EGtfsB;IACI,0BAAA;IACA,6BAAA;IACA,UAAA;EHwf1B;EG7eE;IACI,YAAA;IACA,WAAA;IACA,aAAA;IACA,mBAAA;IACA,8BAAA;EH+eN;EG5eM;IACI,eAAA;IACA,eAAA;IACA,kBAAA;IACA,iBAAA;IACA,0BAAA;EH8eV;EG5eU;IACI,sBAAA;EH8ed;EG1eM;IAEI,WAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;IACA,eAAA;EH2eV;EGxeU;IACI,kBAAA;IACA,eAAA;IACA,gBAAA;IACA,eAAA;IACA,kBAAA;EH0ed;EGxec;IACI,SAAA;EH0elB;EGtec;IACI,gBAAA;IACA,0BAAA;EHwelB;EGneM;IAEI,sBAAA;IACA,6BAAA;IACA,sBAAA;EHoeV;EG5dU;IACI,eAAA;IACA,SAAA;IACA,kBAAA;EH8dd;EGvdE;IACI,aAAA;EHydN;EGhdF;IACI,6BAAA;IACA,iBAAA;EHkdF;EG/cE;IACI,eAAA;IACA,gBAAA;IACA,kBAAA;EHidN;EG9cE;IACI,kBAAA;EHgdN;EG7cE;IACI,iBAAA;EH+cN;EG5cE;;;IAGI,sBAAA;EH8cN;EGxcE;;;IAGI,mBAAA;IACA,kBAAA;EH0cN;EGpcE;IACI,gBAAA;IACA,oBAAA;EHscN;EGpcM;IACI,kBAAA;EHscV;EGncM;IACI,kBAAA;EHqcV;EG/bF;IACI,kBAAA;EHicF;EG3bE;IACI,eAAA;IACA,aAAA;IACA,eAAA;EH6bN;EG1bM;IACI,kBAAA;EH4bV;EGzbM;IACI,iBAAA;IACA,eAAA;EH2bV;EGvbM;IACI,SAAA;EHybV;EGvbU;IACI,UAAA;IACA,iDAAA;IACA,YAAA;IACA,kDAAA;IACA,eAAA;IACA,kBAAA;IACA,gCAAA;EHybd;EGvbc;IACI,aAAA;EHyblB;EGrbU;IACI,qCAAA;IACA,sBAAA;IACA,mBAAA;IACA,kBAAA;EHubd;EGnbM;IACI,SAAA;EHqbV;EGnbU;IACI,mBAAA;EHqbd;EGjbkB;IACI,SAAA;EHmbtB;EG5aM;IACI,SAAA;EH8aV;EG5aU;IACI,gBAAA;IACA,oBAAA;EH8ad;EGraE;IACI,aAAA;IACA,iBAAA;EHuaN;EGraM;IACI,SAAA;IACA,aAAA;IACA,yBAAA;IACA,eAAA;EHuaV;EGraU;IACI,SAAA;IACA,eAAA;EHuad;EGnaM;IACI,SAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;EHqaV;EGnaU;IACI,YAAA;IACA,WAAA;EHqad;EGhaM;IACI,SAAA;IACA,kBAAA;IACA,gBAAA;IACA,mBAAA;EHkaV;AACF;AA12BA,6CAAA;AAOA,uCAAA;AFXI;EMPA;IACI,aAAA;IACA,gBAAA;EJ03BN;EIx3BM;IACI,OAAA;EJ03BV;EIv3BM;IACI,aAAA;IACA,mBAAA;EJy3BV;EIv3BU;IAEI,WAAA;EJw3Bd;EIp3BM;IACI,aAAA;IACA,uBAAA;IACA,mBAAA;EJs3BV;EIj3Bc;IACI,YAAA;IACA,WAAA;IACA,uBAAA;IACA,kBAAA;EJm3BlB;EIj3BkB;IACI,eAAA;IACA,kBAAA;EJm3BtB;EI92BU;IACI,aAAA;EJg3Bd;EI52BM;IACI,mBAAA;IACA,kBAAA;IACA,wBAAA;IACA,oBAAA;IACA,aAAA;IACA,uBAAA;EJ82BV;EIz2BU;IACI,iBAAA;IACA,SAAA;EJ22Bd;EIr2BE;IACI,aAAA;EJu2BN;EIj2BU;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;EJm2Bd;EIj2Bc;IACI,UAAA;IACA,SAAA;IACA,iBAAA;IACA,uBAAA;IACA,cAAA;IACA,mBAAA;EJm2BlB;EIj2BkB;IACI,kBAAA;IACA,gBAAA;EJm2BtB;EI51Bc;IACI,cAAA;EJ81BlB;EI31Bc;IACI,kBAAA;IACA,WAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,iBAAA;EJ61BlB;EI11Bc;IACI,yBAAA;IACA,kBAAA;IACA,mBAAA;EJ41BlB;EI11BkB;IACI,aAAA;IACA,mBAAA;EJ41BtB;EIz1BsB;IACI,cAAA;EJ21B1B;EIz1B0B;IACI,cAAA;IACA,aAAA;EJ21B9B;EIv1BsB;IACI,0BAAA;IACA,SAAA;IACA,kBAAA;EJy1B1B;EIt1BsB;IACI,iBAAA;EJw1B1B;EIr1BsB;IACI,mBAAA;EJu1B1B;EIp1BsB;IACI,aAAA;IACA,cAAA;EJs1B1B;EIj1BkB;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;EJm1BtB;EIj1BsB;IACI,kBAAA;IACA,cAAA;IACA,YAAA;IACA,aAAA;IACA,mBAAA;IACA,uBAAA;EJm1B1B;EI9zBF;IACI,iBAAA;EJg0BF;AACF;AA39BA,6BAAA;AFzBI;EOAA;IACI,aAAA;ELw/BN;EKt/BM;IACI,OAAA;ELw/BV;EKr/BM;IACI,aAAA;IACA,mBAAA;ELu/BV;EKr/BU;IAEI,WAAA;ELs/Bd;EKl/BM;IACI,aAAA;IACA,uBAAA;IACA,mBAAA;ELo/BV;EK/+Bc;IACI,YAAA;IACA,WAAA;IACA,uBAAA;IACA,kBAAA;ELi/BlB;EK/+BkB;IACI,eAAA;IACA,kBAAA;ELi/BtB;EK5+BU;IACI,aAAA;EL8+Bd;EK1+BM;IACI,mBAAA;IACA,2BAAA;EL4+BV;EKv+BU;IACI,kBAAA;IACA,SAAA;ELy+Bd;EKn+BE;IACI,aAAA;ELq+BN;EK99BU;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;ELg+Bd;EK99Bc;IACI,UAAA;IACA,SAAA;IACA,iBAAA;IACA,uBAAA;IACA,cAAA;IACA,mBAAA;ELg+BlB;EK99BkB;IACI,kBAAA;IACA,gBAAA;ELg+BtB;EKz9Bc;IACI,cAAA;EL29BlB;EKx9Bc;IACI,kBAAA;IACA,WAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,iBAAA;EL09BlB;EKv9Bc;IACI,yBAAA;IACA,kBAAA;IACA,mBAAA;ELy9BlB;EKv9BkB;IACI,aAAA;IACA,mBAAA;ELy9BtB;EKt9BsB;IACI,cAAA;ELw9B1B;EKt9B0B;IACI,cAAA;IACA,aAAA;ELw9B9B;EKp9BsB;IACI,0BAAA;IACA,SAAA;IACA,kBAAA;ELs9B1B;EKn9BsB;IACI,iBAAA;IACA,iBAAA;ELq9B1B;EKl9BsB;IACI,mBAAA;ELo9B1B;EKj9BsB;IACI,aAAA;IACA,cAAA;ELm9B1B;EK98BkB;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;ELg9BtB;EK98BsB;IACI,kBAAA;IACA,cAAA;IACA,YAAA;IACA,aAAA;IACA,mBAAA;IACA,uBAAA;ELg9B1B;EK77BF;IACI,iBAAA;EL+7BF;AACF","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 768px) and (max-width: 979px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}",":root {\r\n    --background-color-primary: #15171C;\r\n    --background-color-primary-opacity: #15171ccb;\r\n    --text-color-primary: rgba(255, 255, 255, 0.75);\r\n    --input-border-color: #6A6B6D;\r\n    --blue-primary: #4A81F7;\r\n}","@use 'media-queries' as MQueries;\r\n@import \"./responsive/all.scss\";\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/standard-styles\";\r\n}\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard-styles\";\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md-styles\";\r\n}\r\n\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm-styles\";\r\n}\r\n\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs-styles\";\r\n}",".point-bleu-avec-trait {\r\n\r\n    /* Style pour le conteneur de point et de trait */\r\n    .point-et-trait {\r\n        height: fit-content;\r\n        display: flex;\r\n        align-items: center;\r\n\r\n        /* Style pour la ligne grise */\r\n        .trait {\r\n            width: 3rem;\r\n            height: 1px;\r\n            background-color: var(--input-border-color);\r\n            margin-left: 1rem;\r\n\r\n            &-column {\r\n                width: 1px;\r\n                height: 3rem;\r\n                margin-top: 1rem;\r\n                margin-bottom: 1rem;\r\n                margin-left: 0;\r\n            }\r\n        }\r\n\r\n        /* Style pour le point bleu */\r\n        .point-bleu {\r\n            min-width: 10px;\r\n            min-height: 10px;\r\n            background-color: var(--blue-primary);\r\n            border-radius: 50%;\r\n            margin-left: 1rem;\r\n        }\r\n\r\n        p {\r\n            font-size: 1.5rem;\r\n            margin-left: 1rem;\r\n        }\r\n    }\r\n\r\n    .column {\r\n        flex-direction: column;\r\n\r\n        .point-bleu {\r\n            margin-left: 0;\r\n            margin-top: 1rem;\r\n        }\r\n\r\n        &>p {\r\n            // writing-mode: vertical-rl;\r\n            rotate: -90deg;\r\n            margin-top: 2rem;\r\n            margin-left: auto;\r\n            margin-right: auto;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n.blue-word {\r\n    color: var(--blue-primary);\r\n}","@use '../variables';\r\n@use '../classes';\r\n\r\n\r\n/* thai */\r\n/* latin */\r\n@font-face {\r\n    font-display: swap;\r\n    font-family: 'Prompt';\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    src: url('../fonts/-W_8XJnvUD7dzB2Ck_kIaWMu.woff2') format('woff2');\r\n    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n\r\n\r\n\r\n\r\n:root {\r\n    font-family: 'Prompt';\r\n    font-weight: normal;\r\n    cursor: default;\r\n\r\n    body {\r\n        margin: 0;\r\n        display: grid;\r\n        background-color: var(--background-color-primary);\r\n\r\n        .blur {\r\n            transition: 0.5s;\r\n            background-color: var(--background-color-primary-opacity);\r\n            filter: blur(10px);\r\n        }\r\n\r\n        // header\r\n        header {\r\n            z-index: 1;\r\n            color: white;\r\n            position: fixed;\r\n            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);\r\n            width: 100%;\r\n\r\n            // general header\r\n            .active {\r\n                color: var(--blue-primary);\r\n            }\r\n\r\n            .header-container-1 {\r\n                display: flex;\r\n\r\n                div {}\r\n\r\n                .logo-container {\r\n\r\n                    img {\r\n                        cursor: pointer;\r\n                    }\r\n                }\r\n\r\n                .menu-container {\r\n                    .span-icon {\r\n                        cursor: pointer;\r\n\r\n                        &.active {\r\n                            * {\r\n\r\n                                background-color: var(--blue-primary);\r\n                            }\r\n\r\n                            .milieu {\r\n                                margin-left: 0.5rem;\r\n                            }\r\n                        }\r\n                    }\r\n\r\n                    p {}\r\n                }\r\n\r\n                .nous-rejoindre {\r\n                    border-top: var(--blue-primary) solid 2px;\r\n                    border-left: var(--blue-primary) solid 2px;\r\n                    border-bottom: #FF3131 solid 2px;\r\n                    border-right: #FF3131 solid 2px;\r\n                    border-radius: 5px;\r\n                    display: flex;\r\n\r\n\r\n\r\n                    span.point {\r\n                        background-color: var(--blue-primary);\r\n                        border-radius: 50%;\r\n                        height: 12px;\r\n                        width: 12px;\r\n                        margin-right: 10px;\r\n                        margin-top: auto;\r\n                        margin-bottom: auto;\r\n                    }\r\n\r\n                    p {}\r\n\r\n                    &:hover {\r\n                        transition: 0.2s;\r\n                        border: var(--blue-primary) solid 2px;\r\n                        color: var(--blue-primary);\r\n\r\n                        span.point {\r\n                            transition: 1.2s;\r\n                            background-color: white;\r\n                        }\r\n                    }\r\n\r\n                    &,\r\n                    & * {\r\n                        cursor: pointer;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.down-scroll {\r\n                // apparition/disparition de la top-bar\r\n                position: fixed;\r\n                top: 0px;\r\n                width: 100%;\r\n                transition: top 0.3s;\r\n                background-color: var(--background-color-primary-opacity);\r\n                backdrop-filter: blur(5px);\r\n            }\r\n\r\n            // mobil & tablet\r\n            &.open {\r\n                .header-container-mobil {\r\n                    background-color: black;\r\n                    border-top: 1px white solid;\r\n                    padding: 7.5% 0;\r\n\r\n\r\n                    &.menu {\r\n\r\n\r\n                        .menu-mobil {\r\n\r\n\r\n                            p {}\r\n                        }\r\n                    }\r\n\r\n                    &.sous-menu {\r\n\r\n                        .span-icon {}\r\n\r\n                        .span-icon.retour {}\r\n\r\n                        .sous-menu-mobil {\r\n\r\n\r\n                            .titre-container {\r\n\r\n\r\n                                .icon-container {\r\n\r\n\r\n                                    .span-icon {}\r\n                                }\r\n\r\n                                p {\r\n                                    display: flex;\r\n                                    align-items: center;\r\n\r\n                                }\r\n\r\n                                .nouveau {\r\n                                    position: absolute;\r\n                                    color: white;\r\n                                    text-shadow: 5px -4px 2px blue;\r\n                                    opacity: 0.75;\r\n                                }\r\n\r\n                                .green-word {\r\n                                    color: #01FF01;\r\n                                    text-shadow: 0px 1px 2px #01FF01;\r\n                                    opacity: 0.85;\r\n                                }\r\n\r\n                                .span-image {\r\n                                    background: url('../images/trefle.png') center/contain no-repeat;\r\n                                    display: block;\r\n\r\n                                }\r\n                            }\r\n\r\n                            nav {\r\n\r\n\r\n                                a {}\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        // content\r\n        .content {\r\n\r\n            // titres\r\n            h1,\r\n            h2,\r\n            h3 {\r\n                color: white;\r\n            }\r\n\r\n            // textes\r\n            p,\r\n            a {\r\n                text-align: center;\r\n\r\n            }\r\n\r\n            &a,\r\n            p,\r\n            li {\r\n                color: var(--text-color-primary);\r\n            }\r\n\r\n            // listes\r\n            ul {\r\n                text-decoration: none;\r\n                padding: 0 0 0 0;\r\n\r\n                li {\r\n\r\n                    list-style-type: none;\r\n                }\r\n\r\n                &.with-blue-puce {\r\n                    li {\r\n                        list-style-type: disc;\r\n                    }\r\n\r\n                    li::marker {\r\n                        color: var(--blue-primary);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        // footer\r\n        footer {\r\n\r\n            h3 {\r\n                color: white;\r\n            }\r\n\r\n            a,\r\n            p,\r\n            li {\r\n                color: var(--text-color-primary);\r\n\r\n            }\r\n\r\n            ul {\r\n                list-style-type: none;\r\n                padding-left: 0;\r\n            }\r\n\r\n            .footer-separator {\r\n                height: 2px;\r\n                background-color: var(--text-color-primary);\r\n            }\r\n\r\n        }\r\n\r\n    }\r\n\r\n}","// page de chargement\r\n.loading-screen {\r\n    position: fixed;\r\n    height: 100%;\r\n    width: 100%;\r\n    z-index: 10;\r\n\r\n    .section-0 {\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: black;\r\n        padding: 4rem 0 10rem 0;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n\r\n\r\n        .span-image {\r\n            background: url('../images/cropped-image_2023-08-10_142556159-removebg-preview.png') no-repeat;\r\n            background-size: contain;\r\n            display: block;\r\n            height: 12.5rem;\r\n            width: 25rem;\r\n            margin: 4rem auto 0 auto;\r\n            overflow: hidden;\r\n        }\r\n\r\n        h1 {\r\n            background-image: linear-gradient(to left, #94A4B0, #5F82A0, #3F6D97, #486078);\r\n            -webkit-background-clip: text;\r\n            color: transparent;\r\n            font-size: 1.5rem;\r\n            margin: 0\r\n        }\r\n\r\n        p {\r\n            width: 35%;\r\n\r\n            text-align: center;\r\n            font-size: 0.8rem;\r\n            color: white;\r\n        }\r\n\r\n        .span-icon {\r\n\r\n            margin-top: 3rem;\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            width: 35%;\r\n\r\n            * {\r\n                height: 2.5rem;\r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n\r\n// header\r\nheader {\r\n\r\n\r\n\r\n\r\n\r\n    &.open {\r\n\r\n\r\n\r\n        div {\r\n            background-color: black;\r\n            z-index: 1;\r\n\r\n            transition: all 0.5s ease-out;\r\n            transform: perspective();\r\n\r\n        }\r\n\r\n        .header-container-1 {\r\n            border-bottom: 1px solid rgba(255, 255, 255, 0.5);\r\n\r\n        }\r\n\r\n        .header-container-2 {\r\n            height: fit-content;\r\n            position: absolute;\r\n            width: 100%;\r\n            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);\r\n            display: flex;\r\n\r\n            .description-container {\r\n\r\n                flex: 1;\r\n\r\n\r\n                .span-image {\r\n                    height: 7.5rem;\r\n                    width: 10rem;\r\n                    display: block;\r\n                    margin: 3rem auto 3rem 3rem;\r\n                }\r\n\r\n\r\n                p {\r\n                    font-size: 0.65rem;\r\n                    opacity: 0.75;\r\n                    padding: 0 0 0 1rem;\r\n\r\n                    &.description-titre {\r\n                        font-size: 1rem;\r\n                        opacity: 1;\r\n                    }\r\n                }\r\n            }\r\n\r\n            .sous-menu-container {\r\n                flex: 3;\r\n                padding: 3rem 2rem 8rem 2rem;\r\n\r\n                margin-left: auto;\r\n\r\n                display: flex;\r\n                justify-content: end;\r\n                flex-wrap: wrap;\r\n\r\n                transition: flex-wrap 0.5s ease-out;\r\n                transform: perspective();\r\n\r\n\r\n\r\n                .sous-menu {\r\n                    flex: 1;\r\n                    letter-spacing: 0.1rem;\r\n                    padding: 2rem 1rem;\r\n\r\n\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        justify-content: start;\r\n\r\n                        * {\r\n                            color: white;\r\n                            margin: 0 0;\r\n                            padding: 0 0;\r\n                            text-align: left;\r\n\r\n                        }\r\n\r\n                        div.icon-container {\r\n\r\n                            .span-icon {\r\n                                position: absolute;\r\n                                width: 1rem;\r\n                                height: 1rem;\r\n                                display: block;\r\n                                background-color: #01FF01;\r\n                            }\r\n                        }\r\n\r\n\r\n                        p {\r\n                            font-size: 0.65rem;\r\n                            // transition: 0.75s;\r\n                            width: max-content;\r\n                            padding-left: 23px;\r\n                            padding-bottom: 0.5rem;\r\n                            display: flex;\r\n\r\n                            .green-word {\r\n                                color: #01FF01;\r\n                                text-shadow: 0px 1px 2px #01FF01;\r\n                                opacity: 0.85;\r\n                                margin: 0 5px 0 5px\r\n                            }\r\n\r\n                            .nouveau {\r\n                                position: absolute;\r\n                                margin-top: -1.5rem;\r\n                                margin-left: 2rem;\r\n                                text-shadow: 5px -4px 2px blue;\r\n                                opacity: 0.75;\r\n                            }\r\n\r\n                            .span-image {\r\n                                background: url('../images/trefle.png') center/contain no-repeat;\r\n                                display: block;\r\n                                width: 1rem;\r\n                                height: 1rem;\r\n                            }\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                nav {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n\r\n                    a {\r\n                        cursor: pointer;\r\n                        height: 2rem;\r\n                        width: max-content;\r\n                        min-width: 8rem;\r\n                        display: flex;\r\n                        align-items: center;\r\n                        opacity: 0.75;\r\n                        font-size: 0.6rem;\r\n                        transition: all 0.5s;\r\n\r\n                        &:hover {\r\n                            color: var(--blue-primary);\r\n                            text-shadow: 5px 5px 2px blue;\r\n                            opacity: 1;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n    .header-container-1 {\r\n        height: 100%;\r\n        width: 100%;\r\n        display: flex;\r\n        letter-spacing: 3px;\r\n        justify-content: space-between;\r\n\r\n\r\n        img {\r\n            cursor: pointer;\r\n            height: 2.75rem;\r\n            margin-top: 0.8rem;\r\n            margin-left: 3rem;\r\n            transition: transform 0.3s;\r\n\r\n            &:hover {\r\n                transform: scale(1.05);\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n\r\n            width: 100%;\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            align-items: center;\r\n            flex-wrap: wrap;\r\n\r\n\r\n            p {\r\n                width: fit-content;\r\n                padding: 0 15px;\r\n                margin: .5rem 0;\r\n                cursor: pointer;\r\n                font-size: 0.65rem;\r\n\r\n                a {\r\n                    margin: 0;\r\n                }\r\n\r\n\r\n                & a:hover {\r\n                    transition: 0.5s;\r\n                    color: var(--blue-primary);\r\n                }\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n\r\n            padding: 0 2rem 0 2rem;\r\n            margin: auto 3rem auto 1.5rem;\r\n            letter-spacing: normal;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n            p {\r\n                min-width: 8rem;\r\n                margin: 0;\r\n                font-size: 0.65rem;\r\n            }\r\n\r\n\r\n        }\r\n    }\r\n\r\n    .header-container-mobil {\r\n        display: none;\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n\r\n// content\r\n.content {\r\n    padding: 0 2.5rem 4rem 2.5rem;\r\n    margin-top: 170px;\r\n\r\n    // titres\r\n    h1 {\r\n        font-size: 3rem;\r\n        margin-top: 8rem;\r\n        text-align: center;\r\n    }\r\n\r\n    h2 {\r\n        font-size: 1.75rem;\r\n    }\r\n\r\n    h3 {\r\n        font-size: 1.2rem;\r\n    }\r\n\r\n    h1,\r\n    h2,\r\n    h3 {\r\n        letter-spacing: 0.2rem;\r\n\r\n    }\r\n\r\n    // textes\r\n\r\n    &a,\r\n    p,\r\n    li {\r\n        letter-spacing: 2px;\r\n        font-size: 0.75rem;\r\n    }\r\n\r\n\r\n\r\n    // sections\r\n    section {\r\n        margin-top: 2rem;\r\n        margin-bottom: 15rem;\r\n\r\n        .span-image {\r\n            border-radius: 5px;\r\n        }\r\n\r\n        .tab p {\r\n            padding-left: 2rem;\r\n        }\r\n    }\r\n}\r\n\r\n// footer\r\nfooter {\r\n    padding: 1rem 2rem;\r\n\r\n\r\n\r\n\r\n\r\n    .footer-container {\r\n        padding: 2rem 0;\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n\r\n\r\n        div {\r\n            margin-right: 6rem;\r\n        }\r\n\r\n        h3 {\r\n            font-size: 1.8rem;\r\n            max-width: 50px;\r\n\r\n        }\r\n\r\n        .footer-register {\r\n            flex: 0.4;\r\n\r\n            input {\r\n                width: 99%;\r\n                background-color: var(--background-color-general);\r\n                border: none;\r\n                border-bottom: var(--input-border-color) solid 1px;\r\n                font-size: 20px;\r\n                margin: 3rem 0 0 0;\r\n                color: var(--text-color-primary);\r\n\r\n                &:focus {\r\n                    outline: none;\r\n                }\r\n            }\r\n\r\n            .footer-submit {\r\n                background-color: var(--blue-primary);\r\n                padding: .75rem 20rem;\r\n                border-radius: 15px;\r\n                margin: 3rem 0 0 0;\r\n            }\r\n        }\r\n\r\n        .footer-coordonnees {\r\n            flex: 0.3;\r\n\r\n            li {\r\n                margin-bottom: 2rem;\r\n\r\n                span {\r\n\r\n                    p {\r\n                        margin: 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .footer-services {\r\n            flex: .3;\r\n\r\n            li {\r\n                margin-bottom: 0;\r\n                padding-bottom: 1rem;\r\n            }\r\n        }\r\n\r\n\r\n\r\n    }\r\n\r\n\r\n    .footer-container2 {\r\n        display: flex;\r\n        padding-top: 2rem;\r\n\r\n        .footer-links {\r\n            flex: .4;\r\n            display: flex;\r\n            /* align-items: center; */\r\n            flex-wrap: wrap;\r\n\r\n            p {\r\n                margin: 0;\r\n                padding: 0 2rem;\r\n            }\r\n        }\r\n\r\n        .footer-icons {\r\n            flex: .2;\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            align-items: center;\r\n\r\n            img {\r\n                height: 2rem;\r\n                width: 2rem;\r\n            }\r\n        }\r\n\r\n\r\n        .footer-mention {\r\n            flex: .4;\r\n            text-align: center;\r\n            margin-top: auto;\r\n            margin-bottom: auto;\r\n\r\n\r\n        }\r\n    }\r\n\r\n}","header {\r\n\r\n    .header-container-1 {\r\n        display: flex;\r\n        margin-top: 1rem;\r\n\r\n        div {\r\n            flex: 1;\r\n        }\r\n\r\n        .logo-container {\r\n            display: flex;\r\n            align-items: center;\r\n\r\n            img {\r\n\r\n                width: 110%;\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n\r\n            .span-icon {\r\n\r\n\r\n                .bar {\r\n                    height: 10px;\r\n                    width: 50px;\r\n                    background-color: white;\r\n                    border-radius: 5px;\r\n\r\n                    &.milieu {\r\n                        margin-top: 8px;\r\n                        margin-bottom: 8px;\r\n                    }\r\n                }\r\n            }\r\n\r\n            p {\r\n                display: none;\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n            height: fit-content;\r\n            width: fit-content;\r\n            margin: auto 1rem auto 0;\r\n            padding: 0.5rem 1rem;\r\n            display: flex;\r\n            justify-content: center;\r\n\r\n\r\n            span.point {}\r\n\r\n            p {\r\n                font-size: .8rem;\r\n                margin: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    .header-container-2 {\r\n        display: none;\r\n    }\r\n\r\n    &.open {\r\n        .header-container-mobil {\r\n\r\n            &.menu {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-evenly;\r\n                align-items: center;\r\n\r\n                .menu-mobil {\r\n                    width: 75%;\r\n                    margin: 0;\r\n                    font-size: 1.2rem;\r\n                    border: 1px solid white;\r\n                    margin: 1rem 0;\r\n                    border-radius: 15px;\r\n\r\n                    p {\r\n                        text-align: center;\r\n                        margin: 0.5rem 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.sous-menu {\r\n\r\n                .span-icon {\r\n                    display: block;\r\n                }\r\n\r\n                .span-icon.retour {\r\n                    position: absolute;\r\n                    right: 1rem;\r\n                    width: 60px;\r\n                    height: 60px;\r\n                    margin-right: 7.5%;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                .sous-menu-mobil {\r\n                    margin: 1.5rem 0 0.5rem 0;\r\n                    padding-left: 7.5%;\r\n                    padding-right: 7.5%;\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        // border: 1px dotted var(--blue-primary);\r\n\r\n                        .icon-container {\r\n                            padding: 0 5px;\r\n\r\n                            .span-icon {\r\n                                height: 1.5rem;\r\n                                width: 1.5rem;\r\n                            }\r\n                        }\r\n\r\n                        p {\r\n                            color: var(--blue-primary);\r\n                            margin: 0;\r\n                            font-size: 1.25rem;\r\n                        }\r\n\r\n                        .nouveau {\r\n                            margin-top: -3rem;\r\n                        }\r\n\r\n                        .green-word {\r\n                            margin: 0 8px 0 8px;\r\n                        }\r\n\r\n                        .span-image {\r\n                            width: 1.5rem;\r\n                            height: 1.5rem;\r\n                        }\r\n\r\n                    }\r\n\r\n                    nav {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        padding: 0 0 0 3rem;\r\n\r\n                        a {\r\n                            width: max-content;\r\n                            min-width: 50%;\r\n                            height: 48px;\r\n                            display: flex;\r\n                            align-items: center;\r\n                            margin: 2.5px 0 2.5px 0;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n.content {\r\n    margin-top: 10rem;\r\n}","header {\r\n\r\n    .header-container-1 {\r\n        display: flex;\r\n\r\n        div {\r\n            flex: 1;\r\n        }\r\n\r\n        .logo-container {\r\n            display: flex;\r\n            align-items: center;\r\n\r\n            img {\r\n\r\n                width: 110%;\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n\r\n            .span-icon {\r\n\r\n\r\n                .bar {\r\n                    height: 10px;\r\n                    width: 50px;\r\n                    background-color: white;\r\n                    border-radius: 5px;\r\n\r\n                    &.milieu {\r\n                        margin-top: 8px;\r\n                        margin-bottom: 8px;\r\n                    }\r\n                }\r\n            }\r\n\r\n            p {\r\n                display: none;\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n            height: fit-content;\r\n            margin: auto 0.25rem auto 0;\r\n\r\n\r\n            span.point {}\r\n\r\n            p {\r\n                font-size: .65rem;\r\n                margin: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    .header-container-2 {\r\n        display: none;\r\n    }\r\n\r\n\r\n    &.open {\r\n        .header-container-mobil {\r\n\r\n            &.menu {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-evenly;\r\n                align-items: center;\r\n\r\n                .menu-mobil {\r\n                    width: 75%;\r\n                    margin: 0;\r\n                    font-size: 1.2rem;\r\n                    border: 1px solid white;\r\n                    margin: 1rem 0;\r\n                    border-radius: 15px;\r\n\r\n                    p {\r\n                        text-align: center;\r\n                        margin: 0.5rem 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.sous-menu {\r\n\r\n                .span-icon {\r\n                    display: block;\r\n                }\r\n\r\n                .span-icon.retour {\r\n                    position: absolute;\r\n                    right: 1rem;\r\n                    width: 60px;\r\n                    height: 60px;\r\n                    margin-right: 1rem;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                .sous-menu-mobil {\r\n                    margin: 1.5rem 0 0.5rem 0;\r\n                    padding-left: 1rem;\r\n                    padding-right: 1rem;\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        // border: 1px dotted var(--blue-primary);\r\n\r\n                        .icon-container {\r\n                            padding: 0 5px;\r\n\r\n                            .span-icon {\r\n                                height: 1.5rem;\r\n                                width: 1.5rem;\r\n                            }\r\n                        }\r\n\r\n                        p {\r\n                            color: var(--blue-primary);\r\n                            margin: 0;\r\n                            font-size: 1.25rem;\r\n                        }\r\n\r\n                        .nouveau {\r\n                            margin-top: -3rem;\r\n                            font-size: 0.5rem;\r\n                        }\r\n\r\n                        .green-word {\r\n                            margin: 0 8px 0 8px;\r\n                        }\r\n\r\n                        .span-image {\r\n                            width: 1.5rem;\r\n                            height: 1.5rem;\r\n                        }\r\n\r\n                    }\r\n\r\n                    nav {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        padding: 0 0 0 3rem;\r\n\r\n                        a {\r\n                            width: max-content;\r\n                            min-width: 50%;\r\n                            height: 48px;\r\n                            display: flex;\r\n                            align-items: center;\r\n                            margin: 2.5px 0 2.5px 0;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        }\r\n    }\r\n}\r\n\r\n.content {\r\n    margin-top: 20rem;\r\n}\r\n\r\nfooter {}"],"sourceRoot":""}]);
+  footer {
+    margin-top: 60px;
+  }
+  footer .footer-container .footer-register input {
+    margin: 20px 0 20px 0;
+  }
+  footer .footer-container .footer-coordonnees {
+    margin-top: 60px;
+  }
+  footer .footer-container .footer-coordonnees h3 {
+    font-size: 30px;
+  }
+  footer .footer-container .footer-coordonnees span {
+    margin: 10px 0 10px 0;
+  }
+  footer .footer-container .footer-services {
+    margin-top: 60px;
+  }
+  footer .footer-container .footer-services h3 {
+    font-size: 30px;
+  }
+  footer .footer-container .footer-services ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-container .footer-services ul li {
+    margin: 10px 0 10px 0;
+    width: max-content;
+    min-height: 48px;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-separator {
+    margin: 40px 0;
+  }
+  footer .footer-container2 .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-container2 .footer-links p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    min-height: 48px;
+    min-width: 50%;
+  }
+  footer .footer-container2 .footer-icons {
+    justify-content: space-evenly;
+    margin: 60px 0 60px 0;
+  }
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./assets/styles/_variables.scss","webpack://./assets/styles/responsive-styles.scss","webpack://./assets/styles/_classes.scss","webpack://./assets/styles/responsive/all.scss","webpack://./assets/styles/responsive/_standard-styles.scss","webpack://./assets/styles/responsive/_md-styles.scss","webpack://./assets/styles/responsive/_sm-styles.scss","webpack://./assets/styles/responsive/_xs-styles.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;AC5BA;EACI,mCAAA;EACA,6CAAA;EACA,+CAAA;EACA,6BAAA;EACA,uBAAA;ACMJ;;ACXA;EAEI,iDAAA;ADaJ;;ACZI;EACI,mBAAA;EACA,aAAA;EACA,mBAAA;EAEA,8BAAA;EAgBA,6BAAA;ADDR;;ACdQ;EACI,WAAA;EACA,WAAA;EACA,2CAAA;EACA,iBAAA;ADiBZ;;ACfY;EACI,UAAA;EACA,YAAA;EACA,gBAAA;EACA,mBAAA;EACA,cAAA;ADkBhB;;ACbQ;EACI,eAAA;EACA,gBAAA;EACA,qCAAA;EACA,kBAAA;EACA,iBAAA;ADgBZ;;ACbQ;EACI,iBAAA;EACA,iBAAA;ADgBZ;;ACZI;EACI,sBAAA;ADeR;;ACbQ;EACI,cAAA;EACA,gBAAA;ADgBZ;;ACbQ;EAEI,cAAA;EACA,gBAAA;EACA,iBAAA;EACA,kBAAA;ADeZ;;ACRA;EACI,0BAAA;ADWJ;;AEnEA,SAAA;AACA,UAAA;AACA;EACI,kBAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,4DAAA;EACA,iMAAA;AFsEJ;AEhEA;EACI,qBAAA;EACA,mBAAA;EACA,eAAA;AFkEJ;AEhEI;EACI,SAAA;EACA,aAAA;EACA,iDAAA;AFkER;AEhEQ;EACI,gBAAA;EACA,yDAAA;EACA,kBAAA;AFkEZ;AE/DQ;EACI,gBAAA;AFiEZ;AE7DQ;EACI,UAAA;EACA,YAAA;EACA,eAAA;EACA,2CAAA;EACA,WAAA;EACA,iBAAA;AF+DZ;AE5DY;EACI,0BAAA;AF8DhB;AE3DY;EACI,aAAA;EACA,gBAAA;AF6DhB;AEvDoB;EACI,eAAA;EACA,gBAAA;AFyDxB;AEpDoB;EACI,eAAA;AFsDxB;AEpDwB;EACI,YAAA;EACA,WAAA;EACA,uBAAA;EACA,kBAAA;AFsD5B;AEpD4B;EACI,eAAA;EACA,kBAAA;AFsDhC;AEhD4B;EAEI,qCAAA;AFiDhC;AE9C4B;EACI,mBAAA;AFgDhC;AEtCgB;EACI,yCAAA;EACA,0CAAA;EACA,gCAAA;EACA,+BAAA;EACA,kBAAA;EACA,aAAA;AFwCpB;AEpCoB;EACI,qCAAA;EACA,kBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AFsCxB;AEjCoB;EACI,gBAAA;EACA,qCAAA;EACA,0BAAA;AFmCxB;AEjCwB;EACI,gBAAA;EACA,uBAAA;AFmC5B;AE/BoB;EAEI,eAAA;AFgCxB;AE3BY;EAEI,eAAA;EACA,QAAA;EACA,WAAA;EACA,6BAAA;EACA,yDAAA;EACA,0BAAA;AF4BhB;AEzBY;EACI,gBAAA;AF2BhB;AErBgB;EACI,uBAAA;EACA,2BAAA;EACA,eAAA;AFuBpB;AEQgC;EACI,aAAA;EACA,mBAAA;AFNpC;AEUgC;EACI,kBAAA;EACA,YAAA;EACA,8BAAA;EACA,aAAA;AFRpC;AEWgC;EACI,cAAA;EACA,gCAAA;EACA,aAAA;AFTpC;AEYgC;EACI,4EAAA;EACA,cAAA;AFVpC;AE8BY;;;EAGI,YAAA;AF5BhB;AEgCY;;EAEI,kBAAA;AF9BhB;AEkCY;;;EAGI,gCAAA;AFhChB;AEoCY;EACI,qBAAA;EACA,gBAAA;AFlChB;AEoCgB;EAEI,qBAAA;AFnCpB;AEuCoB;EACI,qBAAA;AFrCxB;AEwCoB;EACI,0BAAA;AFtCxB;AE6CQ;EACI,gBAAA;AF3CZ;AE6CY;EACI,YAAA;AF3ChB;AE8CY;;;EAGI,gCAAA;AF5ChB;AEgDY;EACI,qBAAA;EACA,eAAA;AF9ChB;AEmDoB;EACI,kBAAA;EACA,eAAA;AFjDxB;AEoDoB;EACI,kBAAA;AFlDxB;AEqDoB;EACI,UAAA;EACA,iDAAA;EACA,YAAA;EACA,kDAAA;EACA,eAAA;EACA,gCAAA;EACA,kBAAA;AFnDxB;AEqDwB;EACI,aAAA;AFnD5B;AEuDoB;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,qCAAA;EACA,mBAAA;EACA,gBAAA;AFrDxB;AEyDgB;EACI,aAAA;EACA,sBAAA;EACA,kBAAA;AFvDpB;AEgEwB;EACI,YAAA;AF9D5B;AEiEwB;EACI,eAAA;AF/D5B;AEsEgB;EACI,kBAAA;AFpEpB;AE8EY;EACI,WAAA;EACA,2CAAA;AF5EhB;AEgFgB;EACI,kBAAA;AF9EpB;AEmFgB;EACI,aAAA;AFjFpB;AEmFoB;EACI,YAAA;AFjFxB;AEqFgB;EACI,YAAA;EACA,kBAAA;AFnFpB;;AA3SA,kBAAA;AF2BI;EK7BJ;IACI,eAAA;IACA,YAAA;IACA,WAAA;IACA,WAAA;EHkTF;EGhTE;IACI,WAAA;IACA,YAAA;IACA,uBAAA;IACA,uBAAA;IACA,aAAA;IACA,sBAAA;IACA,mBAAA;EHkTN;EG/SM;IACI,6DAAA;IACA,wBAAA;IACA,cAAA;IACA,eAAA;IACA,YAAA;IACA,wBAAA;IACA,gBAAA;EHiTV;EG9SM;IACI,8EAAA;IACA,6BAAA;IACA,kBAAA;IACA,iBAAA;IACA,SAAA;EHgTV;EG7SM;IACI,UAAA;IAEA,kBAAA;IACA,iBAAA;IACA,YAAA;EH8SV;EG3SM;IAEI,gBAAA;IACA,aAAA;IACA,6BAAA;IACA,UAAA;EH4SV;EG1SU;IACI,cAAA;EH4Sd;EGlSE;IACI,YAAA;IACA,WAAA;IACA,aAAA;IACA,mBAAA;IACA,8BAAA;EHoSN;EGjSM;IACI,eAAA;IACA,eAAA;IACA,kBAAA;IACA,iBAAA;IACA,0BAAA;EHmSV;EGjSU;IACI,sBAAA;EHmSd;EG/RM;IAEI,WAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;IACA,eAAA;EHgSV;EG7RU;IACI,kBAAA;IACA,eAAA;IACA,gBAAA;IACA,eAAA;IACA,kBAAA;EH+Rd;EG7Rc;IACI,SAAA;EH+RlB;EG3Rc;IACI,gBAAA;IACA,0BAAA;EH6RlB;EGzRU;IACI,aAAA;EH2Rd;EGvRM;IAEI,sBAAA;IACA,6BAAA;IACA,sBAAA;EHwRV;EGhRU;IACI,eAAA;IACA,SAAA;IACA,kBAAA;EHkRd;EG3QE;IACI,aAAA;EH6QN;EGtQM;IACI,uBAAA;IACA,UAAA;IAEA,6BAAA;IACA,wBAAA;EHuQV;EGnQM;IACI,iDAAA;EHqQV;EGjQM;IACI,mBAAA;IACA,kBAAA;IACA,WAAA;IACA,2CAAA;IACA,aAAA;EHmQV;EGjQU;IAEI,OAAA;EHkQd;EG/Pc;IACI,cAAA;IACA,YAAA;IACA,cAAA;IACA,2BAAA;EHiQlB;EG7Pc;IACI,kBAAA;IACA,aAAA;IACA,mBAAA;EH+PlB;EG7PkB;IACI,eAAA;IACA,UAAA;EH+PtB;EG1PU;IACI,OAAA;IACA,4BAAA;IAEA,iBAAA;IAEA,aAAA;IACA,oBAAA;IACA,eAAA;IAEA,mCAAA;IACA,wBAAA;EHyPd;EGrPc;IACI,OAAA;IACA,sBAAA;IACA,kBAAA;EHuPlB;EGnPkB;IACI,aAAA;IACA,sBAAA;EHqPtB;EGnPsB;IACI,YAAA;IACA,WAAA;IACA,YAAA;IACA,gBAAA;EHqP1B;EG/O0B;IACI,kBAAA;IACA,WAAA;IACA,YAAA;IACA,cAAA;IACA,yBAAA;EHiP9B;EG5OsB;IACI,kBAAA;IAEA,kBAAA;IACA,kBAAA;IACA,sBAAA;IACA,aAAA;EH6O1B;EG3O0B;IACI,cAAA;IACA,gCAAA;IACA,aAAA;IACA,mBAAA;EH6O9B;EG1O0B;IACI,kBAAA;IACA,mBAAA;IACA,iBAAA;IACA,8BAAA;IACA,aAAA;EH4O9B;EGzO0B;IACI,4EAAA;IACA,cAAA;IACA,WAAA;IACA,YAAA;EH2O9B;EGpOc;IACI,aAAA;IACA,sBAAA;EHsOlB;EGpOkB;IACI,eAAA;IACA,YAAA;IACA,kBAAA;IACA,eAAA;IACA,aAAA;IACA,mBAAA;IACA,aAAA;IACA,iBAAA;IACA,oBAAA;EHsOtB;EGpOsB;IACI,0BAAA;IACA,6BAAA;IACA,UAAA;EHsO1B;EG1NF;IACI,6BAAA;IACA,iBAAA;EH4NF;EGzNE;IACI,eAAA;IACA,gBAAA;IACA,kBAAA;EH2NN;EGxNE;IACI,kBAAA;EH0NN;EGvNE;IACI,iBAAA;EHyNN;EGtNE;;;IAGI,sBAAA;EHwNN;EGlNE;;;IAGI,mBAAA;IACA,kBAAA;EHoNN;EG9ME;IACI,gBAAA;IACA,oBAAA;EHgNN;EG9MM;IACI,kBAAA;EHgNV;EG7MM;IACI,kBAAA;EH+MV;EGzMF;IACI,kBAAA;EH2MF;EGrME;IACI,eAAA;IACA,aAAA;IACA,eAAA;EHuMN;EGpMM;IACI,kBAAA;EHsMV;EGnMM;IACI,iBAAA;IACA,eAAA;EHqMV;EGjMM;IACI,SAAA;EHmMV;EGjMU;IACI,UAAA;IACA,iDAAA;IACA,YAAA;IACA,kDAAA;IACA,eAAA;IACA,kBAAA;IACA,gCAAA;EHmMd;EGjMc;IACI,aAAA;EHmMlB;EG/LU;IACI,qCAAA;IACA,sBAAA;IACA,mBAAA;IACA,kBAAA;EHiMd;EG7LM;IACI,SAAA;EH+LV;EG7LU;IACI,mBAAA;EH+Ld;EG3LkB;IACI,SAAA;EH6LtB;EGtLM;IACI,SAAA;EHwLV;EGtLU;IACI,gBAAA;IACA,oBAAA;EHwLd;EG/KE;IACI,aAAA;IACA,iBAAA;EHiLN;EG/KM;IACI,SAAA;IACA,aAAA;IACA,yBAAA;IACA,eAAA;EHiLV;EG/KU;IACI,SAAA;IACA,eAAA;EHiLd;EG7KM;IACI,SAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;EH+KV;EG7KU;IACI,YAAA;IACA,WAAA;EH+Kd;EG1KM;IACI,SAAA;IACA,kBAAA;IACA,gBAAA;IACA,mBAAA;EH4KV;AACF;AApnBA,aAAA;AFeI;EKtBJ;IACI,eAAA;IACA,YAAA;IACA,WAAA;IACA,WAAA;EH+nBF;EG7nBE;IACI,WAAA;IACA,YAAA;IACA,uBAAA;IACA,uBAAA;IACA,aAAA;IACA,sBAAA;IACA,mBAAA;EH+nBN;EG5nBM;IACI,6DAAA;IACA,wBAAA;IACA,cAAA;IACA,eAAA;IACA,YAAA;IACA,wBAAA;IACA,gBAAA;EH8nBV;EG3nBM;IACI,8EAAA;IACA,6BAAA;IACA,kBAAA;IACA,iBAAA;IACA,SAAA;EH6nBV;EG1nBM;IACI,UAAA;IAEA,kBAAA;IACA,iBAAA;IACA,YAAA;EH2nBV;EGxnBM;IAEI,gBAAA;IACA,aAAA;IACA,6BAAA;IACA,UAAA;EHynBV;EGvnBU;IACI,cAAA;EHynBd;EG/mBE;IACI,YAAA;IACA,WAAA;IACA,aAAA;IACA,mBAAA;IACA,8BAAA;EHinBN;EG9mBM;IACI,eAAA;IACA,eAAA;IACA,kBAAA;IACA,iBAAA;IACA,0BAAA;EHgnBV;EG9mBU;IACI,sBAAA;EHgnBd;EG5mBM;IAEI,WAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;IACA,eAAA;EH6mBV;EG1mBU;IACI,kBAAA;IACA,eAAA;IACA,gBAAA;IACA,eAAA;IACA,kBAAA;EH4mBd;EG1mBc;IACI,SAAA;EH4mBlB;EGxmBc;IACI,gBAAA;IACA,0BAAA;EH0mBlB;EGtmBU;IACI,aAAA;EHwmBd;EGpmBM;IAEI,sBAAA;IACA,6BAAA;IACA,sBAAA;EHqmBV;EG7lBU;IACI,eAAA;IACA,SAAA;IACA,kBAAA;EH+lBd;EGxlBE;IACI,aAAA;EH0lBN;EGnlBM;IACI,uBAAA;IACA,UAAA;IAEA,6BAAA;IACA,wBAAA;EHolBV;EGhlBM;IACI,iDAAA;EHklBV;EG9kBM;IACI,mBAAA;IACA,kBAAA;IACA,WAAA;IACA,2CAAA;IACA,aAAA;EHglBV;EG9kBU;IAEI,OAAA;EH+kBd;EG5kBc;IACI,cAAA;IACA,YAAA;IACA,cAAA;IACA,2BAAA;EH8kBlB;EG1kBc;IACI,kBAAA;IACA,aAAA;IACA,mBAAA;EH4kBlB;EG1kBkB;IACI,eAAA;IACA,UAAA;EH4kBtB;EGvkBU;IACI,OAAA;IACA,4BAAA;IAEA,iBAAA;IAEA,aAAA;IACA,oBAAA;IACA,eAAA;IAEA,mCAAA;IACA,wBAAA;EHskBd;EGlkBc;IACI,OAAA;IACA,sBAAA;IACA,kBAAA;EHokBlB;EGhkBkB;IACI,aAAA;IACA,sBAAA;EHkkBtB;EGhkBsB;IACI,YAAA;IACA,WAAA;IACA,YAAA;IACA,gBAAA;EHkkB1B;EG5jB0B;IACI,kBAAA;IACA,WAAA;IACA,YAAA;IACA,cAAA;IACA,yBAAA;EH8jB9B;EGzjBsB;IACI,kBAAA;IAEA,kBAAA;IACA,kBAAA;IACA,sBAAA;IACA,aAAA;EH0jB1B;EGxjB0B;IACI,cAAA;IACA,gCAAA;IACA,aAAA;IACA,mBAAA;EH0jB9B;EGvjB0B;IACI,kBAAA;IACA,mBAAA;IACA,iBAAA;IACA,8BAAA;IACA,aAAA;EHyjB9B;EGtjB0B;IACI,4EAAA;IACA,cAAA;IACA,WAAA;IACA,YAAA;EHwjB9B;EGjjBc;IACI,aAAA;IACA,sBAAA;EHmjBlB;EGjjBkB;IACI,eAAA;IACA,YAAA;IACA,kBAAA;IACA,eAAA;IACA,aAAA;IACA,mBAAA;IACA,aAAA;IACA,iBAAA;IACA,oBAAA;EHmjBtB;EGjjBsB;IACI,0BAAA;IACA,6BAAA;IACA,UAAA;EHmjB1B;EGviBF;IACI,6BAAA;IACA,iBAAA;EHyiBF;EGtiBE;IACI,eAAA;IACA,gBAAA;IACA,kBAAA;EHwiBN;EGriBE;IACI,kBAAA;EHuiBN;EGpiBE;IACI,iBAAA;EHsiBN;EGniBE;;;IAGI,sBAAA;EHqiBN;EG/hBE;;;IAGI,mBAAA;IACA,kBAAA;EHiiBN;EG3hBE;IACI,gBAAA;IACA,oBAAA;EH6hBN;EG3hBM;IACI,kBAAA;EH6hBV;EG1hBM;IACI,kBAAA;EH4hBV;EGthBF;IACI,kBAAA;EHwhBF;EGlhBE;IACI,eAAA;IACA,aAAA;IACA,eAAA;EHohBN;EGjhBM;IACI,kBAAA;EHmhBV;EGhhBM;IACI,iBAAA;IACA,eAAA;EHkhBV;EG9gBM;IACI,SAAA;EHghBV;EG9gBU;IACI,UAAA;IACA,iDAAA;IACA,YAAA;IACA,kDAAA;IACA,eAAA;IACA,kBAAA;IACA,gCAAA;EHghBd;EG9gBc;IACI,aAAA;EHghBlB;EG5gBU;IACI,qCAAA;IACA,sBAAA;IACA,mBAAA;IACA,kBAAA;EH8gBd;EG1gBM;IACI,SAAA;EH4gBV;EG1gBU;IACI,mBAAA;EH4gBd;EGxgBkB;IACI,SAAA;EH0gBtB;EGngBM;IACI,SAAA;EHqgBV;EGngBU;IACI,gBAAA;IACA,oBAAA;EHqgBd;EG5fE;IACI,aAAA;IACA,iBAAA;EH8fN;EG5fM;IACI,SAAA;IACA,aAAA;IACA,yBAAA;IACA,eAAA;EH8fV;EG5fU;IACI,SAAA;IACA,eAAA;EH8fd;EG1fM;IACI,SAAA;IACA,aAAA;IACA,6BAAA;IACA,mBAAA;EH4fV;EG1fU;IACI,YAAA;IACA,WAAA;EH4fd;EGvfM;IACI,SAAA;IACA,kBAAA;IACA,gBAAA;IACA,mBAAA;EHyfV;AACF;AA57BA,6CAAA;AFGI;EMdA;IAEI,gBAAA;EJ08BN;EIx8BM;IACI,OAAA;EJ08BV;EIv8BM;IACI,aAAA;IACA,mBAAA;EJy8BV;EIv8BU;IAEI,WAAA;EJw8Bd;EIp8BM;IACI,aAAA;IACA,uBAAA;IACA,mBAAA;EJs8BV;EI17BU;IACI,aAAA;EJ47Bd;EIx7BM;IACI,mBAAA;IACA,kBAAA;IACA,wBAAA;IACA,oBAAA;IACA,aAAA;IACA,uBAAA;EJ07BV;EIr7BU;IACI,iBAAA;IACA,SAAA;EJu7Bd;EIj7BE;IACI,aAAA;EJm7BN;EI76BU;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;EJ+6Bd;EI76Bc;IACI,UAAA;IACA,SAAA;IACA,iBAAA;IACA,uBAAA;IACA,cAAA;IACA,mBAAA;EJ+6BlB;EI76BkB;IACI,kBAAA;IACA,gBAAA;EJ+6BtB;EIx6Bc;IACI,cAAA;EJ06BlB;EIv6Bc;IACI,kBAAA;IACA,WAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,iBAAA;EJy6BlB;EIt6Bc;IACI,yBAAA;IACA,kBAAA;IACA,mBAAA;EJw6BlB;EIt6BkB;IACI,aAAA;IACA,mBAAA;EJw6BtB;EIr6BsB;IACI,cAAA;EJu6B1B;EIr6B0B;IACI,cAAA;IACA,aAAA;EJu6B9B;EIn6BsB;IACI,0BAAA;IACA,SAAA;IACA,kBAAA;EJq6B1B;EIl6BsB;IACI,iBAAA;EJo6B1B;EIj6BsB;IACI,mBAAA;EJm6B1B;EIh6BsB;IACI,aAAA;IACA,cAAA;EJk6B1B;EI75BkB;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;EJ+5BtB;EI75BsB;IACI,kBAAA;IACA,cAAA;IACA,YAAA;IACA,aAAA;IACA,mBAAA;IACA,uBAAA;EJ+5B1B;AACF;AAriCA,uCAAA;AFXI;EOPA;IACI,gBAAA;EL2jCN;EKzjCM;IACI,OAAA;EL2jCV;EKxjCM;IACI,aAAA;IACA,mBAAA;EL0jCV;EKxjCU;IAEI,WAAA;ELyjCd;EKrjCM;IACI,aAAA;IACA,uBAAA;IACA,mBAAA;ELujCV;EK3iCU;IACI,aAAA;EL6iCd;EKziCM;IACI,mBAAA;IACA,kBAAA;IACA,wBAAA;IACA,oBAAA;IACA,aAAA;IACA,uBAAA;EL2iCV;EKtiCU;IACI,iBAAA;IACA,SAAA;ELwiCd;EKliCE;IACI,aAAA;ELoiCN;EK9hCU;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;ELgiCd;EK9hCc;IACI,UAAA;IACA,SAAA;IACA,iBAAA;IACA,uBAAA;IACA,cAAA;IACA,mBAAA;ELgiClB;EK9hCkB;IACI,kBAAA;IACA,gBAAA;ELgiCtB;EKzhCc;IACI,cAAA;EL2hClB;EKxhCc;IACI,kBAAA;IACA,WAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,iBAAA;EL0hClB;EKvhCc;IACI,yBAAA;IACA,kBAAA;IACA,mBAAA;ELyhClB;EKvhCkB;IACI,aAAA;IACA,mBAAA;ELyhCtB;EKthCsB;IACI,cAAA;ELwhC1B;EKthC0B;IACI,cAAA;IACA,aAAA;ELwhC9B;EKphCsB;IACI,0BAAA;IACA,SAAA;IACA,kBAAA;ELshC1B;EKnhCsB;IACI,iBAAA;ELqhC1B;EKlhCsB;IACI,mBAAA;ELohC1B;EKjhCsB;IACI,aAAA;IACA,cAAA;ELmhC1B;EK9gCkB;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;ELghCtB;EK9gCsB;IACI,kBAAA;IACA,cAAA;IACA,YAAA;IACA,aAAA;IACA,mBAAA;IACA,uBAAA;ELghC1B;EK3/BF;IACI,iBAAA;EL6/BF;AACF;AAjpCA,6BAAA;AFzBI;EQEI;IACI,OAAA;EN4qCV;EMzqCM;IACI,aAAA;IACA,mBAAA;EN2qCV;EMzqCU;IAEI,WAAA;EN0qCd;EMtqCM;IACI,aAAA;IACA,uBAAA;IACA,mBAAA;ENwqCV;EM9pCU;IACI,aAAA;ENgqCd;EM5pCM;IACI,mBAAA;IACA,2BAAA;EN8pCV;EMzpCU;IACI,kBAAA;IACA,SAAA;EN2pCd;EMrpCE;IACI,aAAA;ENupCN;EMhpCU;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;ENkpCd;EMhpCc;IACI,UAAA;IACA,SAAA;IACA,iBAAA;IACA,uBAAA;IACA,cAAA;IACA,mBAAA;ENkpClB;EMhpCkB;IACI,kBAAA;IACA,gBAAA;ENkpCtB;EM3oCc;IACI,cAAA;EN6oClB;EM1oCc;IACI,kBAAA;IACA,WAAA;IACA,WAAA;IACA,YAAA;IACA,kBAAA;IACA,iBAAA;EN4oClB;EMzoCc;IACI,yBAAA;IACA,kBAAA;IACA,mBAAA;EN2oClB;EMzoCkB;IACI,aAAA;IACA,mBAAA;EN2oCtB;EMxoCsB;IACI,cAAA;EN0oC1B;EMxoC0B;IACI,cAAA;IACA,aAAA;EN0oC9B;EMtoCsB;IACI,0BAAA;IACA,SAAA;IACA,kBAAA;ENwoC1B;EMroCsB;IACI,iBAAA;IACA,kBAAA;ENuoC1B;EMpoCsB;IACI,mBAAA;ENsoC1B;EMnoCsB;IACI,aAAA;IACA,cAAA;ENqoC1B;EMhoCkB;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;ENkoCtB;EMhoCsB;IACI,kBAAA;IACA,cAAA;IACA,YAAA;IACA,aAAA;IACA,mBAAA;IACA,uBAAA;ENkoC1B;EMtnCF;IACI,iBAAA;ENwnCF;EMrnCF;IACI,gBAAA;ENunCF;EMvmCU;IACI,qBAAA;ENymCd;EMnmCM;IACI,gBAAA;ENqmCV;EMnmCU;IACI,eAAA;ENqmCd;EMjmCU;IACI,qBAAA;ENmmCd;EM5lCM;IACI,gBAAA;EN8lCV;EM5lCU;IACI,eAAA;EN8lCd;EM3lCU;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;IACA,mBAAA;EN6lCd;EM3lCc;IACI,qBAAA;IACA,kBAAA;IACA,gBAAA;IACA,cAAA;IACA,aAAA;IACA,uBAAA;IACA,mBAAA;EN6lClB;EMvlCE;IACI,cAAA;ENylCN;EMrlCM;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;ENulCV;EMrlCU;IACI,aAAA;IACA,uBAAA;IACA,mBAAA;IACA,kBAAA;IACA,gBAAA;IACA,cAAA;ENulCd;EMnlCM;IACI,6BAAA;IACA,qBAAA;ENqlCV;AACF","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}",":root {\r\n    --background-color-primary: #15171C;\r\n    --background-color-primary-opacity: #15171ccb;\r\n    --text-color-primary: rgba(255, 255, 255, 0.75);\r\n    --input-border-color: #6A6B6D;\r\n    --blue-primary: #4A81F7;\r\n}","@use 'media-queries' as MQueries;\r\n@import \"./responsive/all.scss\";\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/standard-styles\";\r\n}\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard-styles\";\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md-styles\";\r\n}\r\n\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm-styles\";\r\n}\r\n\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs-styles\";\r\n}",".point-bleu-avec-trait {\r\n\r\n    /* Style pour le conteneur de point et de trait */\r\n    .point-et-trait {\r\n        height: fit-content;\r\n        display: flex;\r\n        align-items: center;\r\n\r\n        /* Style pour la ligne grise */\r\n        .trait {\r\n            width: 3rem;\r\n            height: 1px;\r\n            background-color: var(--input-border-color);\r\n            margin-left: 1rem;\r\n\r\n            &-column {\r\n                width: 1px;\r\n                height: 3rem;\r\n                margin-top: 1rem;\r\n                margin-bottom: 1rem;\r\n                margin-left: 0;\r\n            }\r\n        }\r\n\r\n        /* Style pour le point bleu */\r\n        .point-bleu {\r\n            min-width: 10px;\r\n            min-height: 10px;\r\n            background-color: var(--blue-primary);\r\n            border-radius: 50%;\r\n            margin-left: 1rem;\r\n        }\r\n\r\n        p {\r\n            font-size: 1.5rem;\r\n            margin-left: 1rem;\r\n        }\r\n    }\r\n\r\n    .column {\r\n        flex-direction: column;\r\n\r\n        .point-bleu {\r\n            margin-left: 0;\r\n            margin-top: 1rem;\r\n        }\r\n\r\n        &>p {\r\n            // writing-mode: vertical-rl;\r\n            rotate: -90deg;\r\n            margin-top: 2rem;\r\n            margin-left: auto;\r\n            margin-right: auto;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n.blue-word {\r\n    color: var(--blue-primary);\r\n}","@use '../variables';\r\n@use '../classes';\r\n\r\n\r\n/* thai */\r\n/* latin */\r\n@font-face {\r\n    font-display: swap;\r\n    font-family: 'Prompt';\r\n    font-style: normal;\r\n    font-weight: 300;\r\n    src: url('../fonts/-W_8XJnvUD7dzB2Ck_kIaWMu.woff2') format('woff2');\r\n    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\r\n}\r\n\r\n\r\n\r\n\r\n:root {\r\n    font-family: 'Prompt';\r\n    font-weight: normal;\r\n    cursor: default;\r\n\r\n    body {\r\n        margin: 0;\r\n        display: grid;\r\n        background-color: var(--background-color-primary);\r\n\r\n        .blur {\r\n            transition: 0.5s;\r\n            background-color: var(--background-color-primary-opacity);\r\n            filter: blur(10px);\r\n        }\r\n\r\n        &.header-menu-open {\r\n            overflow: hidden;\r\n        }\r\n\r\n        // header\r\n        header {\r\n            z-index: 1;\r\n            color: white;\r\n            position: fixed;\r\n            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);\r\n            width: 100%;\r\n            max-height: 100vh;\r\n\r\n            // general header\r\n            .active {\r\n                color: var(--blue-primary);\r\n            }\r\n\r\n            .header-container-1 {\r\n                display: flex;\r\n                max-height: 75px;\r\n\r\n                div {}\r\n\r\n                .logo-container {\r\n\r\n                    img {\r\n                        cursor: pointer;\r\n                        max-height: 70px;\r\n                    }\r\n                }\r\n\r\n                .menu-container {\r\n                    .span-icon {\r\n                        cursor: pointer;\r\n\r\n                        .bar {\r\n                            height: 10px;\r\n                            width: 50px;\r\n                            background-color: white;\r\n                            border-radius: 5px;\r\n\r\n                            &.milieu {\r\n                                margin-top: 8px;\r\n                                margin-bottom: 8px;\r\n                            }\r\n                        }\r\n\r\n                        &.active {\r\n\r\n                            * {\r\n\r\n                                background-color: var(--blue-primary);\r\n                            }\r\n\r\n                            .milieu {\r\n                                margin-left: 0.5rem;\r\n                            }\r\n\r\n                        }\r\n\r\n                    }\r\n\r\n                    p {}\r\n                }\r\n\r\n                .nous-rejoindre {\r\n                    border-top: var(--blue-primary) solid 2px;\r\n                    border-left: var(--blue-primary) solid 2px;\r\n                    border-bottom: #FF3131 solid 2px;\r\n                    border-right: #FF3131 solid 2px;\r\n                    border-radius: 5px;\r\n                    display: flex;\r\n\r\n\r\n\r\n                    span.point {\r\n                        background-color: var(--blue-primary);\r\n                        border-radius: 50%;\r\n                        height: 12px;\r\n                        width: 12px;\r\n                        margin-right: 10px;\r\n                        margin-top: auto;\r\n                        margin-bottom: auto;\r\n                    }\r\n\r\n                    p {}\r\n\r\n                    &:hover {\r\n                        transition: 0.2s;\r\n                        border: var(--blue-primary) solid 2px;\r\n                        color: var(--blue-primary);\r\n\r\n                        span.point {\r\n                            transition: 1.2s;\r\n                            background-color: white;\r\n                        }\r\n                    }\r\n\r\n                    &,\r\n                    & * {\r\n                        cursor: pointer;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.down-scroll {\r\n                // apparition/disparition de la top-bar\r\n                position: fixed;\r\n                top: 0px;\r\n                width: 100%;\r\n                transition: top 0.5s ease-out;\r\n                background-color: var(--background-color-primary-opacity);\r\n                backdrop-filter: blur(5px);\r\n            }\r\n\r\n            &.mobil-menu-open {\r\n                overflow: scroll;\r\n            }\r\n\r\n            // mobil & tablet\r\n            &.open {\r\n\r\n                .header-container-mobil {\r\n                    background-color: black;\r\n                    border-top: 1px white solid;\r\n                    padding: 7.5% 0;\r\n\r\n\r\n                    &.menu {\r\n\r\n\r\n                        .menu-mobil {\r\n\r\n\r\n                            p {}\r\n                        }\r\n                    }\r\n\r\n                    &.sous-menu {\r\n\r\n                        .span-icon {}\r\n\r\n                        .span-icon.retour {}\r\n\r\n                        .sous-menu-mobil {\r\n\r\n\r\n                            .titre-container {\r\n\r\n\r\n                                .icon-container {\r\n\r\n\r\n                                    .span-icon {}\r\n                                }\r\n\r\n                                p {\r\n                                    display: flex;\r\n                                    align-items: center;\r\n\r\n                                }\r\n\r\n                                .nouveau {\r\n                                    position: absolute;\r\n                                    color: white;\r\n                                    text-shadow: 5px -4px 2px blue;\r\n                                    opacity: 0.75;\r\n                                }\r\n\r\n                                .green-word {\r\n                                    color: #01FF01;\r\n                                    text-shadow: 0px 1px 2px #01FF01;\r\n                                    opacity: 0.85;\r\n                                }\r\n\r\n                                .span-image {\r\n                                    background: url('../images/trefle.png') center/contain no-repeat;\r\n                                    display: block;\r\n\r\n                                }\r\n                            }\r\n\r\n                            nav {\r\n\r\n\r\n                                a {}\r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        // content\r\n        .content {\r\n\r\n            // titres\r\n            h1,\r\n            h2,\r\n            h3 {\r\n                color: white;\r\n            }\r\n\r\n            // textes\r\n            p,\r\n            a {\r\n                text-align: center;\r\n\r\n            }\r\n\r\n            &a,\r\n            p,\r\n            li {\r\n                color: var(--text-color-primary);\r\n            }\r\n\r\n            // listes\r\n            ul {\r\n                text-decoration: none;\r\n                padding: 0 0 0 0;\r\n\r\n                li {\r\n\r\n                    list-style-type: none;\r\n                }\r\n\r\n                &.with-blue-puce {\r\n                    li {\r\n                        list-style-type: disc;\r\n                    }\r\n\r\n                    li::marker {\r\n                        color: var(--blue-primary);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n\r\n        // footer\r\n        footer {\r\n            padding: 1vh 1vh;\r\n\r\n            h3 {\r\n                color: white;\r\n            }\r\n\r\n            a,\r\n            p,\r\n            li {\r\n                color: var(--text-color-primary);\r\n\r\n            }\r\n\r\n            ul {\r\n                list-style-type: none;\r\n                padding-left: 0;\r\n            }\r\n\r\n            .footer-container {\r\n                .footer-register {\r\n                    h3 {\r\n                        text-align: center;\r\n                        font-size: 45px;\r\n                    }\r\n\r\n                    p:not([id=\"footer-submit\"]) {\r\n                        text-align: center;\r\n                    }\r\n\r\n                    input {\r\n                        width: 99%;\r\n                        background-color: var(--background-color-general);\r\n                        border: none;\r\n                        border-bottom: var(--input-border-color) solid 1px;\r\n                        font-size: 20px;\r\n                        color: var(--text-color-primary);\r\n                        text-align: center;\r\n\r\n                        &:focus {\r\n                            outline: none;\r\n                        }\r\n                    }\r\n\r\n                    p#footer-submit {\r\n                        display: flex;\r\n                        justify-content: center;\r\n                        align-items: center;\r\n                        background-color: var(--blue-primary);\r\n                        border-radius: 15px;\r\n                        min-height: 48px;\r\n                    }\r\n                }\r\n\r\n                .footer-coordonnees {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    text-align: center;\r\n\r\n                    h3 {}\r\n\r\n\r\n\r\n\r\n                    span {\r\n\r\n                        & p:first-child {\r\n                            color: white;\r\n                        }\r\n\r\n                        p {\r\n                            margin: 0 0 0 0;\r\n                        }\r\n                    }\r\n\r\n\r\n                }\r\n\r\n                .footer-services {\r\n                    text-align: center;\r\n\r\n                    h3 {}\r\n\r\n                    ul {\r\n                        li {}\r\n                    }\r\n                }\r\n            }\r\n\r\n            .footer-separator {\r\n                height: 2px;\r\n                background-color: var(--text-color-primary);\r\n            }\r\n\r\n            .footer-container2 {\r\n                .footer-links {\r\n                    text-align: center;\r\n\r\n                    p {}\r\n                }\r\n\r\n                .footer-icons {\r\n                    display: flex;\r\n\r\n                    img {\r\n                        height: 48px;\r\n                    }\r\n                }\r\n\r\n                .footer-mention {\r\n                    color: white;\r\n                    text-align: center;\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n    }\r\n\r\n}","// page de chargement\r\n.loading-screen {\r\n    position: fixed;\r\n    height: 100%;\r\n    width: 100%;\r\n    z-index: 10;\r\n\r\n    .section-0 {\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: black;\r\n        padding: 4rem 0 10rem 0;\r\n        display: flex;\r\n        flex-direction: column;\r\n        align-items: center;\r\n\r\n\r\n        .span-image {\r\n            background: url('../images/cropped-image_2023-08-10_142556159-removebg-preview.png') no-repeat;\r\n            background-size: contain;\r\n            display: block;\r\n            height: 12.5rem;\r\n            width: 25rem;\r\n            margin: 4rem auto 0 auto;\r\n            overflow: hidden;\r\n        }\r\n\r\n        h1 {\r\n            background-image: linear-gradient(to left, #94A4B0, #5F82A0, #3F6D97, #486078);\r\n            -webkit-background-clip: text;\r\n            color: transparent;\r\n            font-size: 1.5rem;\r\n            margin: 0\r\n        }\r\n\r\n        p {\r\n            width: 35%;\r\n\r\n            text-align: center;\r\n            font-size: 0.8rem;\r\n            color: white;\r\n        }\r\n\r\n        .span-icon {\r\n\r\n            margin-top: 3rem;\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            width: 35%;\r\n\r\n            * {\r\n                height: 2.5rem;\r\n            }\r\n        }\r\n    }\r\n\r\n}\r\n\r\n// header\r\nheader {\r\n\r\n    .header-container-1 {\r\n        height: 100%;\r\n        width: 100%;\r\n        display: flex;\r\n        letter-spacing: 3px;\r\n        justify-content: space-between;\r\n\r\n\r\n        img {\r\n            cursor: pointer;\r\n            height: 2.75rem;\r\n            margin-top: 0.8rem;\r\n            margin-left: 3rem;\r\n            transition: transform 0.3s;\r\n\r\n            &:hover {\r\n                transform: scale(1.05);\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n\r\n            width: 100%;\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            align-items: center;\r\n            flex-wrap: wrap;\r\n\r\n\r\n            p {\r\n                width: fit-content;\r\n                padding: 0 15px;\r\n                margin: .5rem 0;\r\n                cursor: pointer;\r\n                font-size: 0.65rem;\r\n\r\n                a {\r\n                    margin: 0;\r\n                }\r\n\r\n\r\n                & a:hover {\r\n                    transition: 0.5s;\r\n                    color: var(--blue-primary);\r\n                }\r\n            }\r\n\r\n            .span-icon {\r\n                display: none;\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n\r\n            padding: 0 2rem 0 2rem;\r\n            margin: auto 3rem auto 1.5rem;\r\n            letter-spacing: normal;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n            p {\r\n                min-width: 8rem;\r\n                margin: 0;\r\n                font-size: 0.65rem;\r\n            }\r\n\r\n\r\n        }\r\n    }\r\n\r\n    .header-container-mobil {\r\n        display: none;\r\n    }\r\n\r\n    &.open {\r\n\r\n\r\n\r\n        div {\r\n            background-color: black;\r\n            z-index: 1;\r\n\r\n            transition: all 0.5s ease-out;\r\n            transform: perspective();\r\n\r\n        }\r\n\r\n        .header-container-1 {\r\n            border-bottom: 1px solid rgba(255, 255, 255, 0.5);\r\n\r\n        }\r\n\r\n        .header-container-2 {\r\n            height: fit-content;\r\n            position: absolute;\r\n            width: 100%;\r\n            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);\r\n            display: flex;\r\n\r\n            .description-container {\r\n\r\n                flex: 1;\r\n\r\n\r\n                .span-image {\r\n                    height: 7.5rem;\r\n                    width: 10rem;\r\n                    display: block;\r\n                    margin: 3rem auto 3rem 3rem;\r\n                }\r\n\r\n\r\n                p {\r\n                    font-size: 0.65rem;\r\n                    opacity: 0.75;\r\n                    padding: 0 0 0 1rem;\r\n\r\n                    &.description-titre {\r\n                        font-size: 1rem;\r\n                        opacity: 1;\r\n                    }\r\n                }\r\n            }\r\n\r\n            .sous-menu-container {\r\n                flex: 3;\r\n                padding: 3rem 2rem 8rem 2rem;\r\n\r\n                margin-left: auto;\r\n\r\n                display: flex;\r\n                justify-content: end;\r\n                flex-wrap: wrap;\r\n\r\n                transition: flex-wrap 0.5s ease-out;\r\n                transform: perspective();\r\n\r\n\r\n\r\n                .sous-menu {\r\n                    flex: 1;\r\n                    letter-spacing: 0.1rem;\r\n                    padding: 2rem 1rem;\r\n\r\n\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        justify-content: start;\r\n\r\n                        * {\r\n                            color: white;\r\n                            margin: 0 0;\r\n                            padding: 0 0;\r\n                            text-align: left;\r\n\r\n                        }\r\n\r\n                        div.icon-container {\r\n\r\n                            .span-icon {\r\n                                position: absolute;\r\n                                width: 1rem;\r\n                                height: 1rem;\r\n                                display: block;\r\n                                background-color: #01FF01;\r\n                            }\r\n                        }\r\n\r\n\r\n                        p {\r\n                            font-size: 0.65rem;\r\n                            // transition: 0.75s;\r\n                            width: max-content;\r\n                            padding-left: 23px;\r\n                            padding-bottom: 0.5rem;\r\n                            display: flex;\r\n\r\n                            .green-word {\r\n                                color: #01FF01;\r\n                                text-shadow: 0px 1px 2px #01FF01;\r\n                                opacity: 0.85;\r\n                                margin: 0 5px 0 5px\r\n                            }\r\n\r\n                            .nouveau {\r\n                                position: absolute;\r\n                                margin-top: -1.5rem;\r\n                                margin-left: 2rem;\r\n                                text-shadow: 5px -4px 2px blue;\r\n                                opacity: 0.75;\r\n                            }\r\n\r\n                            .span-image {\r\n                                background: url('../images/trefle.png') center/contain no-repeat;\r\n                                display: block;\r\n                                width: 1rem;\r\n                                height: 1rem;\r\n                            }\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                nav {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n\r\n                    a {\r\n                        cursor: pointer;\r\n                        height: 2rem;\r\n                        width: max-content;\r\n                        min-width: 8rem;\r\n                        display: flex;\r\n                        align-items: center;\r\n                        opacity: 0.75;\r\n                        font-size: 0.6rem;\r\n                        transition: all 0.5s;\r\n\r\n                        &:hover {\r\n                            color: var(--blue-primary);\r\n                            text-shadow: 5px 5px 2px blue;\r\n                            opacity: 1;\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n}\r\n\r\n// content\r\n.content {\r\n    padding: 0 2.5rem 4rem 2.5rem;\r\n    margin-top: 170px;\r\n\r\n    // titres\r\n    h1 {\r\n        font-size: 3rem;\r\n        margin-top: 8rem;\r\n        text-align: center;\r\n    }\r\n\r\n    h2 {\r\n        font-size: 1.75rem;\r\n    }\r\n\r\n    h3 {\r\n        font-size: 1.2rem;\r\n    }\r\n\r\n    h1,\r\n    h2,\r\n    h3 {\r\n        letter-spacing: 0.2rem;\r\n\r\n    }\r\n\r\n    // textes\r\n\r\n    &a,\r\n    p,\r\n    li {\r\n        letter-spacing: 2px;\r\n        font-size: 0.75rem;\r\n    }\r\n\r\n\r\n\r\n    // sections\r\n    section {\r\n        margin-top: 2rem;\r\n        margin-bottom: 15rem;\r\n\r\n        .span-image {\r\n            border-radius: 5px;\r\n        }\r\n\r\n        .tab p {\r\n            padding-left: 2rem;\r\n        }\r\n    }\r\n}\r\n\r\n// footer\r\nfooter {\r\n    padding: 1rem 2rem;\r\n\r\n\r\n\r\n\r\n\r\n    .footer-container {\r\n        padding: 2rem 0;\r\n        display: flex;\r\n        flex-wrap: wrap;\r\n\r\n\r\n        div {\r\n            margin-right: 6rem;\r\n        }\r\n\r\n        h3 {\r\n            font-size: 1.8rem;\r\n            max-width: 50px;\r\n\r\n        }\r\n\r\n        .footer-register {\r\n            flex: 0.4;\r\n\r\n            input {\r\n                width: 99%;\r\n                background-color: var(--background-color-general);\r\n                border: none;\r\n                border-bottom: var(--input-border-color) solid 1px;\r\n                font-size: 20px;\r\n                margin: 3rem 0 0 0;\r\n                color: var(--text-color-primary);\r\n\r\n                &:focus {\r\n                    outline: none;\r\n                }\r\n            }\r\n\r\n            .footer-submit {\r\n                background-color: var(--blue-primary);\r\n                padding: .75rem 20rem;\r\n                border-radius: 15px;\r\n                margin: 3rem 0 0 0;\r\n            }\r\n        }\r\n\r\n        .footer-coordonnees {\r\n            flex: 0.3;\r\n\r\n            li {\r\n                margin-bottom: 2rem;\r\n\r\n                span {\r\n\r\n                    p {\r\n                        margin: 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .footer-services {\r\n            flex: .3;\r\n\r\n            li {\r\n                margin-bottom: 0;\r\n                padding-bottom: 1rem;\r\n            }\r\n        }\r\n\r\n\r\n\r\n    }\r\n\r\n\r\n    .footer-container2 {\r\n        display: flex;\r\n        padding-top: 2rem;\r\n\r\n        .footer-links {\r\n            flex: .4;\r\n            display: flex;\r\n            /* align-items: center; */\r\n            flex-wrap: wrap;\r\n\r\n            p {\r\n                margin: 0;\r\n                padding: 0 2rem;\r\n            }\r\n        }\r\n\r\n        .footer-icons {\r\n            flex: .2;\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            align-items: center;\r\n\r\n            img {\r\n                height: 2rem;\r\n                width: 2rem;\r\n            }\r\n        }\r\n\r\n\r\n        .footer-mention {\r\n            flex: .4;\r\n            text-align: center;\r\n            margin-top: auto;\r\n            margin-bottom: auto;\r\n\r\n\r\n        }\r\n    }\r\n\r\n}","header {\r\n\r\n    .header-container-1 {\r\n\r\n        margin-top: 1rem;\r\n\r\n        div {\r\n            flex: 1;\r\n        }\r\n\r\n        .logo-container {\r\n            display: flex;\r\n            align-items: center;\r\n\r\n            img {\r\n\r\n                width: 110%;\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n\r\n            .span-icon {\r\n\r\n\r\n                .bar {\r\n\r\n\r\n                    &.milieu {}\r\n                }\r\n            }\r\n\r\n            p {\r\n                display: none;\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n            height: fit-content;\r\n            width: fit-content;\r\n            margin: auto 1rem auto 0;\r\n            padding: 0.5rem 1rem;\r\n            display: flex;\r\n            justify-content: center;\r\n\r\n\r\n            span.point {}\r\n\r\n            p {\r\n                font-size: .8rem;\r\n                margin: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    .header-container-2 {\r\n        display: none;\r\n    }\r\n\r\n    &.open {\r\n        .header-container-mobil {\r\n\r\n            &.menu {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-evenly;\r\n                align-items: center;\r\n\r\n                .menu-mobil {\r\n                    width: 75%;\r\n                    margin: 0;\r\n                    font-size: 1.2rem;\r\n                    border: 1px solid white;\r\n                    margin: 1rem 0;\r\n                    border-radius: 15px;\r\n\r\n                    p {\r\n                        text-align: center;\r\n                        margin: 0.5rem 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.sous-menu {\r\n\r\n                .span-icon {\r\n                    display: block;\r\n                }\r\n\r\n                .span-icon.retour {\r\n                    position: absolute;\r\n                    right: 1rem;\r\n                    width: 60px;\r\n                    height: 60px;\r\n                    margin-right: 7.5%;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                .sous-menu-mobil {\r\n                    margin: 1.5rem 0 0.5rem 0;\r\n                    padding-left: 7.5%;\r\n                    padding-right: 7.5%;\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        // border: 1px dotted var(--blue-primary);\r\n\r\n                        .icon-container {\r\n                            padding: 0 5px;\r\n\r\n                            .span-icon {\r\n                                height: 1.5rem;\r\n                                width: 1.5rem;\r\n                            }\r\n                        }\r\n\r\n                        p {\r\n                            color: var(--blue-primary);\r\n                            margin: 0;\r\n                            font-size: 1.25rem;\r\n                        }\r\n\r\n                        .nouveau {\r\n                            margin-top: -3rem;\r\n                        }\r\n\r\n                        .green-word {\r\n                            margin: 0 8px 0 8px;\r\n                        }\r\n\r\n                        .span-image {\r\n                            width: 1.5rem;\r\n                            height: 1.5rem;\r\n                        }\r\n\r\n                    }\r\n\r\n                    nav {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        padding: 0 0 0 3rem;\r\n\r\n                        a {\r\n                            width: max-content;\r\n                            min-width: 50%;\r\n                            height: 48px;\r\n                            display: flex;\r\n                            align-items: center;\r\n                            margin: 2.5px 0 2.5px 0;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.content {}\r\n\r\n\r\nfooter {\r\n\r\n    h3 {}\r\n\r\n    a,\r\n    p,\r\n    li {}\r\n\r\n    ul {}\r\n\r\n    .footer-container {\r\n        .footer-register {\r\n            h3 {}\r\n\r\n            p:not([id=\"footer-submit\"]) {}\r\n\r\n            input {}\r\n\r\n            p#footer-submit {}\r\n        }\r\n\r\n        .footer-coordonnees {\r\n            h3 {}\r\n\r\n\r\n            span {\r\n                p {}\r\n            }\r\n\r\n        }\r\n\r\n        .footer-services {\r\n            h3 {}\r\n\r\n            ul {\r\n                li {}\r\n            }\r\n        }\r\n    }\r\n\r\n    .footer-separator {}\r\n\r\n    .footer-container2 {\r\n        .footer-links {\r\n            p {}\r\n        }\r\n\r\n        .footer-icons {\r\n            img {}\r\n        }\r\n\r\n        .footer-mention {}\r\n    }\r\n\r\n}","header {\r\n\r\n    .header-container-1 {\r\n        margin-top: 1rem;\r\n\r\n        div {\r\n            flex: 1;\r\n        }\r\n\r\n        .logo-container {\r\n            display: flex;\r\n            align-items: center;\r\n\r\n            img {\r\n\r\n                width: 110%;\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n\r\n            .span-icon {\r\n\r\n\r\n                .bar {\r\n\r\n\r\n                    &.milieu {}\r\n                }\r\n            }\r\n\r\n            p {\r\n                display: none;\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n            height: fit-content;\r\n            width: fit-content;\r\n            margin: auto 1rem auto 0;\r\n            padding: 0.5rem 1rem;\r\n            display: flex;\r\n            justify-content: center;\r\n\r\n\r\n            span.point {}\r\n\r\n            p {\r\n                font-size: .8rem;\r\n                margin: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    .header-container-2 {\r\n        display: none;\r\n    }\r\n\r\n    &.open {\r\n        .header-container-mobil {\r\n\r\n            &.menu {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-evenly;\r\n                align-items: center;\r\n\r\n                .menu-mobil {\r\n                    width: 75%;\r\n                    margin: 0;\r\n                    font-size: 1.2rem;\r\n                    border: 1px solid white;\r\n                    margin: 1rem 0;\r\n                    border-radius: 15px;\r\n\r\n                    p {\r\n                        text-align: center;\r\n                        margin: 0.5rem 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.sous-menu {\r\n\r\n                .span-icon {\r\n                    display: block;\r\n                }\r\n\r\n                .span-icon.retour {\r\n                    position: absolute;\r\n                    right: 1rem;\r\n                    width: 60px;\r\n                    height: 60px;\r\n                    margin-right: 7.5%;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                .sous-menu-mobil {\r\n                    margin: 1.5rem 0 0.5rem 0;\r\n                    padding-left: 7.5%;\r\n                    padding-right: 7.5%;\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        // border: 1px dotted var(--blue-primary);\r\n\r\n                        .icon-container {\r\n                            padding: 0 5px;\r\n\r\n                            .span-icon {\r\n                                height: 1.5rem;\r\n                                width: 1.5rem;\r\n                            }\r\n                        }\r\n\r\n                        p {\r\n                            color: var(--blue-primary);\r\n                            margin: 0;\r\n                            font-size: 1.25rem;\r\n                        }\r\n\r\n                        .nouveau {\r\n                            margin-top: -3rem;\r\n                        }\r\n\r\n                        .green-word {\r\n                            margin: 0 8px 0 8px;\r\n                        }\r\n\r\n                        .span-image {\r\n                            width: 1.5rem;\r\n                            height: 1.5rem;\r\n                        }\r\n\r\n                    }\r\n\r\n                    nav {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        padding: 0 0 0 3rem;\r\n\r\n                        a {\r\n                            width: max-content;\r\n                            min-width: 50%;\r\n                            height: 48px;\r\n                            display: flex;\r\n                            align-items: center;\r\n                            margin: 2.5px 0 2.5px 0;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n            }\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        }\r\n    }\r\n}\r\n\r\n\r\n\r\n.content {\r\n    margin-top: 10rem;\r\n}\r\n\r\nfooter {\r\n\r\n    h3 {}\r\n\r\n    a,\r\n    p,\r\n    li {}\r\n\r\n    ul {}\r\n\r\n    .footer-container {\r\n        .footer-register {\r\n            h3 {}\r\n\r\n            p:not([id=\"footer-submit\"]) {}\r\n\r\n            input {}\r\n\r\n            p#footer-submit {}\r\n        }\r\n\r\n        .footer-coordonnees {\r\n            h3 {}\r\n\r\n\r\n            span {\r\n                p {}\r\n            }\r\n\r\n        }\r\n\r\n        .footer-services {\r\n            h3 {}\r\n\r\n            ul {\r\n                li {}\r\n            }\r\n        }\r\n    }\r\n\r\n    .footer-separator {}\r\n\r\n    .footer-container2 {\r\n        .footer-links {\r\n            p {}\r\n        }\r\n\r\n        .footer-icons {\r\n            img {}\r\n        }\r\n\r\n        .footer-mention {}\r\n    }\r\n\r\n}","header {\r\n\r\n    .header-container-1 {\r\n\r\n        div {\r\n            flex: 1;\r\n        }\r\n\r\n        .logo-container {\r\n            display: flex;\r\n            align-items: center;\r\n\r\n            img {\r\n\r\n                width: 110%;\r\n            }\r\n        }\r\n\r\n        .menu-container {\r\n            display: flex;\r\n            justify-content: center;\r\n            align-items: center;\r\n\r\n            .span-icon {\r\n\r\n\r\n                .bar {\r\n                    &.milieu {}\r\n                }\r\n            }\r\n\r\n            p {\r\n                display: none;\r\n            }\r\n        }\r\n\r\n        .nous-rejoindre {\r\n            height: fit-content;\r\n            margin: auto 0.25rem auto 0;\r\n\r\n\r\n            span.point {}\r\n\r\n            p {\r\n                font-size: .65rem;\r\n                margin: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n    .header-container-2 {\r\n        display: none;\r\n    }\r\n\r\n\r\n    &.open {\r\n        .header-container-mobil {\r\n\r\n            &.menu {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-evenly;\r\n                align-items: center;\r\n\r\n                .menu-mobil {\r\n                    width: 75%;\r\n                    margin: 0;\r\n                    font-size: 1.2rem;\r\n                    border: 1px solid white;\r\n                    margin: 1rem 0;\r\n                    border-radius: 15px;\r\n\r\n                    p {\r\n                        text-align: center;\r\n                        margin: 0.5rem 0;\r\n                    }\r\n                }\r\n            }\r\n\r\n            &.sous-menu {\r\n\r\n                .span-icon {\r\n                    display: block;\r\n                }\r\n\r\n                .span-icon.retour {\r\n                    position: absolute;\r\n                    right: 1rem;\r\n                    width: 60px;\r\n                    height: 60px;\r\n                    margin-right: 1rem;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                .sous-menu-mobil {\r\n                    margin: 1.5rem 0 0.5rem 0;\r\n                    padding-left: 1rem;\r\n                    padding-right: 1rem;\r\n\r\n                    .titre-container {\r\n                        display: flex;\r\n                        align-items: center;\r\n                        // border: 1px dotted var(--blue-primary);\r\n\r\n                        .icon-container {\r\n                            padding: 0 5px;\r\n\r\n                            .span-icon {\r\n                                height: 1.5rem;\r\n                                width: 1.5rem;\r\n                            }\r\n                        }\r\n\r\n                        p {\r\n                            color: var(--blue-primary);\r\n                            margin: 0;\r\n                            font-size: 1.25rem;\r\n                        }\r\n\r\n                        .nouveau {\r\n                            margin-top: -3rem;\r\n                            font-size: 0.65rem;\r\n                        }\r\n\r\n                        .green-word {\r\n                            margin: 0 8px 0 8px;\r\n                        }\r\n\r\n                        .span-image {\r\n                            width: 1.5rem;\r\n                            height: 1.5rem;\r\n                        }\r\n\r\n                    }\r\n\r\n                    nav {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        padding: 0 0 0 3rem;\r\n\r\n                        a {\r\n                            width: max-content;\r\n                            min-width: 50%;\r\n                            height: 48px;\r\n                            display: flex;\r\n                            align-items: center;\r\n                            margin: 2.5px 0 2.5px 0;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n            }\r\n\r\n        }\r\n    }\r\n}\r\n\r\n.content {\r\n    margin-top: 20rem;\r\n}\r\n\r\nfooter {\r\n    margin-top: 60px;\r\n\r\n    h3 {}\r\n\r\n    a,\r\n    p,\r\n    li {}\r\n\r\n    ul {}\r\n\r\n    .footer-container {\r\n        .footer-register {\r\n            h3 {}\r\n\r\n            p:not([id=\"footer-submit\"]) {}\r\n\r\n            input {\r\n                margin: 20px 0 20px 0;\r\n            }\r\n\r\n            p#footer-submit {}\r\n        }\r\n\r\n        .footer-coordonnees {\r\n            margin-top: 60px;\r\n\r\n            h3 {\r\n                font-size: 30px;\r\n            }\r\n\r\n\r\n            span {\r\n                margin: 10px 0 10px 0;\r\n\r\n                p {}\r\n            }\r\n\r\n        }\r\n\r\n        .footer-services {\r\n            margin-top: 60px;\r\n\r\n            h3 {\r\n                font-size: 30px;\r\n            }\r\n\r\n            ul {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: center;\r\n                align-items: center;\r\n\r\n                li {\r\n                    margin: 10px 0 10px 0;\r\n                    width: max-content;\r\n                    min-height: 48px;\r\n                    min-width: 50%;\r\n                    display: flex;\r\n                    justify-content: center;\r\n                    align-items: center;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .footer-separator {\r\n        margin: 40px 0;\r\n    }\r\n\r\n    .footer-container2 {\r\n        .footer-links {\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n\r\n            p {\r\n                display: flex;\r\n                justify-content: center;\r\n                align-items: center;\r\n                width: max-content;\r\n                min-height: 48px;\r\n                min-width: 50%;\r\n            }\r\n        }\r\n\r\n        .footer-icons {\r\n            justify-content: space-evenly;\r\n            margin: 60px 0 60px 0;\r\n\r\n            img {}\r\n        }\r\n\r\n        .footer-mention {}\r\n    }\r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4275,7 +4500,7 @@ const menuMap = [
     "id": "telephone",
     "text": "Ligne Téléphonique et Internet",
     "icon": "recycle-solid.svg",
-    "nav": ["<a id='install-telephone-internet'>Installation de lignes téléphonique<br> et connexion Haut Débit</a>"]
+    "nav": ["<a id='install-telephone-internet'>Installation de lignes téléphonique<br> et connexion Internet Haut Débit</a>"]
   }]
 }, {
   'id': 'entreprise',
@@ -4507,6 +4732,7 @@ const createMenuMobilHTML = () => {
     document.getElementById("header-container-mobil").classList.add("menu");
     document.getElementById("header-container-mobil").classList.remove("sous-menu");
   });
+  document.querySelector("header").classList.add("mobil-menu-open");
 };
 
 // balyse pour la top-bar
@@ -4534,20 +4760,22 @@ window.addEventListener('DOMContentLoaded', event => {
   const contentElement = document.querySelector('.content');
   let lastScrollY;
   document.addEventListener('scroll', event => {
-    if (scrollY > 0) {
-      headerElement.classList.add('down-scroll');
-      // contentElement.style = 'margin-top: 170px';
-    } else {
-      headerElement.classList.remove('down-scroll');
-      // document.getElementById('section-0').style = 'padding-top: 0';
-    }
+    if (!headerElement.classList.value.includes("open")) {
+      if (scrollY > 0) {
+        headerElement.classList.add('down-scroll');
+        // contentElement.style = 'margin-top: 170px';
+      } else {
+        headerElement.classList.remove('down-scroll');
+        // document.getElementById('section-0').style = 'padding-top: 0';
+      }
 
-    if (scrollY < lastScrollY) {
-      DScrollElement.style.top = '0px';
-    } else if (scrollY > lastScrollY) {
-      DScrollElement.style.top = '-64px';
+      if (scrollY < lastScrollY) {
+        DScrollElement.style.top = '0px';
+      } else if (scrollY > lastScrollY) {
+        DScrollElement.style.top = '-86px';
+      }
+      lastScrollY = scrollY;
     }
-    lastScrollY = scrollY;
   });
 
   // creation de la top-bar
@@ -4560,36 +4788,24 @@ window.addEventListener('DOMContentLoaded', event => {
     menuContainerElement.appendChild(headerMenuElement);
   });
 
-  // création de l'écouteur d'evenement pour le menu mobile
-  // document.getElementById("header-span-icon").addEventListener("click", event => {
-  //     // si deja la class 'active' l'enleve sinon la met
-  //     if (event.currentTarget.classList.value === 'active') {
-  //         addAndRemoveClass('', menuContainerAllElements, 'active');
-  //         addAndRemoveClass('', [headerElement], 'open');
-  //         addAndRemoveClass('', [contentElement], 'blur');
-
-  //     } else {
-  //         addAndRemoveClass(event.currentTarget, menuContainerAllElements, 'active');
-  //         addAndRemoveClass(headerElement, [headerElement], 'open');
-  //         addAndRemoveClass(contentElement, [contentElement], 'blur');
-
-  //     }
-  // });
-
   // creation des écouteurs de chaque menu de la top-bar
   const menuContainerAllElements = document.querySelectorAll('.menu-container p, .menu-container .span-icon');
   menuContainerAllElements.forEach(element => {
     element.addEventListener('click', event => {
+      addAndRemoveClass('', [document.querySelector("header")], "mobil-menu-open");
+
       // si deja la class 'active' l'enleve sinon la met
       if (event.currentTarget.classList.value.includes("active")) {
         addAndRemoveClass('', menuContainerAllElements, 'active');
         addAndRemoveClass('', [headerElement], 'open');
+        addAndRemoveClass('', [document.querySelector("body")], "header-menu-open");
         addAndRemoveClass('', [contentElement], 'blur');
         //destruction du sous-menu
         resetHeader();
       } else {
         addAndRemoveClass(event.currentTarget, menuContainerAllElements, 'active');
         addAndRemoveClass(headerElement, [headerElement], 'open');
+        addAndRemoveClass(document.querySelector("body"), [document.querySelector("body")], "header-menu-open");
         addAndRemoveClass(contentElement, [contentElement], 'blur');
 
         // si menu mobil
@@ -4619,6 +4835,8 @@ window.addEventListener('DOMContentLoaded', event => {
         // enleve les class pour desactiver la top-bar
         addAndRemoveClass('', menuContainerAllElements, 'active');
         addAndRemoveClass('', [headerElement], 'open');
+        addAndRemoveClass('', [document.querySelector("body")], "header-menu-open");
+        addAndRemoveClass('', [document.querySelector("header")], "mobil-menu-open");
         addAndRemoveClass('', [contentElement], 'blur');
         //destruction du sous-menu
         resetHeader();
@@ -4645,7 +4863,7 @@ window.addEventListener('DOMContentLoaded', event => {
   // construction du pied de page
   class Footer extends HTMLElement {
     connectedCallback() {
-      this.innerHTML = "\n            <footer>\n    <div class=\"footer-container\">\n        <div class=\"footer-register\">\n            <h3>ParlonsPC</h3>\n            <p>ParlonsPC est une entreprise informatique comprenant un r\xE9seau de partenaires informatique certifi\xE9s\n                sur le territoire fran\xE7ais.</p>\n            <input type=\"text\" placeholder=\"Votre Email*\"><br>\n                <p class=\"footer-submit\">S'incrire</p>\n            </div>\n                <div class=\"footer-coordonnees\">\n\n                    <h3>Nos Coordonn\xE9es</h3>\n                    <ul>\n                        <li><span>\n                            <p>T\xE9l\xE9phone :</p>\n                            <p>+33 (0)7 64 36 89 08</p>\n                        </span></li>\n                        <li><span>\n                            <p>Email :</p>\n                            <p>contact@parlonspc.fr</p>\n                        </span></li>\n                        <li><span>\n                            <p>Adresse :</p>\n                            <p>2805 Avenue Etienne Mehul</p>\n                            <p>34070 Montpellier</p>\n                        </span></li>\n                    </ul>\n                </div>\n                <div class=\"footer-services\">\n                    <h3>Nos Services</h3>\n                    <ul>\n                        <li>Audit Informatique</li>\n                        <li>Maintenance Informatique</li>\n                        <li>Cybers\xE9curit\xE9</li>\n                        <li>Conception de site internet</li>\n                        <li>Vente de mat\xE9riel</li>\n                        <li>T\xE9l\xE9phonie et Internet</li>\n                        <li>Support Informatique</li>\n                        <li>Maintenance Informatique</li>\n                        <li>Cloud Computing</li>\n                    </ul>\n                </div>\n        </div>\n        <div class=\"footer-separator\"></div>\n        <div class=\"footer-container2\">\n            <div class=\"footer-links\">\n                <p>Acceuil</p>\n                <p>Mentions L\xE9gales</p>\n                <p>Conditions d'utilisation</p>\n                <p>Charte de protection des donn\xE9es</p>\n            </div>\n            <div class=\"footer-icons\">\n                <img src=\"assets/icons/linkedin_circle.svg\" alt=\"Icon de linkedin avec cercle\">\n                    <img src=\"assets/icons/Facebook_circle.svg\" alt=\"Icon de facbook avec cercle\">\n                        <img src=\" assets/icons/Instagram_circle.svg\" alt=\"Icon de instagram avec cercle\">\n                        </div>\n                        <div class=\"footer-mention\">Copyright \xA9ParlonsPC Tous droits r\xE9serv\xE9s.</div>\n                    </div>\n                </footer>\n                ";
+      this.innerHTML = "\n            <footer>\n    <div class=\"footer-container\">\n        <div class=\"footer-register\">\n            <h3>ParlonsPC</h3>\n            <p>ParlonsPC est une entreprise informatique comprenant un r\xE9seau de partenaires informatique certifi\xE9s\n                sur le territoire fran\xE7ais.</p>\n            <input type=\"text\" placeholder=\"Votre Email*\"><br>\n                <p class=\"footer-submit\" id=\"footer-submit\">S'incrire</p>\n            </div>\n                <div class=\"footer-coordonnees\">\n\n                    <h3>Nos Coordonn\xE9es</h3>\n                    \n                    <span>\n                        <p>T\xE9l\xE9phone :</p>\n                        <p>+33 (0)7 64 36 89 08</p>\n                    </span>\n                    <span>\n                        <p>Email :</p>\n                        <p>contact@parlonspc.fr</p>\n                    </span>\n                    <span>\n                        <p>Adresse :</p>\n                        <p>2805 Avenue Etienne Mehul</p>\n                        <p>34070 Montpellier</p>\n                    </span>\n                    \n                </div>\n                <div class=\"footer-services\">\n                    <h3>Nos Services</h3>\n                    <ul>\n                        <li>Audit Informatique</li>\n                        <li>Maintenance Informatique</li>\n                        <li>Cybers\xE9curit\xE9</li>\n                        <li>Conception de site internet</li>\n                        <li>Vente de mat\xE9riel</li>\n                        <li>T\xE9l\xE9phonie et Internet</li>\n                        <li>Support Informatique</li>\n                        <li>Maintenance Informatique</li>\n                        <li>Cloud Computing</li>\n                    </ul>\n                </div>\n        </div>\n        <div class=\"footer-separator\"></div>\n        <div class=\"footer-container2\">\n            <div class=\"footer-links\">\n                <p>Acceuil</p>\n                <p>Mentions L\xE9gales</p>\n                <p>Conditions d'utilisation</p>\n                <p>Charte de protection des donn\xE9es</p>\n            </div>\n            <div class=\"footer-icons\">\n                <img src=\"assets/icons/linkedin_circle.svg\" alt=\"Icon de linkedin avec cercle\">\n                    <img src=\"assets/icons/Facebook_circle.svg\" alt=\"Icon de facbook avec cercle\">\n                        <img src=\" assets/icons/Instagram_circle.svg\" alt=\"Icon de instagram avec cercle\">\n                        </div>\n                        <div class=\"footer-mention\">Copyright \xA9ParlonsPC Tous droits r\xE9serv\xE9s.</div>\n                    </div>\n                </footer>\n                ";
     }
   }
 

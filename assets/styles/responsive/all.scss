@@ -32,13 +32,18 @@
             filter: blur(10px);
         }
 
+        &.header-menu-open {
+            overflow: hidden;
+        }
+
         // header
         header {
             z-index: 1;
             color: white;
-            position: absolute;
+            position: fixed;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);
             width: 100%;
+            max-height: 100vh;
 
             // general header
             .active {
@@ -47,6 +52,7 @@
 
             .header-container-1 {
                 display: flex;
+                max-height: 75px;
 
                 div {}
 
@@ -54,6 +60,7 @@
 
                     img {
                         cursor: pointer;
+                        max-height: 70px;
                     }
                 }
 
@@ -61,7 +68,20 @@
                     .span-icon {
                         cursor: pointer;
 
+                        .bar {
+                            height: 10px;
+                            width: 50px;
+                            background-color: white;
+                            border-radius: 5px;
+
+                            &.milieu {
+                                margin-top: 8px;
+                                margin-bottom: 8px;
+                            }
+                        }
+
                         &.active {
+
                             * {
 
                                 background-color: var(--blue-primary);
@@ -70,7 +90,9 @@
                             .milieu {
                                 margin-left: 0.5rem;
                             }
+
                         }
+
                     }
 
                     p {}
@@ -112,6 +134,93 @@
                     &,
                     & * {
                         cursor: pointer;
+                    }
+                }
+            }
+
+            &.down-scroll {
+                // apparition/disparition de la top-bar
+                position: fixed;
+                top: 0px;
+                width: 100%;
+                transition: top 0.5s ease-out;
+                background-color: var(--background-color-primary-opacity);
+                backdrop-filter: blur(5px);
+            }
+
+            &.mobil-menu-open {
+                overflow: scroll;
+            }
+
+            // mobil & tablet
+            &.open {
+
+                .header-container-mobil {
+                    background-color: black;
+                    border-top: 1px white solid;
+                    padding: 7.5% 0;
+
+
+                    &.menu {
+
+
+                        .menu-mobil {
+
+
+                            p {}
+                        }
+                    }
+
+                    &.sous-menu {
+
+                        .span-icon {}
+
+                        .span-icon.retour {}
+
+                        .sous-menu-mobil {
+
+
+                            .titre-container {
+
+
+                                .icon-container {
+
+
+                                    .span-icon {}
+                                }
+
+                                p {
+                                    display: flex;
+                                    align-items: center;
+
+                                }
+
+                                .nouveau {
+                                    position: absolute;
+                                    color: white;
+                                    text-shadow: 5px -4px 2px blue;
+                                    opacity: 0.75;
+                                }
+
+                                .green-word {
+                                    color: #01FF01;
+                                    text-shadow: 0px 1px 2px #01FF01;
+                                    opacity: 0.85;
+                                }
+
+                                .span-image {
+                                    background: url('../images/trefle.png') center/contain no-repeat;
+                                    display: block;
+
+                                }
+                            }
+
+                            nav {
+
+
+                                a {}
+                            }
+                        }
                     }
                 }
             }
@@ -164,6 +273,7 @@
 
         // footer
         footer {
+            padding: 1vh 1vh;
 
             h3 {
                 color: white;
@@ -181,9 +291,100 @@
                 padding-left: 0;
             }
 
+            .footer-container {
+                .footer-register {
+                    h3 {
+                        text-align: center;
+                        font-size: 45px;
+                    }
+
+                    p:not([id="footer-submit"]) {
+                        text-align: center;
+                    }
+
+                    input {
+                        width: 99%;
+                        background-color: var(--background-color-general);
+                        border: none;
+                        border-bottom: var(--input-border-color) solid 1px;
+                        font-size: 20px;
+                        color: var(--text-color-primary);
+                        text-align: center;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    p#footer-submit {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--blue-primary);
+                        border-radius: 15px;
+                        min-height: 48px;
+                    }
+                }
+
+                .footer-coordonnees {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    h3 {}
+
+
+
+
+                    span {
+
+                        & p:first-child {
+                            color: white;
+                        }
+
+                        p {
+                            margin: 0 0 0 0;
+                        }
+                    }
+
+
+                }
+
+                .footer-services {
+                    text-align: center;
+
+                    h3 {}
+
+                    ul {
+                        li {}
+                    }
+                }
+            }
+
             .footer-separator {
                 height: 2px;
                 background-color: var(--text-color-primary);
+            }
+
+            .footer-container2 {
+                .footer-links {
+                    text-align: center;
+
+                    p {}
+                }
+
+                .footer-icons {
+                    display: flex;
+
+                    img {
+                        height: 48px;
+                    }
+                }
+
+                .footer-mention {
+                    color: white;
+                    text-align: center;
+                }
             }
 
         }

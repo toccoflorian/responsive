@@ -1,8 +1,6 @@
 header {
 
     .header-container-1 {
-        display: flex;
-        margin-top: 1rem;
 
         div {
             flex: 1;
@@ -27,15 +25,7 @@ header {
 
 
                 .bar {
-                    height: 10px;
-                    width: 50px;
-                    background-color: white;
-                    border-radius: 5px;
-
-                    &.milieu {
-                        margin-top: 8px;
-                        margin-bottom: 8px;
-                    }
+                    &.milieu {}
                 }
             }
 
@@ -63,12 +53,9 @@ header {
         display: none;
     }
 
+
     &.open {
         .header-container-mobil {
-            background-color: black;
-            border-top: 1px white solid;
-            padding: 7.5% 0;
-
 
             &.menu {
                 display: flex;
@@ -100,8 +87,8 @@ header {
                 .span-icon.retour {
                     position: absolute;
                     right: 1rem;
-                    width: 48px;
-                    height: 48px;
+                    width: 60px;
+                    height: 60px;
                     margin-right: 1rem;
                     margin-left: auto;
                 }
@@ -115,46 +102,56 @@ header {
                         display: flex;
                         align-items: center;
                         // border: 1px dotted var(--blue-primary);
-                        opacity: 0.75;
 
                         .icon-container {
                             padding: 0 5px;
 
                             .span-icon {
-                                height: 1rem;
-                                width: 1rem;
+                                height: 1.5rem;
+                                width: 1.5rem;
                             }
                         }
 
                         p {
+                            color: var(--blue-primary);
                             margin: 0;
                             font-size: 1.25rem;
                         }
+
+                        .nouveau {
+                            margin-top: -3rem;
+                            font-size: 0.65rem;
+                        }
+
+                        .green-word {
+                            margin: 0 8px 0 8px;
+                        }
+
+                        .span-image {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                        }
+
                     }
 
                     nav {
                         display: flex;
                         flex-direction: column;
+                        padding: 0 0 0 3rem;
 
                         a {
                             width: max-content;
-                            min-width: 75%;
+                            min-width: 50%;
                             height: 48px;
-                            // border: 1px dotted white;
                             display: flex;
                             align-items: center;
                             margin: 2.5px 0 2.5px 0;
                         }
+
+
                     }
                 }
             }
-
-
-
-
-
-
-
 
         }
     }
@@ -164,4 +161,100 @@ header {
     margin-top: 20rem;
 }
 
-footer {}
+footer {
+    margin-top: 60px;
+
+    h3 {}
+
+    a,
+    p,
+    li {}
+
+    ul {}
+
+    .footer-container {
+        .footer-register {
+            h3 {}
+
+            p:not([id="footer-submit"]) {}
+
+            input {
+                margin: 20px 0 20px 0;
+            }
+
+            p#footer-submit {}
+        }
+
+        .footer-coordonnees {
+            margin-top: 60px;
+
+            h3 {
+                font-size: 30px;
+            }
+
+
+            span {
+                margin: 10px 0 10px 0;
+
+                p {}
+            }
+
+        }
+
+        .footer-services {
+            margin-top: 60px;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    margin: 10px 0 10px 0;
+                    width: max-content;
+                    min-height: 48px;
+                    min-width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .footer-separator {
+        margin: 40px 0;
+    }
+
+    .footer-container2 {
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: max-content;
+                min-height: 48px;
+                min-width: 50%;
+            }
+        }
+
+        .footer-icons {
+            justify-content: space-evenly;
+            margin: 60px 0 60px 0;
+
+            img {}
+        }
+
+        .footer-mention {}
+    }
+
+}

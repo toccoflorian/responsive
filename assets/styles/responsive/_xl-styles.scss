@@ -1,0 +1,59 @@
+header {}
+
+.content {}
+
+footer {
+
+    h3 {}
+
+    a,
+    p,
+    li {}
+
+    ul {}
+
+    .footer-container {
+        .footer-register {
+            h3 {}
+
+            p:not([id="footer-submit"]) {}
+
+            input {}
+
+            p#footer-submit {}
+        }
+
+        .footer-coordonnees {
+            h3 {}
+
+
+            span {
+                p {}
+            }
+
+        }
+
+        .footer-services {
+            h3 {}
+
+            ul {
+                li {}
+            }
+        }
+    }
+
+    .footer-separator {}
+
+    .footer-container2 {
+        .footer-links {
+            p {}
+        }
+
+        .footer-icons {
+            img {}
+        }
+
+        .footer-mention {}
+    }
+
+}

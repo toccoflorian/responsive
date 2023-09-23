@@ -59,9 +59,83 @@
 // header
 header {
 
+    .header-container-1 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        letter-spacing: 3px;
+        justify-content: space-between;
+
+
+        img {
+            cursor: pointer;
+            height: 2.75rem;
+            margin-top: 0.8rem;
+            margin-left: 3rem;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .menu-container {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+            p {
+                width: fit-content;
+                padding: 0 15px;
+                margin: .5rem 0;
+                cursor: pointer;
+                font-size: 0.65rem;
+
+                a {
+                    margin: 0;
+                }
+
+
+                & a:hover {
+                    transition: 0.5s;
+                    color: var(--blue-primary);
+                }
+            }
+
+            .span-icon {
+                display: none;
+            }
+        }
+
+        .nous-rejoindre {
+
+            padding: 0 2rem 0 2rem;
+            margin: auto 3rem auto 1.5rem;
+            letter-spacing: normal;
 
 
 
+
+
+
+
+            p {
+                min-width: 8rem;
+                margin: 0;
+                font-size: 0.65rem;
+            }
+
+
+        }
+    }
+
+    .header-container-mobil {
+        display: none;
+    }
 
     &.open {
 
@@ -218,93 +292,6 @@ header {
             }
         }
     }
-
-    &.down-scroll {
-        // apparition/disparition de la top-bar
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        transition: top 0.3s;
-        background-color: var(--background-color-primary-opacity);
-        backdrop-filter: blur(5px);
-    }
-
-
-    .header-container-1 {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        letter-spacing: 3px;
-        justify-content: space-between;
-
-
-        img {
-            cursor: pointer;
-            height: 2.75rem;
-            margin-top: 0.8rem;
-            margin-left: 3rem;
-            transition: transform 0.3s;
-
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-
-        .menu-container {
-
-            width: 100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-wrap: wrap;
-
-
-            p {
-                width: fit-content;
-                padding: 0 15px;
-                margin: .5rem 0;
-                cursor: pointer;
-                font-size: 0.65rem;
-
-                a {
-                    margin: 0;
-                }
-
-
-                & a:hover {
-                    transition: 0.5s;
-                    color: var(--blue-primary);
-                }
-            }
-        }
-
-        .nous-rejoindre {
-
-            padding: 0 2rem 0 2rem;
-            margin: auto 3rem auto 1.5rem;
-            letter-spacing: normal;
-
-
-
-
-
-
-
-            p {
-                min-width: 8rem;
-                margin: 0;
-                font-size: 0.65rem;
-            }
-
-
-        }
-    }
-
-    .header-container-mobil {
-        display: none;
-    }
-
-
 
 
 }
