@@ -28,7 +28,52 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.content .point-bleu-avec-trait {
+___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* desktop */
+/* Large desktop */
+/* Large desktop */
+@media (min-width: 1200px) {
+  .content section.section-1 .container .avis {
+    width: 20rem;
+    margin: 4rem 6rem;
+  }
+}
+/*  desktop */
+@media (min-width: 980px) and (max-width: 1199.9px) {
+  .content section.section-1 .container .avis {
+    width: 20rem;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979.9px) {
+  .content section.section-1 .container .avis {
+    width: 22.5rem;
+  }
+  .content section.section-1 .container .avis[data-theme=light] {
+    background-color: rgb(78, 76, 76);
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767.9px) {
+  .content section.section-1 .container .avis {
+    width: 20rem;
+  }
+  .content section.section-1 .container .avis[data-theme=light] {
+    background-color: rgb(78, 76, 76);
+  }
+}
+/* portrait phones and down */
+@media (max-width: 480.9px) {
+  .content section.section-1 .container .avis {
+    width: 90%;
+  }
+  .content section.section-1 .container .avis[data-theme=light] {
+    background-color: rgb(78, 76, 76);
+  }
+}
+.content .point-bleu-avec-trait {
   margin-top: 4rem;
 }
 .content .point-bleu-avec-trait .point-et-trait {
@@ -42,20 +87,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.content .point-bleu-avec-trait {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .content .section-1 .container .avis {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #252629;
-  max-width: 2000px;
-  width: 90%;
   margin: 2.5rem 3rem;
   padding: 2rem;
   border-radius: 5px;
-}
-.content .section-1 .container .avis[data-theme=light] {
-  background-color: rgb(78, 76, 76);
 }
 .content .section-1 .container .avis .infos {
   display: flex;
@@ -108,7 +151,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.content .point-bleu-avec-trait {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.25rem;
-}`, "",{"version":3,"sources":["webpack://./src/pages/entreprise/avis-clients/avis-clients.scss"],"names":[],"mappings":"AACI;EACI,gBAAA;AAAR;AAGQ;EACI,uBAAA;AADZ;AAKI;EACI,aAAA;EACA,kBAAA;AAHR;AASQ;EACI,aAAA;EACA,6BAAA;EACA,eAAA;AAPZ;AASY;EACI,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,yBAAA;EACA,iBAAA;EACA,UAAA;EACA,mBAAA;EACA,aAAA;EACA,kBAAA;AAPhB;AASgB;EACI,iCAAA;AAPpB;AAYgB;EACI,aAAA;EACA,mBAAA;AAVpB;AAYoB;EACI,OAAA;EACA,eAAA;EACA,WAAA;EACA,cAAA;EACA,kBAAA;EAEA,iBAAA;AAXxB;AAcoB;EACI,OAAA;EAEA,UAAA;EACA,kBAAA;EACA,kBAAA;AAbxB;AAewB;EACI,iBAAA;AAb5B;AAoBgB;EACI,gBAAA;EACA,kBAAA;AAlBpB;AAoBoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,YAAA;EACA,WAAA;EACA,qBAAA;EACA,uBAAA;AAlBxB;AAoBwB;EACI,iBAAA;EACA,iBAAA;EACA,sBAAA;AAlB5B;AAwBgB;EACI,aAAA;EACA,oBAAA;EACA,gBAAA;AAtBpB;AAwBoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,cAAA;EACA,aAAA;EACA,qBAAA;AAtBxB","sourcesContent":[".content {\r\n    .point-bleu-avec-trait {\r\n        margin-top: 4rem;\r\n        // padding-right: 5%;\r\n\r\n        .point-et-trait {\r\n            justify-content: center;\r\n        }\r\n    }\r\n\r\n    h1 {\r\n        margin-top: 0;\r\n        text-align: center;\r\n    }\r\n\r\n    .section-1 {\r\n\r\n\r\n        .container {\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            flex-wrap: wrap;\r\n\r\n            .avis {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-between;\r\n                background-color: #252629;\r\n                max-width: 2000px;\r\n                width: 90%;\r\n                margin: 2.5rem 3rem;\r\n                padding: 2rem;\r\n                border-radius: 5px;\r\n\r\n                &[data-theme='light'] {\r\n                    background-color: rgb(78, 76, 76);\r\n\r\n\r\n                }\r\n\r\n                .infos {\r\n                    display: flex;\r\n                    align-items: center;\r\n\r\n                    .span-image {\r\n                        flex: 1;\r\n                        height: 6.35rem;\r\n                        width: 100%;\r\n                        display: block;\r\n                        border-radius: 50%;\r\n                        // margin-right: 2rem;\r\n                        overflow: visible;\r\n                    }\r\n\r\n                    p {\r\n                        flex: 2;\r\n\r\n                        display: f;\r\n                        font-size: 0.75rem;\r\n                        padding-left: 1rem;\r\n\r\n                        &.en-tete {\r\n                            font-size: 1.2rem;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    font-size: 0.75rem;\r\n\r\n                    .span-icon {\r\n                        background: url('../../../../assets/icons/qote.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1rem;\r\n                        width: 1rem;\r\n                        margin-left: -1.25rem;\r\n                        margin-bottom: -0.75rem;\r\n\r\n                        &.end {\r\n                            margin-left: auto;\r\n                            margin-top: -1rem;\r\n                            margin-right: -1.25rem;\r\n                        }\r\n\r\n                    }\r\n                }\r\n\r\n                .stars-container {\r\n                    display: flex;\r\n                    justify-content: end;\r\n                    margin-top: 3rem;\r\n\r\n                    .span-star {\r\n                        background: url('../../../../assets/icons/star.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1.5rem;\r\n                        width: 1.5rem;\r\n                        margin-right: 0.25rem;\r\n                    }\r\n                }\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/entreprise/avis-clients/avis-clients.scss","webpack://./src/pages/entreprise/avis-clients/responsive/_xl.scss","webpack://./src/pages/entreprise/avis-clients/responsive/_standard.scss","webpack://./src/pages/entreprise/avis-clients/responsive/_md.scss","webpack://./src/pages/entreprise/avis-clients/responsive/_sm.scss","webpack://./src/pages/entreprise/avis-clients/responsive/_xs.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;ACzBA,kBAAA;AD2BI;EEfQ;IACI,YAAA;IACA,iBAAA;EDPd;AACF;AAFA,aAAA;ADcI;EGRQ;IACI,YAAA;EFAd;AACF;AAFA,6CAAA;ADCI;EIDQ;IACI,cAAA;EHMd;EGQc;IACI,iCAAA;EHNlB;AACF;AALA,uCAAA;ADZI;EKMQ;IACI,YAAA;EJed;EIDc;IACI,iCAAA;EJGlB;AACF;AARA,6BAAA;ADzBI;EMaQ;IACI,UAAA;ELwBd;EKVc;IACI,iCAAA;ELYlB;AACF;AAXI;EACI,gBAAA;AAaR;AAVQ;EACI,uBAAA;AAYZ;AARI;EACI,aAAA;EACA,kBAAA;AAUR;AAJQ;EACI,aAAA;EACA,6BAAA;EACA,eAAA;EACA,iBAAA;EACA,iBAAA;EACA,kBAAA;AAMZ;AAJY;EACI,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,yBAAA;EAEA,mBAAA;EACA,aAAA;EACA,kBAAA;AAKhB;AADgB;EACI,aAAA;EACA,mBAAA;AAGpB;AADoB;EACI,OAAA;EACA,eAAA;EACA,WAAA;EACA,cAAA;EACA,kBAAA;EACA,iBAAA;AAGxB;AAAoB;EACI,OAAA;EAEA,UAAA;EACA,kBAAA;EACA,kBAAA;AACxB;AACwB;EACI,iBAAA;AAC5B;AAMgB;EACI,gBAAA;EACA,kBAAA;AAJpB;AAMoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,YAAA;EACA,WAAA;EACA,qBAAA;EACA,uBAAA;AAJxB;AAMwB;EACI,iBAAA;EACA,iBAAA;EACA,sBAAA;AAJ5B;AAUgB;EACI,aAAA;EACA,oBAAA;EACA,gBAAA;AARpB;AAUoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,cAAA;EACA,aAAA;EACA,qBAAA;AARxB","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n.content {\r\n    .point-bleu-avec-trait {\r\n        margin-top: 4rem;\r\n        // padding-right: 5%;\r\n\r\n        .point-et-trait {\r\n            justify-content: center;\r\n        }\r\n    }\r\n\r\n    h1 {\r\n        margin-top: 0;\r\n        text-align: center;\r\n    }\r\n\r\n    .section-1 {\r\n\r\n\r\n        .container {\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            flex-wrap: wrap;\r\n            max-width: 2000px;\r\n            margin-left: auto;\r\n            margin-right: auto;\r\n\r\n            .avis {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-between;\r\n                background-color: #252629;\r\n\r\n                margin: 2.5rem 3rem;\r\n                padding: 2rem;\r\n                border-radius: 5px;\r\n\r\n\r\n\r\n                .infos {\r\n                    display: flex;\r\n                    align-items: center;\r\n\r\n                    .span-image {\r\n                        flex: 1;\r\n                        height: 6.35rem;\r\n                        width: 100%;\r\n                        display: block;\r\n                        border-radius: 50%;\r\n                        overflow: visible;\r\n                    }\r\n\r\n                    p {\r\n                        flex: 2;\r\n\r\n                        display: f;\r\n                        font-size: 0.75rem;\r\n                        padding-left: 1rem;\r\n\r\n                        &.en-tete {\r\n                            font-size: 1.2rem;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    font-size: 0.75rem;\r\n\r\n                    .span-icon {\r\n                        background: url('../../../../assets/icons/qote.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1rem;\r\n                        width: 1rem;\r\n                        margin-left: -1.25rem;\r\n                        margin-bottom: -0.75rem;\r\n\r\n                        &.end {\r\n                            margin-left: auto;\r\n                            margin-top: -1rem;\r\n                            margin-right: -1.25rem;\r\n                        }\r\n\r\n                    }\r\n                }\r\n\r\n                .stars-container {\r\n                    display: flex;\r\n                    justify-content: end;\r\n                    margin-top: 3rem;\r\n\r\n                    .span-star {\r\n                        background: url('../../../../assets/icons/star.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1.5rem;\r\n                        width: 1.5rem;\r\n                        margin-right: 0.25rem;\r\n                    }\r\n                }\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n}",".content {\r\n    .point-bleu-avec-trait {\r\n        .point-et-trait {\r\n            .trait {}\r\n\r\n            .point-bleu {}\r\n\r\n            p {}\r\n        }\r\n    }\r\n\r\n    h1 {}\r\n\r\n    section.section-1 {\r\n        .container {\r\n            .avis {\r\n                width: 20rem;\r\n                margin: 4rem 6rem;\r\n\r\n                .infos {\r\n                    .span-image {}\r\n\r\n                    p {}\r\n                }\r\n\r\n                p {}\r\n\r\n                .stars-container {\r\n                    .span-stars {}\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    .point-bleu-avec-trait {\r\n        .point-et-trait {\r\n            .trait {}\r\n\r\n            .point-bleu {}\r\n\r\n            p {}\r\n        }\r\n    }\r\n\r\n    h1 {}\r\n\r\n    section.section-1 {\r\n        .container {\r\n            .avis {\r\n                width: 20rem;\r\n\r\n                .infos {\r\n                    .span-image {}\r\n\r\n                    p {}\r\n                }\r\n\r\n                p {}\r\n\r\n                .stars-container {\r\n                    .span-stars {}\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    .point-bleu-avec-trait {\r\n        .point-et-trait {\r\n            .trait {}\r\n\r\n            .point-bleu {}\r\n\r\n            p {}\r\n        }\r\n    }\r\n\r\n    h1 {}\r\n\r\n    section.section-1 {\r\n        .container {\r\n            .avis {\r\n                width: 22.5rem;\r\n\r\n                .infos {\r\n                    .span-image {}\r\n\r\n                    p {}\r\n                }\r\n\r\n                p {}\r\n\r\n                .stars-container {\r\n                    .span-stars {}\r\n                }\r\n\r\n                &[data-theme='light'] {\r\n                    background-color: rgb(78, 76, 76);\r\n\r\n\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    .point-bleu-avec-trait {\r\n        .point-et-trait {\r\n            .trait {}\r\n\r\n            .point-bleu {}\r\n\r\n            p {}\r\n        }\r\n    }\r\n\r\n    h1 {}\r\n\r\n    section.section-1 {\r\n        .container {\r\n            .avis {\r\n                width: 20rem;\r\n\r\n                .infos {\r\n                    .span-image {}\r\n\r\n                    p {}\r\n                }\r\n\r\n                p {}\r\n\r\n                .stars-container {\r\n                    .span-stars {}\r\n                }\r\n\r\n                &[data-theme='light'] {\r\n                    background-color: rgb(78, 76, 76);\r\n\r\n\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    .point-bleu-avec-trait {\r\n        .point-et-trait {\r\n            .trait {}\r\n\r\n            .point-bleu {}\r\n\r\n            p {}\r\n        }\r\n    }\r\n\r\n    h1 {}\r\n\r\n    section.section-1 {\r\n        .container {\r\n            .avis {\r\n                width: 90%;\r\n\r\n                .infos {\r\n                    .span-image {}\r\n\r\n                    p {}\r\n                }\r\n\r\n                p {}\r\n\r\n                .stars-container {\r\n                    .span-stars {}\r\n                }\r\n\r\n                &[data-theme='light'] {\r\n                    background-color: rgb(78, 76, 76);\r\n\r\n\r\n                }\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -162,6 +162,59 @@ header {
     }
 }
 
+// content
+.content {
+    margin-top: 90px;
+    padding: 0 20px;
+
+    // titres
+    h1 {
+        font-size: 3rem;
+        margin-top: 8rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+        letter-spacing: 0.2rem;
+
+    }
+
+    // textes
+
+    &a,
+    p,
+    li {
+        letter-spacing: 2px;
+        font-size: 0.75rem;
+    }
+
+
+
+    // sections
+    section {
+        margin-top: 2rem;
+        margin-bottom: 15rem;
+
+        .span-image {
+            border-radius: 5px;
+        }
+
+        .tab p {
+            padding-left: 2rem;
+        }
+    }
+}
+
 
 footer {
     margin-top: 60px;
