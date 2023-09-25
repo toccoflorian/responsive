@@ -50,6 +50,11 @@
                 color: var(--blue-primary);
             }
 
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
             .header-container-1 {
                 display: flex;
                 max-height: 75px;
@@ -272,6 +277,11 @@
 
             // sections
             section {}
+
+            // marqueurs
+            .marqueur {
+                height: 90px;
+            }
         }
 
         // footer
