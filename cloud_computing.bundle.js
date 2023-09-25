@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_services/cloud_computing/cloud_computing.scss":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_services/cloud_computing/cloud_computing.scss ***!
+  \**********************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -92,7 +92,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.content section .span-image,
 }
 .content .section-3 .span-image {
   background: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) center/cover;
-}`, "",{"version":3,"sources":["webpack://./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss"],"names":[],"mappings":"AAKQ;;EAEI,OAAA;AAJZ;AAOQ;EACI,eAAA;EACA,cAAA;AALZ;AAOY;EACI,kBAAA;EACA,UAAA;AALhB;AAUI;;;EAGI,iBAAA;AARR;AAUQ;;;EACI,aAAA;AANZ;AASQ;;;EACI,mBAAA;AALZ;AAOY;;;EACI,aAAA;EACA,UAAA;EACA,kBAAA;AAHhB;AAMY;;;EACI,sBAAA;EACA,UAAA;EACA,0CAAA;EACA,kBAAA;EACA,gBAAA;AAFhB;AAQgB;;;EACI,gBAAA;AAJpB;AAYQ;EACI,gEAAA;AAVZ;AAkBgB;EACI,kBAAA;AAhBpB;AAmBgB;EACI,gBAAA;AAjBpB;AAqBY;EACI,gEAAA;AAnBhB;AA0BQ;EACI,gEAAA;AAxBZ","sourcesContent":[".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1,\r\n    .section-2,\r\n    .section-3 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-0jw8g5-768x480.jpg') center/cover;\r\n        }\r\n    }\r\n\r\n    // section-2\r\n    .section-2 {\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n                background: url('../../../../assets/images/lignes_rouges.jpg') center/cover;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 3\r\n    .section-3 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-k7d7xm.jpg') center/cover;\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/nos_services/cloud_computing/cloud_computing.scss"],"names":[],"mappings":"AAKQ;;EAEI,OAAA;AAJZ;AAOQ;EACI,eAAA;EACA,cAAA;AALZ;AAOY;EACI,kBAAA;EACA,UAAA;AALhB;AAUI;;;EAGI,iBAAA;AARR;AAUQ;;;EACI,aAAA;AANZ;AASQ;;;EACI,mBAAA;AALZ;AAOY;;;EACI,aAAA;EACA,UAAA;EACA,kBAAA;AAHhB;AAMY;;;EACI,sBAAA;EACA,UAAA;EACA,0CAAA;EACA,kBAAA;EACA,gBAAA;AAFhB;AAQgB;;;EACI,gBAAA;AAJpB;AAYQ;EACI,gEAAA;AAVZ;AAkBgB;EACI,kBAAA;AAhBpB;AAmBgB;EACI,gBAAA;AAjBpB;AAqBY;EACI,gEAAA;AAnBhB;AA0BQ;EACI,gEAAA;AAxBZ","sourcesContent":[".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1,\r\n    .section-2,\r\n    .section-3 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-0jw8g5-768x480.jpg') center/cover;\r\n        }\r\n    }\r\n\r\n    // section-2\r\n    .section-2 {\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n                background: url('../../../../assets/images/lignes_rouges.jpg') center/cover;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 3\r\n    .section-3 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-k7d7xm.jpg') center/cover;\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -253,10 +253,10 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss":
-/*!***************************************************************************************!*\
-  !*** ./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss ***!
-  \***************************************************************************************/
+/***/ "./src/pages/nos_services/cloud_computing/cloud_computing.scss":
+/*!*********************************************************************!*\
+  !*** ./src/pages/nos_services/cloud_computing/cloud_computing.scss ***!
+  \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -275,7 +275,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_cloud_computing_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/sass-loader/dist/cjs.js!./cloud_computing.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_cloud_computing_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/sass-loader/dist/cjs.js!./cloud_computing.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_services/cloud_computing/cloud_computing.scss");
 
       
       
@@ -744,11 +744,11 @@ module.exports = __webpack_require__.p + "38a9f6b1331645807c62.jpg";
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!*************************************************************************************!*\
-  !*** ./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.js ***!
-  \*************************************************************************************/
+/*!*******************************************************************!*\
+  !*** ./src/pages/nos_services/cloud_computing/cloud_computing.js ***!
+  \*******************************************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cloud_computing_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cloud_computing.scss */ "./src/pages/infogerance_et_cloud_computing/cloud_computing/cloud_computing.scss");
+/* harmony import */ var _cloud_computing_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cloud_computing.scss */ "./src/pages/nos_services/cloud_computing/cloud_computing.scss");
 
 })();
 

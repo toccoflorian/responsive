@@ -30,6 +30,7 @@ divElement.innerHTML = `
 document.querySelector('html').appendChild(divElement)
 
 window.addEventListener('load', event => {
+
     const loadingScreenElement = document.querySelector('div.loading-screen');
 
     loadingScreenElement.style.transition = "opacity 0.25s ease-out";
@@ -37,9 +38,12 @@ window.addEventListener('load', event => {
     loadingScreenElement.style.opacity = '0';
 
     // Retirez l'écran de chargement du DOM après une transition
+
     setTimeout(() => {
+
         loadingScreenElement.remove();
-    }, 250);
+    }, 100)
+
 
 
 

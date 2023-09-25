@@ -2,28 +2,28 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/avis-clients/avis-clients.scss":
-/*!***************************************************************************************************************************************!*\
-  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/avis-clients/avis-clients.scss ***!
-  \***************************************************************************************************************************************/
+/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/entreprise/avis-clients/avis-clients.scss":
+/*!**************************************************************************************************************************************************!*\
+  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/entreprise/avis-clients/avis-clients.scss ***!
+  \**************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "../../node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "../../node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/icons/qote.svg */ "./assets/icons/qote.svg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/icons/star.svg */ "./assets/icons/star.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/icons/qote.svg */ "./assets/icons/qote.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/icons/star.svg */ "./assets/icons/star.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
@@ -48,7 +48,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.content .point-bleu-avec-trait {
   justify-content: space-between;
   background-color: #252629;
   max-width: 2000px;
-  width: 20rem;
+  width: 90%;
   margin: 2.5rem 3rem;
   padding: 2rem;
   border-radius: 5px;
@@ -107,7 +107,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.content .point-bleu-avec-trait {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.25rem;
-}`, "",{"version":3,"sources":["webpack://./src/pages/avis-clients/avis-clients.scss"],"names":[],"mappings":"AACI;EACI,gBAAA;AAAR;AAGQ;EACI,uBAAA;AADZ;AAKI;EACI,aAAA;AAHR;AASQ;EACI,aAAA;EACA,6BAAA;EACA,eAAA;AAPZ;AASY;EACI,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,yBAAA;EACA,iBAAA;EACA,YAAA;EACA,mBAAA;EACA,aAAA;EACA,kBAAA;AAPhB;AASgB;EACI,iCAAA;AAPpB;AAYgB;EACI,aAAA;EACA,mBAAA;AAVpB;AAYoB;EACI,OAAA;EACA,eAAA;EACA,WAAA;EACA,cAAA;EACA,kBAAA;EAEA,iBAAA;AAXxB;AAcoB;EACI,OAAA;EAEA,UAAA;EACA,kBAAA;EACA,kBAAA;AAbxB;AAewB;EACI,iBAAA;AAb5B;AAoBgB;EACI,gBAAA;EACA,kBAAA;AAlBpB;AAoBoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,YAAA;EACA,WAAA;EACA,qBAAA;EACA,uBAAA;AAlBxB;AAoBwB;EACI,iBAAA;EACA,iBAAA;EACA,sBAAA;AAlB5B;AAwBgB;EACI,aAAA;EACA,oBAAA;EACA,gBAAA;AAtBpB;AAwBoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,cAAA;EACA,aAAA;EACA,qBAAA;AAtBxB","sourcesContent":[".content {\r\n    .point-bleu-avec-trait {\r\n        margin-top: 4rem;\r\n        // padding-right: 5%;\r\n\r\n        .point-et-trait {\r\n            justify-content: center;\r\n        }\r\n    }\r\n\r\n    h1 {\r\n        margin-top: 0;\r\n    }\r\n\r\n    .section-1 {\r\n\r\n\r\n        .container {\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            flex-wrap: wrap;\r\n\r\n            .avis {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-between;\r\n                background-color: #252629;\r\n                max-width: 2000px;\r\n                width: 20rem;\r\n                margin: 2.5rem 3rem;\r\n                padding: 2rem;\r\n                border-radius: 5px;\r\n\r\n                &[data-theme='light'] {\r\n                    background-color: rgb(78, 76, 76);\r\n\r\n\r\n                }\r\n\r\n                .infos {\r\n                    display: flex;\r\n                    align-items: center;\r\n\r\n                    .span-image {\r\n                        flex: 1;\r\n                        height: 6.35rem;\r\n                        width: 100%;\r\n                        display: block;\r\n                        border-radius: 50%;\r\n                        // margin-right: 2rem;\r\n                        overflow: visible;\r\n                    }\r\n\r\n                    p {\r\n                        flex: 2;\r\n\r\n                        display: f;\r\n                        font-size: 0.75rem;\r\n                        padding-left: 1rem;\r\n\r\n                        &.en-tete {\r\n                            font-size: 1.2rem;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    font-size: 0.75rem;\r\n\r\n                    .span-icon {\r\n                        background: url('../../../assets/icons/qote.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1rem;\r\n                        width: 1rem;\r\n                        margin-left: -1.25rem;\r\n                        margin-bottom: -0.75rem;\r\n\r\n                        &.end {\r\n                            margin-left: auto;\r\n                            margin-top: -1rem;\r\n                            margin-right: -1.25rem;\r\n                        }\r\n\r\n                    }\r\n                }\r\n\r\n                .stars-container {\r\n                    display: flex;\r\n                    justify-content: end;\r\n                    margin-top: 3rem;\r\n\r\n                    .span-star {\r\n                        background: url('../../../assets/icons/star.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1.5rem;\r\n                        width: 1.5rem;\r\n                        margin-right: 0.25rem;\r\n                    }\r\n                }\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/entreprise/avis-clients/avis-clients.scss"],"names":[],"mappings":"AACI;EACI,gBAAA;AAAR;AAGQ;EACI,uBAAA;AADZ;AAKI;EACI,aAAA;AAHR;AASQ;EACI,aAAA;EACA,6BAAA;EACA,eAAA;AAPZ;AASY;EACI,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,yBAAA;EACA,iBAAA;EACA,UAAA;EACA,mBAAA;EACA,aAAA;EACA,kBAAA;AAPhB;AASgB;EACI,iCAAA;AAPpB;AAYgB;EACI,aAAA;EACA,mBAAA;AAVpB;AAYoB;EACI,OAAA;EACA,eAAA;EACA,WAAA;EACA,cAAA;EACA,kBAAA;EAEA,iBAAA;AAXxB;AAcoB;EACI,OAAA;EAEA,UAAA;EACA,kBAAA;EACA,kBAAA;AAbxB;AAewB;EACI,iBAAA;AAb5B;AAoBgB;EACI,gBAAA;EACA,kBAAA;AAlBpB;AAoBoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,YAAA;EACA,WAAA;EACA,qBAAA;EACA,uBAAA;AAlBxB;AAoBwB;EACI,iBAAA;EACA,iBAAA;EACA,sBAAA;AAlB5B;AAwBgB;EACI,aAAA;EACA,oBAAA;EACA,gBAAA;AAtBpB;AAwBoB;EACI,6DAAA;EACA,wBAAA;EACA,cAAA;EACA,cAAA;EACA,aAAA;EACA,qBAAA;AAtBxB","sourcesContent":[".content {\r\n    .point-bleu-avec-trait {\r\n        margin-top: 4rem;\r\n        // padding-right: 5%;\r\n\r\n        .point-et-trait {\r\n            justify-content: center;\r\n        }\r\n    }\r\n\r\n    h1 {\r\n        margin-top: 0;\r\n    }\r\n\r\n    .section-1 {\r\n\r\n\r\n        .container {\r\n            display: flex;\r\n            justify-content: space-evenly;\r\n            flex-wrap: wrap;\r\n\r\n            .avis {\r\n                display: flex;\r\n                flex-direction: column;\r\n                justify-content: space-between;\r\n                background-color: #252629;\r\n                max-width: 2000px;\r\n                width: 90%;\r\n                margin: 2.5rem 3rem;\r\n                padding: 2rem;\r\n                border-radius: 5px;\r\n\r\n                &[data-theme='light'] {\r\n                    background-color: rgb(78, 76, 76);\r\n\r\n\r\n                }\r\n\r\n                .infos {\r\n                    display: flex;\r\n                    align-items: center;\r\n\r\n                    .span-image {\r\n                        flex: 1;\r\n                        height: 6.35rem;\r\n                        width: 100%;\r\n                        display: block;\r\n                        border-radius: 50%;\r\n                        // margin-right: 2rem;\r\n                        overflow: visible;\r\n                    }\r\n\r\n                    p {\r\n                        flex: 2;\r\n\r\n                        display: f;\r\n                        font-size: 0.75rem;\r\n                        padding-left: 1rem;\r\n\r\n                        &.en-tete {\r\n                            font-size: 1.2rem;\r\n                        }\r\n\r\n\r\n                    }\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    font-size: 0.75rem;\r\n\r\n                    .span-icon {\r\n                        background: url('../../../../assets/icons/qote.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1rem;\r\n                        width: 1rem;\r\n                        margin-left: -1.25rem;\r\n                        margin-bottom: -0.75rem;\r\n\r\n                        &.end {\r\n                            margin-left: auto;\r\n                            margin-top: -1rem;\r\n                            margin-right: -1.25rem;\r\n                        }\r\n\r\n                    }\r\n                }\r\n\r\n                .stars-container {\r\n                    display: flex;\r\n                    justify-content: end;\r\n                    margin-top: 3rem;\r\n\r\n                    .span-star {\r\n                        background: url('../../../../assets/icons/star.svg') no-repeat;\r\n                        background-size: contain;\r\n                        display: block;\r\n                        height: 1.5rem;\r\n                        width: 1.5rem;\r\n                        margin-right: 0.25rem;\r\n                    }\r\n                }\r\n\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -268,29 +268,29 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/pages/avis-clients/avis-clients.scss":
-/*!**************************************************!*\
-  !*** ./src/pages/avis-clients/avis-clients.scss ***!
-  \**************************************************/
+/***/ "./src/pages/entreprise/avis-clients/avis-clients.scss":
+/*!*************************************************************!*\
+  !*** ./src/pages/entreprise/avis-clients/avis-clients.scss ***!
+  \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "../../node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "../../node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "../../node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "../../node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "../../node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "../../node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_avis_clients_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js!./avis-clients.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/avis-clients/avis-clients.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_avis_clients_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/sass-loader/dist/cjs.js!./avis-clients.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/entreprise/avis-clients/avis-clients.scss");
 
       
       
@@ -749,11 +749,11 @@ module.exports = __webpack_require__.p + "7888707790ce998b063d.svg";
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!************************************************!*\
-  !*** ./src/pages/avis-clients/avis-clients.js ***!
-  \************************************************/
+/*!***********************************************************!*\
+  !*** ./src/pages/entreprise/avis-clients/avis-clients.js ***!
+  \***********************************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _avis_clients_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./avis-clients.scss */ "./src/pages/avis-clients/avis-clients.scss");
+/* harmony import */ var _avis_clients_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./avis-clients.scss */ "./src/pages/entreprise/avis-clients/avis-clients.scss");
 
 
 // genere le HTML des avis
@@ -796,7 +796,7 @@ avisContainerElement.innerHTML = allAvisHTML;
 const logoAvisElement = document.querySelectorAll('#logo-avis');
 logoAvisElement.forEach(element => {
   const logoIndex = element.dataset.index;
-  element.style.background = "url(../../../assets/images/".concat(avisMap[logoIndex]['logo'], ") center/contain no-repeat");
+  element.style.background = "url(../../../../assets/images/".concat(avisMap[logoIndex]['logo'], ") center/contain no-repeat");
 });
 })();
 

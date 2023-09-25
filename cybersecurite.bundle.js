@@ -2,30 +2,30 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/cybersecurite/cybersecurite.scss":
-/*!*****************************************************************************************************************************************!*\
-  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/cybersecurite/cybersecurite.scss ***!
-  \*****************************************************************************************************************************************/
+/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_services/cybersecurite/cybersecurite.scss":
+/*!******************************************************************************************************************************************************!*\
+  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_services/cybersecurite/cybersecurite.scss ***!
+  \******************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../node_modules/css-loader/dist/runtime/sourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "../../node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "../../node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/images/wallhaven-nzx3rv.jpg */ "./assets/images/wallhaven-nzx3rv.jpg"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/images/wallhaven-45y5k7.png */ "./assets/images/wallhaven-45y5k7.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/images/visa.png */ "./assets/images/visa.png"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../../assets/images/wallhaven-47615v.png */ "./assets/images/wallhaven-47615v.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/wallhaven-nzx3rv.jpg */ "./assets/images/wallhaven-nzx3rv.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/wallhaven-45y5k7.png */ "./assets/images/wallhaven-45y5k7.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/visa.png */ "./assets/images/visa.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/wallhaven-47615v.png */ "./assets/images/wallhaven-47615v.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
@@ -82,7 +82,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.content section {
 .content section.section-3 .span-image {
   flex: 4;
   background: url(${___CSS_LOADER_URL_REPLACEMENT_3___}) center/cover;
-}`, "",{"version":3,"sources":["webpack://./src/pages/cybersecurite/cybersecurite.scss"],"names":[],"mappings":"AACI;EACI,aAAA;AAAR;AAEQ;EACI,OAAA;EACA,eAAA;AAAZ;AAEY;EACI,aAAA;EACA,kBAAA;AAAhB;AAGY;EACI,iBAAA;EACA,iBAAA;EACA,kBAAA;AADhB;AAIY;EACI,YAAA;EACA,gBAAA;AAFhB;AAOgB;EACI,gBAAA;AALpB;AAYQ;EACI,kBAAA;AAVZ;AAaQ;EACI,gBAAA;AAXZ;AAaY;EAEI,OAAA;EACA,gEAAA;AAZhB;AAkBY;EAEI,OAAA;EACA,gEAAA;AAjBhB;AAuBY;EACI,aAAA;EACA,sBAAA;AArBhB;AAuBgB;EACI,aAAA;EACA,WAAA;EACA,oEAAA;EACA,wBAAA;AArBpB;AAyBY;EAEI,OAAA;EACA,gEAAA;AAxBhB","sourcesContent":[".content {\r\n    section {\r\n        display: flex;\r\n\r\n        .div-text {\r\n            flex: 6;\r\n            padding: 0 2rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 2rem;\r\n                text-align: left;\r\n            }\r\n\r\n            li p {\r\n\r\n                span {\r\n                    font-weight: 800;\r\n\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {\r\n            border-radius: 3px;\r\n        }\r\n\r\n        &.section-1 {\r\n            margin-top: 7rem;\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../assets/images/wallhaven-nzx3rv.jpg') center/cover;\r\n            }\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../assets/images/wallhaven-45y5k7.png') center/cover;\r\n\r\n            }\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    height: 200px;\r\n                    width: 100%;\r\n                    background: url('../../../assets/images/visa.png')center no-repeat;\r\n                    background-size: contain;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../assets/images/wallhaven-47615v.png') center/cover;\r\n\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/nos_services/cybersecurite/cybersecurite.scss"],"names":[],"mappings":"AACI;EACI,aAAA;AAAR;AAEQ;EACI,OAAA;EACA,eAAA;AAAZ;AAEY;EACI,aAAA;EACA,kBAAA;AAAhB;AAGY;EACI,iBAAA;EACA,iBAAA;EACA,kBAAA;AADhB;AAIY;EACI,YAAA;EACA,gBAAA;AAFhB;AAOgB;EACI,gBAAA;AALpB;AAYQ;EACI,kBAAA;AAVZ;AAaQ;EACI,gBAAA;AAXZ;AAaY;EAEI,OAAA;EACA,gEAAA;AAZhB;AAkBY;EAEI,OAAA;EACA,gEAAA;AAjBhB;AAuBY;EACI,aAAA;EACA,sBAAA;AArBhB;AAuBgB;EACI,aAAA;EACA,WAAA;EACA,oEAAA;EACA,wBAAA;AArBpB;AAyBY;EAEI,OAAA;EACA,gEAAA;AAxBhB","sourcesContent":[".content {\r\n    section {\r\n        display: flex;\r\n\r\n        .div-text {\r\n            flex: 6;\r\n            padding: 0 2rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 2rem;\r\n                text-align: left;\r\n            }\r\n\r\n            li p {\r\n\r\n                span {\r\n                    font-weight: 800;\r\n\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {\r\n            border-radius: 3px;\r\n        }\r\n\r\n        &.section-1 {\r\n            margin-top: 7rem;\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-nzx3rv.jpg') center/cover;\r\n            }\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-45y5k7.png') center/cover;\r\n\r\n            }\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    height: 200px;\r\n                    width: 100%;\r\n                    background: url('../../../../assets/images/visa.png')center no-repeat;\r\n                    background-size: contain;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-47615v.png') center/cover;\r\n\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -243,29 +243,29 @@ module.exports = function (item) {
 
 /***/ }),
 
-/***/ "./src/pages/cybersecurite/cybersecurite.scss":
-/*!****************************************************!*\
-  !*** ./src/pages/cybersecurite/cybersecurite.scss ***!
-  \****************************************************/
+/***/ "./src/pages/nos_services/cybersecurite/cybersecurite.scss":
+/*!*****************************************************************!*\
+  !*** ./src/pages/nos_services/cybersecurite/cybersecurite.scss ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "../../node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "../../node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "../../node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "../../node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "../../node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "../../node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_cybersecurite_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/sass-loader/dist/cjs.js!./cybersecurite.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/cybersecurite/cybersecurite.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_cybersecurite_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/sass-loader/dist/cjs.js!./cybersecurite.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_services/cybersecurite/cybersecurite.scss");
 
       
       
@@ -744,11 +744,11 @@ module.exports = __webpack_require__.p + "1f03a5dc7e3b6d678fcc.jpg";
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**************************************************!*\
-  !*** ./src/pages/cybersecurite/cybersecurite.js ***!
-  \**************************************************/
+/*!***************************************************************!*\
+  !*** ./src/pages/nos_services/cybersecurite/cybersecurite.js ***!
+  \***************************************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cybersecurite_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cybersecurite.scss */ "./src/pages/cybersecurite/cybersecurite.scss");
+/* harmony import */ var _cybersecurite_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cybersecurite.scss */ "./src/pages/nos_services/cybersecurite/cybersecurite.scss");
 
 })();
 
