@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="commun.bundle.js"></script><script defer src="formulaire.bundle.js"></script></head>
+
+<body>
+    <!-- top-bar -->
+    <top-bar></top-bar>
+
+    <div class="content">
+        <p>
+            Pour toute question en informatique ou en affaire, n'hésitez pas à contacter notre entreprise
+        </p>
+        <div class="container-1">
+            <span class="span-icon">
+                <!-- icon -->
+            </span>
+            <p><span class="blue-word">Nous vous répondrons sous 24h</span> </p>
+        </div>
+
+        <div class="container-2">
+            <div class="formulaire">
+                <h1>Formulaire de contact</h1>
+                <form action="">
+
+                    <div class="inputs">
+                        <span>
+                            <input type="text" name="firstname" id="firstname" class="firstname" placeholder="Nom">
+                            <input type="text" name="lastname" id="lastname" class="lastname" placeholder="Prenom">
+                        </span>
+                        <input type="text" name="societe" id="societe" class="societe" placeholder="Société">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="text" name="tel" id="tel" class="tel" placeholder="Telephone">
+                        <input type="text" name="mail" id="mail" class="mail" placeholder="Adresse mail">
+                    </div>
+
+                    <div class="selects">
+
+                        <span>
+                            <!-- <label for="selecteur">De quoi s'agit-il ?</label> -->
+                            <select name="selecteur" id="selecteur">
+                                <option value="null">De quoi s'agit-il ?</option>
+                                <option>Poser une question</option>
+                                <option>Demander un devis gratuit</option>
+                                <option>Autre</option>
+                            </select>
+                        </span>
+
+                        <span>
+                            <!-- <label for="selecteur2">En rapport avec quel service ?</label> -->
+                            <select name="selecteur" id="selecteur2">
+                                <option value="null">En rapport avec quel service ?</option>
+                                <option>Audit Informatique</option>
+                                <option>Audit Cybersécurité</option>
+                                <option>Cloud Computing</option>
+                                <option>Maintenance Informatique</option>
+                                <option>Support Informatique</option>
+                                <option>Conception de site internet</option>
+                                <option>Vente de matériel neuf</option>
+                                <option>Vente de matériel reconditionné</option>
+                                <option>Téléphonie et Internet</option>
+                                <option>Autre</option>
+                            </select>
+                        </span>
+
+                    </div>
+
+                    <textarea type="text" name="message" id="message" class="message" placeholder="Message"></textarea>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox" checked>
+                        <label for="checkbox">Je souhaite un devis pour un audit de mon parc informatique</label>
+                    </div>
+
+                    <p onclick="console.log('salut')" class="submit-button">Envoyer</p>
+
+                </form>
+
+            </div>
+            <div class="coordonnees">
+                <p>Venez nous dire bonjour</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <pied-de-page></pied-de-page>
+
+</body>
+
+</html>

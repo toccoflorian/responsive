@@ -1,0 +1,32 @@
+@use 'media-queries' as MQueries;
+@import "./responsive/all-display.scss";
+
+
+/* Large desktop */
+@include MQueries.xl {
+    @import "./responsive/xl-styles";
+}
+
+
+/*  desktop */
+@include MQueries.standard {
+    @import "./responsive/standard-styles";
+}
+
+
+/* Portrait tablet to landscape and desktop */
+@include MQueries.md {
+    @import "./responsive/md-styles";
+}
+
+
+/* Landscape phone to portrait tablet */
+@include MQueries.sm {
+    @import "./responsive/sm-styles";
+}
+
+
+/* portrait phones and down */
+@include MQueries.xs {
+    @import "./responsive/xs-styles";
+}
