@@ -44,41 +44,46 @@
 
                         <span>
                             <!-- <label for="selecteur">De quoi s'agit-il ?</label> -->
-                            <select name="selecteur" id="selecteur">
+                            <select name="selecteur" id="selecteur-1">
                                 <option value="null">De quoi s'agit-il ?</option>
                                 <option>Poser une question</option>
-                                <option>Demander un devis gratuit</option>
+                                <option value="true">Demander un devis gratuit</option>
                                 <option>Autre</option>
                             </select>
                         </span>
 
                         <span>
                             <!-- <label for="selecteur2">En rapport avec quel service ?</label> -->
-                            <select name="selecteur" id="selecteur2">
+                            <select name="selecteur" id="selecteur-2">
                                 <option value="null">En rapport avec quel service ?</option>
-                                <option>Audit Informatique</option>
-                                <option>Audit Cybersécurité</option>
-                                <option>Cloud Computing</option>
-                                <option>Maintenance Informatique</option>
-                                <option>Support Informatique</option>
-                                <option>Conception de site internet</option>
-                                <option>Vente de matériel neuf</option>
-                                <option>Vente de matériel reconditionné</option>
-                                <option>Téléphonie et Internet</option>
-                                <option>Autre</option>
+                                <option value="auditInformatique">Audit Informatique</option>
+                                <option value="infogerance">Infogerance</option>
+                                <option value="auditCybersecurite">Audit Cybersécurité</option>
+                                <option value="cloudComputing">Cloud Computing</option>
+                                <option value="maintenance">Maintenance Informatique</option>
+                                <option value="support">Support Informatique</option>
+                                <option value="siteInternet">Conception de site internet</option>
+                                <option value="venteNeuf">Vente de matériel neuf</option>
+                                <option value="venteReconditionné">Vente de matériel reconditionné</option>
+                                <option value="telephoneInternet">Téléphonie et Internet</option>
+                                <option value="autre">Autre</option>
                             </select>
                         </span>
 
                     </div>
 
+                    <div class="options" id="form-options">
+                        <!-- javascript -->
+                    </div>
+
                     <textarea type="text" name="message" id="message" class="message" placeholder="Message"></textarea>
 
-                    <div class="checkbox">
+                    <div class="check-box">
                         <input type="checkbox" id="checkbox" checked>
                         <label for="checkbox">Je souhaite un devis pour un audit de mon parc informatique</label>
                     </div>
 
-                    <p onclick="console.log('salut')" class="submit-button">Envoyer</p>
+                    <p class="submit-button" id="formulaire-submit-button">Envoyer</p>
 
                 </form>
 

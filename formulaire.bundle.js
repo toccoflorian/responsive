@@ -107,7 +107,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     padding: 10px 10px;
     border-radius: 5px;
   }
-  .content .container-2 .formulaire form .checkbox {
+  .content .container-2 .formulaire form .check-box {
     padding-left: 2.5%;
     margin: 25px 0 25px 0;
   }
@@ -189,7 +189,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     padding: 10px 10px;
     border-radius: 5px;
   }
-  .content .container-2 .formulaire form .checkbox {
+  .content .container-2 .formulaire form .check-box {
     padding-left: 2.5%;
     margin: 25px 0 25px 0;
   }
@@ -271,7 +271,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     padding: 10px 10px;
     border-radius: 5px;
   }
-  .content .container-2 .formulaire form .checkbox {
+  .content .container-2 .formulaire form .check-box {
     padding-left: 2.5%;
     margin: 25px 0 25px 0;
   }
@@ -357,7 +357,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     padding: 10px 10px;
     border-radius: 5px;
   }
-  .content .container-2 .formulaire form .checkbox {
+  .content .container-2 .formulaire form .check-box {
     padding-left: 2.5%;
     margin: 25px 0 25px 0;
   }
@@ -443,11 +443,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
     padding: 10px 10px;
     border-radius: 5px;
   }
-  .content .container-2 .formulaire form .checkbox {
+  .content .container-2 .formulaire form .check-box {
     padding-left: 2.5%;
     margin: 25px 0 25px 0;
   }
-  .content .container-2 .formulaire form .checkbox input {
+  .content .container-2 .formulaire form .check-box input {
     margin-right: 10px;
   }
   .content .container-2 .formulaire form .submit-button {
@@ -463,9 +463,49 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 .content .container-2 .formulaire form label {
   color: var(--input-border-color);
 }
-.content .container-2 .formulaire form .checkbox {
+.content .container-2 .formulaire form .options {
   display: flex;
-}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/formulaire_contact/formulaire.scss","webpack://./src/pages/formulaire_contact/responsive/_xl.scss","webpack://./src/pages/formulaire_contact/responsive/_standard.scss","webpack://./src/pages/formulaire_contact/responsive/_md.scss","webpack://./src/pages/formulaire_contact/responsive/_sm.scss","webpack://./src/pages/formulaire_contact/responsive/_xs.scss"],"names":[],"mappings":"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","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use \"../../../assets/styles/media-queries\" as MQueries;\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n\r\n.content {\r\n    .container-1 {\r\n        .span-icon {\r\n            background: url(\"../../../assets/icons/24heures.svg\") center/contain no-repeat;\r\n\r\n            display: block;\r\n        }\r\n\r\n        p {}\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n                label {\r\n                    color: var(--input-border-color);\r\n                }\r\n\r\n                input {}\r\n\r\n                textarea {}\r\n\r\n                .checkbox {\r\n                    display: flex;\r\n\r\n                }\r\n\r\n                button {}\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            max-width: 1000px;\r\n            margin: 0 auto;\r\n\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n\r\n                    input {\r\n                        width: 45%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(45% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    margin-bottom: 50px;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(45% + 16px);\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .checkbox {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n\r\n                    input {\r\n                        width: 45%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(45% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    margin-bottom: 50px;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(45% + 16px);\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .checkbox {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n\r\n                    input {\r\n                        width: 45%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(45% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    margin-bottom: 50px;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(45% + 16px);\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .checkbox {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    justify-content: center;\r\n                    align-items: center;\r\n\r\n                    input {\r\n                        width: 80%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(80% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    align-items: center;\r\n                    justify-content: space-evenly;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(80% + 16px);\r\n                        margin-bottom: 50px;\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .checkbox {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    justify-content: center;\r\n                    align-items: center;\r\n\r\n                    input {\r\n                        width: calc(95% - 20px);\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(95%);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    align-items: center;\r\n                    justify-content: space-evenly;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(95% + 16px);\r\n                        margin-bottom: 50px;\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 95%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .checkbox {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n\r\n                    input {\r\n                        margin-right: 10px;\r\n                    }\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.content .container-2 .formulaire form .options div {
+  width: 45%;
+  padding: 0 8px 0 8px;
+  margin: 0 0 50px 0;
+}
+.content .container-2 .formulaire form .options div.number {
+  display: flex;
+}
+.content .container-2 .formulaire form .options div.number input {
+  margin-left: 15px;
+  color: white;
+  width: 70px;
+}
+.content .container-2 .formulaire form .options div.checkbox {
+  display: flex;
+}
+.content .container-2 .formulaire form .options div.checkbox input {
+  margin: 0 7px 0 0;
+}
+.content .container-2 .formulaire form .options div.radio {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+}
+.content .container-2 .formulaire form .options div.radio div {
+  width: calc(45% + 0px);
+  display: flex;
+}
+.content .container-2 .formulaire form .options div.radio div input {
+  margin: 0 7px 0 0;
+}
+.content .container-2 .formulaire form .check-box {
+  display: flex;
+}
+.content .container-2 .formulaire form .check-box input {
+  margin-right: 7px;
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/formulaire_contact/formulaire.scss","webpack://./src/pages/formulaire_contact/responsive/_xl.scss","webpack://./src/pages/formulaire_contact/responsive/_standard.scss","webpack://./src/pages/formulaire_contact/responsive/_md.scss","webpack://./src/pages/formulaire_contact/responsive/_sm.scss","webpack://./src/pages/formulaire_contact/responsive/_xs.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;AC1BA,kBAAA;AD4BI;EE9BJ;IACI,gBAAA;IACA,iBAAA;EDQF;ECNE;IACI,gBAAA;IACA,eAAA;EDQN;ECLE;IACI,aAAA;IACA,uBAAA;EDON;ECLM;IACI,YAAA;IACA,WAAA;EDOV;ECJM;IACI,kBAAA;IACA,eAAA;EDMV;ECDM;IACI,iBAAA;IACA,cAAA;EDGV;ECIc;IACI,aAAA;IACA,6BAAA;EDFlB;ECIkB;IACI,UAAA;IACA,mBAAA;IACA,sBAAA;EDFtB;ECMkB;IACI,uBAAA;IACA,aAAA;IACA,8BAAA;EDJtB;ECMsB;IACI,sBAAA;EDJ1B;ECUc;IACI,aAAA;IACA,6BAAA;IACA,mBAAA;EDRlB;ECUkB;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;IACA,uBAAA;EDRtB;ECUsB;IACI,kBAAA;EDR1B;ECWsB;IACI,sBAAA;IACA,WAAA;EDT1B;ECW0B;IACI,oBAAA;IACA,iDAAA;EDT9B;ECqBc;IACI,cAAA;IACA,iDAAA;IACA,YAAA;IACA,uBAAA;IACA,aAAA;IACA,qBAAA;IACA,kBAAA;IACA,kBAAA;EDnBlB;ECsBc;IACI,kBAAA;IACA,qBAAA;EDpBlB;ECuBc;IACI,UAAA;IACA,qBAAA;IACA,eAAA;EDrBlB;AACF;AAlFA,aAAA;ADeI;EGvBJ;IACI,gBAAA;IACA,iBAAA;EF8FF;EE5FE;IACI,gBAAA;IACA,eAAA;EF8FN;EE3FE;IACI,aAAA;IACA,uBAAA;EF6FN;EE3FM;IACI,YAAA;IACA,WAAA;EF6FV;EE1FM;IACI,kBAAA;IACA,eAAA;EF4FV;EEjFc;IACI,aAAA;IACA,6BAAA;EFmFlB;EEjFkB;IACI,UAAA;IACA,mBAAA;IACA,sBAAA;EFmFtB;EE/EkB;IACI,uBAAA;IACA,aAAA;IACA,8BAAA;EFiFtB;EE/EsB;IACI,sBAAA;EFiF1B;EE3Ec;IACI,aAAA;IACA,6BAAA;IACA,mBAAA;EF6ElB;EE3EkB;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;IACA,uBAAA;EF6EtB;EE3EsB;IACI,kBAAA;EF6E1B;EE1EsB;IACI,sBAAA;IACA,WAAA;EF4E1B;EE1E0B;IACI,oBAAA;IACA,iDAAA;EF4E9B;EE/Dc;IACI,cAAA;IACA,iDAAA;IACA,YAAA;IACA,uBAAA;IACA,aAAA;IACA,qBAAA;IACA,kBAAA;IACA,kBAAA;EFiElB;EE9Dc;IACI,kBAAA;IACA,qBAAA;EFgElB;EE7Dc;IACI,UAAA;IACA,qBAAA;IACA,eAAA;EF+DlB;AACF;AA9JA,6CAAA;ADEI;EIhBJ;IACI,gBAAA;IACA,iBAAA;EHgLF;EG9KE;IACI,gBAAA;IACA,eAAA;EHgLN;EG7KE;IACI,aAAA;IACA,uBAAA;EH+KN;EG7KM;IACI,YAAA;IACA,WAAA;EH+KV;EG5KM;IACI,kBAAA;IACA,eAAA;EH8KV;EGnKc;IACI,aAAA;IACA,6BAAA;EHqKlB;EGnKkB;IACI,UAAA;IACA,mBAAA;IACA,sBAAA;EHqKtB;EGjKkB;IACI,uBAAA;IACA,aAAA;IACA,8BAAA;EHmKtB;EGjKsB;IACI,sBAAA;EHmK1B;EG7Jc;IACI,aAAA;IACA,6BAAA;IACA,mBAAA;EH+JlB;EG7JkB;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;IACA,uBAAA;EH+JtB;EG7JsB;IACI,kBAAA;EH+J1B;EG5JsB;IACI,sBAAA;IACA,WAAA;EH8J1B;EG5J0B;IACI,oBAAA;IACA,iDAAA;EH8J9B;EGlJc;IACI,cAAA;IACA,iDAAA;IACA,YAAA;IACA,uBAAA;IACA,aAAA;IACA,qBAAA;IACA,kBAAA;IACA,kBAAA;EHoJlB;EGjJc;IACI,kBAAA;IACA,qBAAA;EHmJlB;EGhJc;IACI,UAAA;IACA,qBAAA;IACA,eAAA;EHkJlB;AACF;AA1OA,uCAAA;ADXI;EKTJ;IACI,gBAAA;IACA,iBAAA;EJkQF;EIhQE;IACI,gBAAA;IACA,eAAA;EJkQN;EI/PE;IACI,aAAA;IACA,uBAAA;EJiQN;EI/PM;IACI,YAAA;IACA,WAAA;EJiQV;EI9PM;IACI,kBAAA;IACA,eAAA;EJgQV;EIrPc;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;IACA,mBAAA;EJuPlB;EIrPkB;IACI,UAAA;IACA,mBAAA;IACA,sBAAA;EJuPtB;EInPkB;IACI,uBAAA;IACA,aAAA;IACA,8BAAA;EJqPtB;EInPsB;IACI,sBAAA;EJqP1B;EI/Oc;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,6BAAA;EJiPlB;EI/OkB;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;IACA,uBAAA;IACA,mBAAA;EJiPtB;EI/OsB;IACI,kBAAA;EJiP1B;EI9OsB;IACI,sBAAA;IACA,WAAA;EJgP1B;EI9O0B;IACI,oBAAA;IACA,iDAAA;EJgP9B;EIpOc;IACI,cAAA;IACA,iDAAA;IACA,YAAA;IACA,uBAAA;IACA,aAAA;IACA,qBAAA;IACA,kBAAA;IACA,kBAAA;EJsOlB;EInOc;IACI,kBAAA;IACA,qBAAA;EJqOlB;EIlOc;IACI,UAAA;IACA,qBAAA;IACA,eAAA;EJoOlB;AACF;AA1TA,6BAAA;ADxBI;EMFJ;IACI,gBAAA;IACA,iBAAA;ELwVF;EKtVE;IACI,gBAAA;IACA,eAAA;ELwVN;EKrVE;IACI,aAAA;IACA,uBAAA;ELuVN;EKrVM;IACI,YAAA;IACA,WAAA;ELuVV;EKpVM;IACI,kBAAA;IACA,eAAA;ELsVV;EK3Uc;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;IACA,mBAAA;EL6UlB;EK3UkB;IACI,uBAAA;IACA,mBAAA;IACA,sBAAA;EL6UtB;EKzUkB;IACI,UAAA;IACA,aAAA;IACA,8BAAA;EL2UtB;EKzUsB;IACI,sBAAA;EL2U1B;EKrUc;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,6BAAA;ELuUlB;EKrUkB;IACI,aAAA;IACA,sBAAA;IACA,6BAAA;IACA,mBAAA;IACA,uBAAA;IACA,mBAAA;ELuUtB;EKrUsB;IACI,kBAAA;ELuU1B;EKpUsB;IACI,sBAAA;IACA,UAAA;ELsU1B;EKpU0B;IACI,oBAAA;IACA,iDAAA;ELsU9B;EK1Tc;IACI,cAAA;IACA,iDAAA;IACA,YAAA;IACA,uBAAA;IACA,aAAA;IACA,qBAAA;IACA,kBAAA;IACA,kBAAA;EL4TlB;EKzTc;IACI,kBAAA;IACA,qBAAA;EL2TlB;EKzTkB;IACI,kBAAA;EL2TtB;EKvTc;IACI,UAAA;IACA,qBAAA;IACA,eAAA;ELyTlB;AACF;AA3YQ;EACI,4EAAA;EAEA,cAAA;AA4YZ;AAjYgB;EACI,gCAAA;AAmYpB;AA9XgB;EACI,aAAA;EACA,6BAAA;EACA,eAAA;AAgYpB;AA7XoB;EACI,UAAA;EACA,oBAAA;EACA,kBAAA;AA+XxB;AA3XoB;EACI,aAAA;AA6XxB;AAzXwB;EACI,iBAAA;EACA,YAAA;EACA,WAAA;AA2X5B;AAvXoB;EACI,aAAA;AAyXxB;AArXwB;EACI,iBAAA;AAuX5B;AAnXoB;EACI,aAAA;EACA,6BAAA;EACA,WAAA;EACA,UAAA;AAqXxB;AAnXwB;EACI,sBAAA;EACA,aAAA;AAqX5B;AAjX4B;EACI,iBAAA;AAmXhC;AA1WgB;EACI,aAAA;AA4WpB;AA1WoB;EACI,iBAAA;AA4WxB","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use \"../../../assets/styles/media-queries\" as MQueries;\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n\r\n.content {\r\n    .container-1 {\r\n        .span-icon {\r\n            background: url(\"../../../assets/icons/24heures.svg\") center/contain no-repeat;\r\n\r\n            display: block;\r\n        }\r\n\r\n        p {}\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n                label {\r\n                    color: var(--input-border-color);\r\n                }\r\n\r\n                input {}\r\n\r\n                .options {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    flex-wrap: wrap;\r\n\r\n                    // toutes les types d'options\r\n                    div {\r\n                        width: 45%;\r\n                        padding: 0 8px 0 8px;\r\n                        margin: 0 0 50px 0;\r\n\r\n                    }\r\n\r\n                    div.number {\r\n                        display: flex;\r\n\r\n                        label {}\r\n\r\n                        input {\r\n                            margin-left: 15px;\r\n                            color: white;\r\n                            width: 70px;\r\n                        }\r\n                    }\r\n\r\n                    div.checkbox {\r\n                        display: flex;\r\n\r\n                        label {}\r\n\r\n                        input {\r\n                            margin: 0 7px 0 0;\r\n                        }\r\n                    }\r\n\r\n                    div.radio {\r\n                        display: flex;\r\n                        justify-content: space-evenly;\r\n                        width: 100%;\r\n                        padding: 0;\r\n\r\n                        div {\r\n                            width: calc(45% + 0px);\r\n                            display: flex;\r\n\r\n                            label {}\r\n\r\n                            input {\r\n                                margin: 0 7px 0 0;\r\n                            }\r\n                        }\r\n\r\n                    }\r\n                }\r\n\r\n                textarea {}\r\n\r\n                .check-box {\r\n                    display: flex;\r\n\r\n                    input {\r\n                        margin-right: 7px;\r\n                    }\r\n\r\n                    label {}\r\n                }\r\n\r\n                button {}\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            max-width: 1000px;\r\n            margin: 0 auto;\r\n\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n\r\n                    input {\r\n                        width: 45%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(45% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    margin-bottom: 50px;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(45% + 16px);\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .check-box {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n\r\n                    input {\r\n                        width: 45%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(45% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    margin-bottom: 50px;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(45% + 16px);\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .check-box {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n\r\n                    input {\r\n                        width: 45%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(45% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    justify-content: space-evenly;\r\n                    margin-bottom: 50px;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(45% + 16px);\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .check-box {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    justify-content: center;\r\n                    align-items: center;\r\n\r\n                    input {\r\n                        width: 80%;\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(80% + 16px);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    align-items: center;\r\n                    justify-content: space-evenly;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(80% + 16px);\r\n                        margin-bottom: 50px;\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 100%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .check-box {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}",".content {\r\n    padding-left: 1%;\r\n    padding-right: 1%;\r\n\r\n    p:first-child {\r\n        margin-top: 80px;\r\n        font-size: 20px;\r\n    }\r\n\r\n    .container-1 {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n        .span-icon {\r\n            height: 80px;\r\n            width: 80px;\r\n        }\r\n\r\n        p {\r\n            padding-left: 25px;\r\n            font-size: 20px;\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n        .formulaire {\r\n            h1 {}\r\n\r\n            form {\r\n\r\n\r\n                .inputs {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    justify-content: center;\r\n                    align-items: center;\r\n\r\n                    input {\r\n                        width: calc(95% - 20px);\r\n                        margin-bottom: 50px;\r\n                        padding: 0.5rem 0.5rem;\r\n\r\n                    }\r\n\r\n                    span {\r\n                        width: calc(95%);\r\n                        display: flex;\r\n                        justify-content: space-between;\r\n\r\n                        input {\r\n                            padding: 0.5rem 0.5rem;\r\n                        }\r\n                    }\r\n\r\n                }\r\n\r\n                .selects {\r\n                    display: flex;\r\n                    flex-direction: column;\r\n                    align-items: center;\r\n                    justify-content: space-evenly;\r\n\r\n                    span {\r\n                        display: flex;\r\n                        flex-direction: column;\r\n                        justify-content: space-evenly;\r\n                        align-items: center;\r\n                        width: calc(95% + 16px);\r\n                        margin-bottom: 50px;\r\n\r\n                        label {\r\n                            width: max-content;\r\n                        }\r\n\r\n                        select {\r\n                            padding: 0.5rem 0.5rem;\r\n                            width: 95%;\r\n\r\n                            option {\r\n                                padding-bottom: 10px;\r\n                                background-color: var(--background-color-primary);\r\n                            }\r\n                        }\r\n\r\n\r\n                        // * {\r\n                        //     flex: 1;\r\n                        // }\r\n                    }\r\n\r\n                }\r\n\r\n                textarea {\r\n                    display: block;\r\n                    background-color: var(--background-color-primary);\r\n                    color: white;\r\n                    width: calc(95% - 20px);\r\n                    height: 225px;\r\n                    margin: 0 auto 0 auto;\r\n                    padding: 10px 10px;\r\n                    border-radius: 5px;\r\n                }\r\n\r\n                .check-box {\r\n                    padding-left: 2.5%;\r\n                    margin: 25px 0 25px 0;\r\n\r\n                    input {\r\n                        margin-right: 10px;\r\n                    }\r\n                }\r\n\r\n                .submit-button {\r\n                    width: 25%;\r\n                    margin: 0 auto 0 auto;\r\n                    font-size: 20px;\r\n                }\r\n            }\r\n        }\r\n\r\n        .coordonnees {\r\n            p {}\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1103,6 +1143,208 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _formulaire_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./formulaire.scss */ "./src/pages/formulaire_contact/formulaire.scss");
 
+const formSelectionMap = {
+  auditInformatique: {
+    1: {
+      text: "Budget",
+      type: "number"
+    },
+    2: {
+      text: "Nombre d'ordinateurs",
+      type: "number"
+    },
+    3: {
+      text: "Nombre de serveurs",
+      type: "number"
+    },
+    4: {
+      text: "Nombre de switchs",
+      type: "number"
+    }
+  },
+  auditCybersecurite: {
+    1: {
+      text: "Budget",
+      type: "number"
+    },
+    2: {
+      text: "Tests d'intrusion",
+      type: "checkbox"
+    },
+    3: {
+      text: "Audit de configuration",
+      type: "checkbox"
+    },
+    4: {
+      text: "Audit d'architecture",
+      type: "checkbox"
+    },
+    5: {
+      text: "Audit organnisationnel",
+      type: "checkbox"
+    },
+    6: {
+      text: "Audit de code source",
+      type: "checkbox"
+    }
+  },
+  cloudComputing: {},
+  infogerance: {
+    1: {
+      text: "Budget",
+      type: "number"
+    },
+    choice_1: {
+      1: "Conception de parc informatique de A à Z",
+      2: "Refonte de parc informatique"
+    },
+    choice_2: {
+      1: "Avec contrat de maintenance et de support",
+      2: "Sans contrat"
+    }
+  },
+  maintenance: {
+    1: {
+      text: "Budget",
+      type: "number"
+    },
+    2: {
+      text: "Nombre d'ordinateurs",
+      type: "number"
+    },
+    3: {
+      text: "Nombre de serveurs",
+      type: "number"
+    },
+    4: {
+      text: "Nombre de switchs",
+      type: "number"
+    }
+  },
+  support: {
+    choice: {
+      1: "Du lundi au vendredi",
+      2: "24h/24 et 7jrs/7"
+    }
+  },
+  siteInternet: {},
+  venteNeuf: {
+    1: {
+      text: "Budget",
+      type: "number"
+    },
+    2: {
+      text: "Windows",
+      type: "checkbox"
+    },
+    3: {
+      text: "MacOs",
+      type: "checkbox"
+    },
+    choice: {
+      1: "Prêt à être livré",
+      2: "Sur mesure"
+    },
+    4: {
+      text: "Avec support et maintenance",
+      type: "checkbox"
+    }
+  },
+  venteReconditionné: {
+    1: {
+      text: "Nombre d'ordinateurs",
+      type: "number"
+    }
+  },
+  telephoneInternet: {
+    1: {
+      text: "Budget",
+      type: "number"
+    },
+    choice: {
+      1: "ADSL",
+      2: "Fibre"
+    },
+    2: {
+      text: "Demande d'audit de la téléphonie et d'internet",
+      type: "checkbox"
+    }
+  },
+  autre: {}
+};
+let devisSelected = null;
+
+// event listener selection 1
+document.getElementById("selecteur-1").addEventListener("change", event => {
+  if (event.currentTarget.value === 'true') {
+    if (devisSelected === false) {
+      generateOptions(formSelectionMap[document.getElementById("selecteur-2").value]);
+    }
+    devisSelected = true;
+  } else {
+    devisSelected = false;
+    document.getElementById("form-options").innerHTML = null;
+  }
+});
+
+// fonction
+const createInput = element => {
+  const input = document.createElement("input");
+  input.id = element.text.split(" ")[0];
+  input.type = element.type;
+  const label = document.createElement("label");
+  label.htmlFor = input.id;
+  label.textContent = element.text;
+  const divElement = document.createElement("div");
+  divElement.classList.add(element.type);
+  if (element.type === "number") {
+    divElement.append(label, input);
+  } else {
+    divElement.append(input, label);
+  }
+  document.getElementById("form-options").appendChild(divElement);
+};
+const createRadioInput = (element, name) => {
+  const input = document.createElement("input");
+  const input2 = document.createElement("input");
+  input.id = element[1].split(" ")[0];
+  input2.id = element[2].split(" ")[0];
+  input.type = "radio";
+  input2.type = "radio";
+  input.name = name;
+  input2.name = name;
+  const label = document.createElement("label");
+  const label2 = document.createElement("label");
+  label.htmlFor = input.id;
+  label2.htmlFor = input2.id;
+  label.textContent = element[1];
+  label2.textContent = element[2];
+  const divElement1 = document.createElement("div");
+  const divElement2 = document.createElement("div");
+  divElement1.append(input, label);
+  divElement2.append(input2, label2);
+  const divContainerElement = document.createElement("div");
+  divContainerElement.classList.add("radio");
+  divContainerElement.append(divElement1, divElement2);
+  document.getElementById("form-options").appendChild(divContainerElement);
+};
+const generateOptions = selection => {
+  document.getElementById("form-options").innerHTML = null;
+  for (const i in selection) {
+    if (i.includes("choice")) {
+      createRadioInput(selection[i], i);
+    } else {
+      createInput(selection[i]);
+    }
+  }
+};
+
+// event listener selection 2
+document.getElementById("selecteur-2").addEventListener("change", event => {
+  if (devisSelected) {
+    generateOptions(formSelectionMap[event.currentTarget.value]);
+  }
+});
 })();
 
 /******/ })()
