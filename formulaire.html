@@ -25,48 +25,51 @@
         <div class="container-2">
             <div class="formulaire">
                 <h1>Formulaire de contact</h1>
-                <form action="">
+                <form id="formulaire">
 
                     <div class="inputs">
                         <span>
-                            <input type="text" name="firstname" id="firstname" class="firstname" placeholder="Nom">
-                            <input type="text" name="lastname" id="lastname" class="lastname" placeholder="Prenom">
+                            <input type="text" name="given-name" id="given-name" class="firstname" placeholder="Prénom"
+                                autocomplete="given-name">
+                            <input type="text" name="family-name" id="family-name" class="lastname" placeholder="Nom"
+                                autocomplete="family-name">
                         </span>
                         <input type="text" name="societe" id="societe" class="societe" placeholder="Société">
                     </div>
 
                     <div class="inputs">
-                        <input type="text" name="tel" id="tel" class="tel" placeholder="Telephone">
-                        <input type="text" name="mail" id="mail" class="mail" placeholder="Adresse mail">
+                        <input type="text" name="tel" id="tel" class="tel" placeholder="Telephone" autocomplete="tel">
+                        <input type="text" name="email" id="email" class="mail" placeholder="Adresse mail"
+                            autocomplete="email">
                     </div>
 
                     <div class="selects">
 
                         <span>
                             <!-- <label for="selecteur">De quoi s'agit-il ?</label> -->
-                            <select name="selecteur" id="selecteur-1">
+                            <select name="cette-personne-veut" id="selecteur-1">
                                 <option value="null">De quoi s'agit-il ?</option>
-                                <option>Poser une question</option>
-                                <option value="true">Demander un devis gratuit</option>
-                                <option>Autre</option>
+                                <option value="question">Poser une question</option>
+                                <option value="devis">Demander un devis gratuit</option>
+                                <option value="autre">Autre</option>
                             </select>
                         </span>
 
                         <span>
                             <!-- <label for="selecteur2">En rapport avec quel service ?</label> -->
-                            <select name="selecteur" id="selecteur-2">
-                                <option value="null">En rapport avec quel service ?</option>
-                                <option value="auditInformatique">Audit Informatique</option>
-                                <option value="infogerance">Infogerance</option>
-                                <option value="auditCybersecurite">Audit Cybersécurité</option>
-                                <option value="cloudComputing">Cloud Computing</option>
-                                <option value="maintenance">Maintenance Informatique</option>
-                                <option value="support">Support Informatique</option>
-                                <option value="siteInternet">Conception de site internet</option>
-                                <option value="venteNeuf">Vente de matériel neuf</option>
-                                <option value="venteReconditionné">Vente de matériel reconditionné</option>
-                                <option value="telephoneInternet">Téléphonie et Internet</option>
-                                <option value="autre">Autre</option>
+                            <select name="en-rapport-avec" id="selecteur-2">
+                                <option value="null" name="">En rapport avec quel service ?</option>
+                                <option value="auditInformatique" name="">Audit Informatique</option>
+                                <option value="auditCybersecurite" name="">Audit Cybersécurité</option>
+                                <option value="infogerance" name="">Infogerance</option>
+                                <option value="cloudComputing" name="">Cloud Computing</option>
+                                <option value="maintenance" name="">Maintenance Informatique</option>
+                                <option value="support" name="">Support Informatique</option>
+                                <option value="siteInternet" name="">Conception de site internet</option>
+                                <option value="venteNeuf" name="">Vente de matériel neuf</option>
+                                <option value="venteReconditionné" name="">Vente de matériel reconditionné</option>
+                                <option value="telephoneInternet" name="">Téléphonie et Internet</option>
+                                <option value="autre" name="">Autre</option>
                             </select>
                         </span>
 
@@ -79,7 +82,7 @@
                     <textarea type="text" name="message" id="message" class="message" placeholder="Message"></textarea>
 
                     <div class="check-box">
-                        <input type="checkbox" id="checkbox" checked>
+                        <input type="checkbox" name="audit-parc-informatique" id="checkbox" checked>
                         <label for="checkbox">Je souhaite un devis pour un audit de mon parc informatique</label>
                     </div>
 

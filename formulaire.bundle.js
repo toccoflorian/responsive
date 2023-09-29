@@ -1147,52 +1147,63 @@ const formSelectionMap = {
   auditInformatique: {
     1: {
       text: "Budget",
-      type: "number"
+      type: "number",
+      name: "Budget"
     },
     2: {
       text: "Nombre d'ordinateurs",
-      type: "number"
+      type: "number",
+      name: "Nombre-ordinateurs"
     },
     3: {
       text: "Nombre de serveurs",
-      type: "number"
+      type: "number",
+      name: "Nombre-serveurs"
     },
     4: {
       text: "Nombre de switchs",
-      type: "number"
+      type: "number",
+      name: "Nombre-switchs"
     }
   },
   auditCybersecurite: {
     1: {
       text: "Budget",
-      type: "number"
+      type: "number",
+      name: "Budget"
     },
     2: {
       text: "Tests d'intrusion",
-      type: "checkbox"
+      type: "checkbox",
+      name: "Tests-intrusion"
     },
     3: {
       text: "Audit de configuration",
-      type: "checkbox"
+      type: "checkbox",
+      name: "Audit-configuration"
     },
     4: {
       text: "Audit d'architecture",
-      type: "checkbox"
+      type: "checkbox",
+      name: "Audit-architecture"
     },
     5: {
       text: "Audit organnisationnel",
-      type: "checkbox"
+      type: "checkbox",
+      name: "Audit-organnisationnel"
     },
     6: {
       text: "Audit de code source",
-      type: "checkbox"
+      type: "checkbox",
+      name: "Audit-code-source"
     }
   },
   cloudComputing: {},
   infogerance: {
     1: {
       text: "Budget",
-      type: "number"
+      type: "number",
+      name: "Budget"
     },
     choice_1: {
       1: "Conception de parc informatique de A à Z",
@@ -1206,19 +1217,23 @@ const formSelectionMap = {
   maintenance: {
     1: {
       text: "Budget",
-      type: "number"
+      type: "number",
+      name: "Budget"
     },
     2: {
       text: "Nombre d'ordinateurs",
-      type: "number"
+      type: "number",
+      name: "Nombre-ordinateurs"
     },
     3: {
       text: "Nombre de serveurs",
-      type: "number"
+      type: "number",
+      name: "Nombre-serveurs"
     },
     4: {
       text: "Nombre de switchs",
-      type: "number"
+      type: "number",
+      name: "Nombre-switchs"
     }
   },
   support: {
@@ -1231,35 +1246,66 @@ const formSelectionMap = {
   venteNeuf: {
     1: {
       text: "Budget",
-      type: "number"
+      type: "number",
+      name: "Budget"
     },
     2: {
-      text: "Windows",
-      type: "checkbox"
+      text: "Avec support et maintenance",
+      type: "checkbox",
+      name: "support-maintenance"
     },
     3: {
-      text: "MacOs",
-      type: "checkbox"
+      text: "Windows",
+      type: "checkbox",
+      name: "Windows"
+    },
+    4: {
+      text: "MacOS",
+      type: "checkbox",
+      name: "MacOS"
     },
     choice: {
       1: "Prêt à être livré",
       2: "Sur mesure"
     },
-    4: {
-      text: "Avec support et maintenance",
-      type: "checkbox"
+    5: {
+      text: "Nombre d'ordinateurs Windows",
+      type: "number",
+      name: "Nombre-Windows"
+    },
+    6: {
+      text: "Nombre d'ordinateurs MacOS",
+      type: "number",
+      name: "Nombre-MacOS"
     }
   },
   venteReconditionné: {
     1: {
-      text: "Nombre d'ordinateurs",
-      type: "number"
+      text: "Lenovo",
+      type: "checkbox",
+      name: "Lenovo"
+    },
+    2: {
+      text: "HP",
+      type: "checkbox",
+      name: "HP"
+    },
+    3: {
+      text: "Nombre d'ordinateurs Lenovo",
+      type: "number",
+      name: "Nombre-Lenovo"
+    },
+    4: {
+      text: "Nombre d'ordinateurs HP",
+      type: "number",
+      name: "Nombre-HP"
     }
   },
   telephoneInternet: {
     1: {
       text: "Budget",
-      type: "number"
+      type: "number",
+      name: "Budget"
     },
     choice: {
       1: "ADSL",
@@ -1267,31 +1313,22 @@ const formSelectionMap = {
     },
     2: {
       text: "Demande d'audit de la téléphonie et d'internet",
-      type: "checkbox"
+      type: "checkbox",
+      name: "audit-téléphonie-internet"
     }
   },
   autre: {}
 };
 let devisSelected = null;
-
-// event listener selection 1
-document.getElementById("selecteur-1").addEventListener("change", event => {
-  if (event.currentTarget.value === 'true') {
-    if (devisSelected === false) {
-      generateOptions(formSelectionMap[document.getElementById("selecteur-2").value]);
-    }
-    devisSelected = true;
-  } else {
-    devisSelected = false;
-    document.getElementById("form-options").innerHTML = null;
-  }
-});
+let idNum = 1;
+const inputsId = "formulaireInput-";
 
 // fonction
 const createInput = element => {
   const input = document.createElement("input");
-  input.id = element.text.split(" ")[0];
+  input.id = inputsId + idNum;
   input.type = element.type;
+  input.name = element.name;
   const label = document.createElement("label");
   label.htmlFor = input.id;
   label.textContent = element.text;
@@ -1307,12 +1344,15 @@ const createInput = element => {
 const createRadioInput = (element, name) => {
   const input = document.createElement("input");
   const input2 = document.createElement("input");
-  input.id = element[1].split(" ")[0];
-  input2.id = element[2].split(" ")[0];
+  input.id = inputsId + idNum;
+  idNum++;
+  input2.id = inputsId + idNum;
   input.type = "radio";
   input2.type = "radio";
   input.name = name;
   input2.name = name;
+  input.value = element[1];
+  input2.value = element[2];
   const label = document.createElement("label");
   const label2 = document.createElement("label");
   label.htmlFor = input.id;
@@ -1333,17 +1373,40 @@ const generateOptions = selection => {
   for (const i in selection) {
     if (i.includes("choice")) {
       createRadioInput(selection[i], i);
+      idNum++;
     } else {
       createInput(selection[i]);
+      idNum++;
     }
   }
 };
+
+// event listener selection 1
+document.getElementById("selecteur-1").addEventListener("change", event => {
+  if (event.currentTarget.value === 'devis') {
+    if (devisSelected === false) {
+      generateOptions(formSelectionMap[document.getElementById("selecteur-2").value]);
+    }
+    devisSelected = true;
+  } else {
+    devisSelected = false;
+    document.getElementById("form-options").innerHTML = null;
+  }
+});
 
 // event listener selection 2
 document.getElementById("selecteur-2").addEventListener("change", event => {
   if (devisSelected) {
     generateOptions(formSelectionMap[event.currentTarget.value]);
   }
+});
+document.getElementById("formulaire-submit-button").addEventListener("click", event => {
+  const formData = new FormData(document.getElementById("formulaire"));
+  const promise = fetch("http://164.132.229.216:100/", {
+    method: "POST",
+    body: formData
+  });
+  promise.then(response => response.json()).then(value => console.log(value.message)).catch(reasson => console.log(reasson));
 });
 })();
 
