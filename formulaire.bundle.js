@@ -1402,11 +1402,15 @@ document.getElementById("selecteur-2").addEventListener("change", event => {
 });
 document.getElementById("formulaire-submit-button").addEventListener("click", event => {
   const formData = new FormData(document.getElementById("formulaire"));
-  const promise = fetch("http://164.132.229.216:6600/", {
-    method: "POST",
-    body: formData
-  });
-  promise.then(response => response.json()).then(value => console.log(value.message)).catch(reasson => console.log(reasson));
+  try {
+    fetch("http://164.132.229.216:6600/", {
+      method: "POST",
+      body: formData
+    });
+    console.log("SUCCES");
+  } catch {
+    console.log("ECHOUER");
+  }
 });
 })();
 
