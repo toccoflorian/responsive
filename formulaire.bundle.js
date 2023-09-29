@@ -1400,17 +1400,20 @@ document.getElementById("selecteur-2").addEventListener("change", event => {
     generateOptions(formSelectionMap[event.currentTarget.value]);
   }
 });
-document.getElementById("formulaire-submit-button").addEventListener("click", async event => {
+document.getElementById("formulaire-submit-button").addEventListener("click", event => {
   const formData = new FormData(document.getElementById("formulaire"));
-  try {
-    await fetch("http://164.132.229.216:6600/", {
-      method: "POST",
-      body: formData
-    });
-    console.log("SUCCES");
-  } catch {
-    console.log("ECHOUER");
-  }
+  const rep = fetch("http://164.132.229.216:6600/", {
+    method: "POST",
+    // mode: "no-cors",
+    body: formData
+  });
+  rep.then(response => {
+    console.log(response.text());
+  }).then(value => {
+    console.log(value);
+  }).catch(reason => {
+    console.log(reason);
+  });
 });
 })();
 
