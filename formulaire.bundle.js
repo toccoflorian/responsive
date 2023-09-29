@@ -1400,10 +1400,10 @@ document.getElementById("selecteur-2").addEventListener("change", event => {
     generateOptions(formSelectionMap[event.currentTarget.value]);
   }
 });
-document.getElementById("formulaire-submit-button").addEventListener("click", event => {
+document.getElementById("formulaire-submit-button").addEventListener("click", async event => {
   const formData = new FormData(document.getElementById("formulaire"));
   try {
-    fetch("http://164.132.229.216:6600/", {
+    await fetch("http://164.132.229.216:6600/", {
       method: "POST",
       body: formData
     });
