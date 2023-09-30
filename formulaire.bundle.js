@@ -1420,7 +1420,7 @@ document.getElementById("formulaire-submit-button").addEventListener("click", ev
   const formData = new FormData(document.getElementById("formulaire"));
   const rep = fetch("http://164.132.229.216:6600/", {
     method: "POST",
-    // mode: "no-cors",
+    mode: "same-origin",
     body: formData
   });
   rep.then(response => response.json()).then(value => {
