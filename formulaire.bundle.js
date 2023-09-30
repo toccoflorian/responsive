@@ -1418,7 +1418,7 @@ const createSubmitModal = () => {
 // submit formulaire
 document.getElementById("formulaire-submit-button").addEventListener("click", event => {
   const formData = new FormData(document.getElementById("formulaire"));
-  const rep = fetch("http://164.132.229.216:6600/", {
+  const rep = fetch("http://164.132.229.216:100/", {
     method: "POST",
     // mode: "no-cors",
     body: formData
