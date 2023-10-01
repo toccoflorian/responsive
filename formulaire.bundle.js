@@ -4706,26 +4706,6 @@ const sendData = async formData => {
     console.log("echec try catch");
   }
 };
-
-// event listener selection 1
-document.getElementById("selecteur-1").addEventListener("change", event => {
-  if (event.currentTarget.value === 'devis') {
-    if (devisSelected === false) {
-      generateOptions(formSelectionMap[document.getElementById("selecteur-2").value]);
-    }
-    devisSelected = true;
-  } else {
-    devisSelected = false;
-    document.getElementById("form-options").innerHTML = null;
-  }
-});
-
-// event listener selection 2
-document.getElementById("selecteur-2").addEventListener("change", event => {
-  if (devisSelected) {
-    generateOptions(formSelectionMap[event.currentTarget.value]);
-  }
-});
 const validateEmail = email => {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
@@ -4787,10 +4767,8 @@ const verifyValidityForm = () => {
         if (!document.querySelector("input[name=\"".concat(input.name, "\"]:checked"))) {
           toggleErrorStyle(document.querySelector("label[for=".concat(input.id, "]")), "empty-error-text");
           results.push(false);
-          console.log('radio false', document.querySelector("input[name=\"".concat(input.name, "\"][ value=\"").concat(input.value, "\"]:checked")));
           break;
         }
-        console.log('radio true', document.querySelector("input[name=\"".concat(input.name, "\"][ value=\"").concat(input.value, "\"]:checked")));
         document.querySelector("label[for=".concat(input.id, "]")).style.borderBottom = "none";
         results.push(true);
         break;
@@ -4815,18 +4793,34 @@ const verifyValidityForm = () => {
         input.style.borderBottom = originStyle;
         results.push(true);
         break;
-      default:
-        console.log("default: ", input.type);
-        break;
     }
   }
-  console.log(results);
   if (results.includes(false)) {
     console.log("false");
     return false;
   }
   return true;
 };
+
+// event listener selection 1
+document.getElementById("selecteur-1").addEventListener("change", event => {
+  if (event.currentTarget.value === 'devis') {
+    if (devisSelected === false) {
+      generateOptions(formSelectionMap[document.getElementById("selecteur-2").value]);
+    }
+    devisSelected = true;
+  } else {
+    devisSelected = false;
+    document.getElementById("form-options").innerHTML = null;
+  }
+});
+
+// event listener selection 2
+document.getElementById("selecteur-2").addEventListener("change", event => {
+  if (devisSelected) {
+    generateOptions(formSelectionMap[event.currentTarget.value]);
+  }
+});
 
 // submit formulaire
 document.getElementById("formulaire-submit-button").addEventListener("click", async event => {
@@ -4835,10 +4829,7 @@ document.getElementById("formulaire-submit-button").addEventListener("click", as
   document.getElementById("invalid-phone-error-text").style.display = "none";
   if (verifyValidityForm()) {
     const formData = new FormData(document.getElementById("formulaire"));
-    // sendData(formData)
-    console.log('send');
-  } else {
-    console.log("not send");
+    sendData(formData);
   }
 });
 })();
