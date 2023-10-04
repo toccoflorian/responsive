@@ -90,7 +90,7 @@ const addListener = (button, fiches) => {
     button.addEventListener("click", event => {
         const fiche = fiches[button.id].fiche;
         document.getElementById("fiche-container").innerHTML = null;
-        document.getElementById("fiche-container").innerHTML = `<h2>${fiches[button.id]["client"]} le ${fiches[button.id]["date"]} à ${fiches[button.id]["heure"]}</h2> <br><br>`
+        document.getElementById("fiche-container").innerHTML = `<h2>${fiches[button.id]["client"].replace("-", " ")} le ${fiches[button.id]["date"]} à ${fiches[button.id]["heure"]}</h2> <br><br>`
         for (const key in fiche) {
             document.getElementById("fiche-container").innerHTML += "<p>" + key + ": <br><span style='color:blue'>" + fiche[key] + "</span></p>";
         }
