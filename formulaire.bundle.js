@@ -4686,7 +4686,7 @@ const createSubmitModal = succes => {
 };
 const sendData = async formData => {
   try {
-    await fetch("http://127.0.0.1:6601/", {
+    await fetch("http://164.132.229.216:6601/", {
       method: "POST",
       // mode: "no-cors",
       body: formData
