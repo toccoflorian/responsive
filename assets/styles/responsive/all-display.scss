@@ -233,7 +233,10 @@
 
         // content
         .content {
-
+            padding: 0 2.5%;
+            max-width: 2000px;
+            margin-right: auto;
+            margin-left: auto;
 
             // titres
             h1,
@@ -297,6 +300,10 @@
             li {
                 color: var(--text-color-primary);
 
+            }
+
+            a {
+                text-decoration: none;
             }
 
             ul {

@@ -37,12 +37,224 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 /* Portrait tablet to landscape and desktop */
 /* desktop */
 /* Large desktop */
-.content section {
-  display: flex;
+/* Large desktop */
+@media (min-width: 1200px) {
+  .content section {
+    display: flex;
+  }
+  .content section .div-text {
+    flex: 6;
+    padding: 0 2rem;
+  }
+  .content section .div-text h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .content section .div-text h3 {
+    padding-top: 8rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+  .content section .div-text p {
+    margin: 2rem;
+    text-align: left;
+  }
+  .content section .div-text li p span {
+    font-weight: 800;
+  }
+  .content section.section-1 {
+    margin-top: 7rem;
+  }
+  .content section.section-1 .span-image {
+    flex: 4;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/cover;
+  }
+  .content section.section-2 .span-image {
+    flex: 4;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) center/cover;
+  }
+  .content section.section-3 .div-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .content section.section-3 .div-text .span-image-2 {
+    height: 200px;
+    width: 100%;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) center no-repeat;
+    background-size: contain;
+  }
+  .content section.section-3 .span-image {
+    flex: 4;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_3___}) center/cover;
+  }
 }
-.content section .div-text {
-  flex: 6;
-  padding: 0 2rem;
+/*  desktop */
+@media (min-width: 980px) and (max-width: 1199.9px) {
+  .content section {
+    display: flex;
+  }
+  .content section .div-text {
+    flex: 6;
+    padding: 0 2rem;
+  }
+  .content section .div-text h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .content section .div-text h3 {
+    padding-top: 8rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+  .content section .div-text p {
+    margin: 2rem;
+    text-align: left;
+  }
+  .content section .div-text li p span {
+    font-weight: 800;
+  }
+  .content section.section-1 {
+    margin-top: 7rem;
+  }
+  .content section.section-1 .span-image {
+    flex: 4;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/cover;
+  }
+  .content section.section-2 .span-image {
+    flex: 4;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) center/cover;
+  }
+  .content section.section-3 .div-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .content section.section-3 .div-text .span-image-2 {
+    height: 200px;
+    width: 100%;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) center no-repeat;
+    background-size: contain;
+  }
+  .content section.section-3 .span-image {
+    flex: 4;
+    background: url(${___CSS_LOADER_URL_REPLACEMENT_3___}) center/cover;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979.9px) {
+  .content section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content section .div-text {
+    padding: 0 1rem;
+  }
+  .content section .div-text h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .content section .div-text h3 {
+    padding-top: 8rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+  .content section .div-text p {
+    margin: 35px 0;
+    text-align: center;
+  }
+  .content section .div-text li p {
+    text-align: left;
+  }
+  .content section .div-text li p span {
+    font-weight: 800;
+  }
+  .content section .span-image {
+    height: 375px;
+    width: 100%;
+    display: block;
+    margin-bottom: 60px;
+  }
+  .content section.section-3 .div-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767.9px) {
+  .content section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content section .div-text {
+    padding: 0 1rem;
+  }
+  .content section .div-text h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .content section .div-text h3 {
+    padding-top: 8rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+  .content section .div-text p {
+    margin: 35px 0;
+    text-align: center;
+  }
+  .content section .div-text li p {
+    text-align: left;
+  }
+  .content section .div-text li p span {
+    font-weight: 800;
+  }
+  .content section .span-image {
+    height: 375px;
+    width: 100%;
+    display: block;
+    margin-bottom: 60px;
+  }
+  .content section.section-3 .div-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* portrait phones and down */
+@media (max-width: 480.9px) {
+  .content section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content section .div-text {
+    padding: 0 1rem;
+  }
+  .content section .div-text h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  .content section .div-text h3 {
+    padding-top: 8rem;
+    margin-top: -4rem;
+    text-align: center;
+  }
+  .content section .div-text p {
+    margin: 25px 0;
+    text-align: center;
+  }
+  .content section .div-text li p {
+    text-align: left;
+  }
+  .content section .div-text li p span {
+    font-weight: 800;
+  }
+  .content section .span-image {
+    height: 300px;
+    width: 100%;
+    display: block;
+    margin-bottom: 60px;
+  }
+  .content section.section-3 .div-text {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .content section .div-text h2 {
   margin-top: 0;
@@ -53,25 +265,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   margin-top: -4rem;
   text-align: center;
 }
-.content section .div-text p {
-  margin: 2rem;
-  text-align: left;
-}
 .content section .div-text li p span {
   font-weight: 800;
 }
-.content section .span-image {
-  border-radius: 3px;
-}
-.content section.section-1 {
-  margin-top: 7rem;
-}
 .content section.section-1 .span-image {
-  flex: 4;
   background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/cover;
 }
 .content section.section-2 .span-image {
-  flex: 4;
   background: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) center/cover;
 }
 .content section.section-3 .div-text {
@@ -85,9 +285,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
   background-size: contain;
 }
 .content section.section-3 .span-image {
-  flex: 4;
   background: url(${___CSS_LOADER_URL_REPLACEMENT_3___}) center/cover;
-}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_services/cybersecurite/cybersecurite.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;ACKI;EACI,aAAA;AA3BR;AA6BQ;EACI,OAAA;EACA,eAAA;AA3BZ;AA6BY;EACI,aAAA;EACA,kBAAA;AA3BhB;AA8BY;EACI,iBAAA;EACA,iBAAA;EACA,kBAAA;AA5BhB;AA+BY;EACI,YAAA;EACA,gBAAA;AA7BhB;AAkCgB;EACI,gBAAA;AAhCpB;AAuCQ;EACI,kBAAA;AArCZ;AAwCQ;EACI,gBAAA;AAtCZ;AAwCY;EAEI,OAAA;EACA,gEAAA;AAvChB;AA6CY;EAEI,OAAA;EACA,gEAAA;AA5ChB;AAkDY;EACI,aAAA;EACA,sBAAA;AAhDhB;AAkDgB;EACI,aAAA;EACA,WAAA;EACA,oEAAA;EACA,wBAAA;AAhDpB;AAoDY;EAEI,OAAA;EACA,gEAAA;AAnDhB","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n// /* Large desktop */\r\n// @include MQueries.xl {\r\n//     @import \"./responsive/xl\";\r\n// }\r\n\r\n\r\n// /*  desktop */\r\n// @include MQueries.standard {\r\n//     @import \"./responsive/standard\";\r\n// }\r\n\r\n\r\n// /* Portrait tablet to landscape and desktop */\r\n// @include MQueries.md {\r\n//     @import \"./responsive/md\";\r\n// }\r\n\r\n\r\n// /* Landscape phone to portrait tablet */\r\n// @include MQueries.sm {\r\n//     @import \"./responsive/sm\";\r\n// }\r\n\r\n\r\n// /* portrait phones and down */\r\n// @include MQueries.xs {\r\n//     @import \"./responsive/xs\";\r\n// }\r\n\r\n.content {\r\n    section {\r\n        display: flex;\r\n\r\n        .div-text {\r\n            flex: 6;\r\n            padding: 0 2rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 2rem;\r\n                text-align: left;\r\n            }\r\n\r\n            li p {\r\n\r\n                span {\r\n                    font-weight: 800;\r\n\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {\r\n            border-radius: 3px;\r\n        }\r\n\r\n        &.section-1 {\r\n            margin-top: 7rem;\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-nzx3rv.jpg') center/cover;\r\n            }\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-45y5k7.png') center/cover;\r\n\r\n            }\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    height: 200px;\r\n                    width: 100%;\r\n                    background: url('../../../../assets/images/visa.png')center no-repeat;\r\n                    background-size: contain;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-47615v.png') center/cover;\r\n\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_services/cybersecurite/cybersecurite.scss","webpack://./src/pages/nos_services/cybersecurite/responsive/_xl.scss","webpack://./src/pages/nos_services/cybersecurite/responsive/_standard.scss","webpack://./src/pages/nos_services/cybersecurite/responsive/_md.scss","webpack://./src/pages/nos_services/cybersecurite/responsive/_sm.scss","webpack://./src/pages/nos_services/cybersecurite/responsive/_xs.scss"],"names":[],"mappings":"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","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n.content {\r\n    section {\r\n\r\n        .div-text {\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {}\r\n\r\n            li p {\r\n\r\n                span {\r\n                    font-weight: 800;\r\n\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {}\r\n\r\n        &.section-1 {\r\n\r\n            .span-image {\r\n\r\n                background: url('../../../../assets/images/wallhaven-nzx3rv.jpg') center/cover;\r\n            }\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {\r\n\r\n                background: url('../../../../assets/images/wallhaven-45y5k7.png') center/cover;\r\n\r\n            }\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    height: 200px;\r\n                    width: 100%;\r\n                    background: url('../../../../assets/images/visa.png')center no-repeat;\r\n                    background-size: contain;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n\r\n                background: url('../../../../assets/images/wallhaven-47615v.png') center/cover;\r\n\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    section {\r\n        display: flex;\r\n\r\n        .div-text {\r\n            flex: 6;\r\n            padding: 0 2rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 2rem;\r\n                text-align: left;\r\n            }\r\n\r\n            li p {\r\n\r\n                span {\r\n                    font-weight: 800;\r\n\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {}\r\n\r\n        &.section-1 {\r\n            margin-top: 7rem;\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-nzx3rv.jpg') center/cover;\r\n            }\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-45y5k7.png') center/cover;\r\n\r\n            }\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    height: 200px;\r\n                    width: 100%;\r\n                    background: url('../../../../assets/images/visa.png')center no-repeat;\r\n                    background-size: contain;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-47615v.png') center/cover;\r\n\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    section {\r\n        display: flex;\r\n\r\n        .div-text {\r\n            flex: 6;\r\n            padding: 0 2rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 2rem;\r\n                text-align: left;\r\n            }\r\n\r\n            li p {\r\n\r\n                span {\r\n                    font-weight: 800;\r\n\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {}\r\n\r\n        &.section-1 {\r\n            margin-top: 7rem;\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-nzx3rv.jpg') center/cover;\r\n            }\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-45y5k7.png') center/cover;\r\n\r\n            }\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    height: 200px;\r\n                    width: 100%;\r\n                    background: url('../../../../assets/images/visa.png')center no-repeat;\r\n                    background-size: contain;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n\r\n                flex: 4;\r\n                background: url('../../../../assets/images/wallhaven-47615v.png') center/cover;\r\n\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    section {\r\n        display: flex;\r\n        flex-direction: column-reverse;\r\n\r\n        .div-text {\r\n            padding: 0 1rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 35px 0;\r\n                text-align: center;\r\n            }\r\n\r\n            li p {\r\n                text-align: left;\r\n\r\n                span {\r\n                    font-weight: 800;\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {\r\n            height: 375px;\r\n            width: 100%;\r\n            display: block;\r\n            margin-bottom: 60px;\r\n        }\r\n\r\n        &.section-1 {\r\n            // margin-top: 7rem;\r\n\r\n            .span-image {}\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {}\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    // height: 200px;\r\n                    // width: 100%;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n}",".content {\r\n    section {\r\n        display: flex;\r\n        flex-direction: column-reverse;\r\n\r\n        .div-text {\r\n            padding: 0 1rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 35px 0;\r\n                text-align: center;\r\n            }\r\n\r\n            li p {\r\n                text-align: left;\r\n\r\n                span {\r\n                    font-weight: 800;\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {\r\n            height: 375px;\r\n            width: 100%;\r\n            display: block;\r\n            margin-bottom: 60px;\r\n        }\r\n\r\n        &.section-1 {\r\n            // margin-top: 7rem;\r\n\r\n            .span-image {}\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {}\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    // height: 200px;\r\n                    // width: 100%;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n}",".content {\r\n    section {\r\n        display: flex;\r\n        flex-direction: column-reverse;\r\n\r\n        .div-text {\r\n            padding: 0 1rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                text-align: center;\r\n            }\r\n\r\n            h3 {\r\n                padding-top: 8rem;\r\n                margin-top: -4rem;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                margin: 25px 0;\r\n                text-align: center;\r\n            }\r\n\r\n            li p {\r\n                text-align: left;\r\n\r\n                span {\r\n                    font-weight: 800;\r\n                }\r\n            }\r\n\r\n        }\r\n\r\n        .span-image {\r\n            height: 300px;\r\n            width: 100%;\r\n            display: block;\r\n            margin-bottom: 60px;\r\n        }\r\n\r\n        &.section-1 {\r\n\r\n            // margin-top: 7rem;\r\n            .span-text {}\r\n\r\n            .span-image {}\r\n        }\r\n\r\n        &.section-2 {\r\n\r\n            .span-image {}\r\n        }\r\n\r\n        &.section-3 {\r\n            .div-text {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                .span-image-2 {\r\n                    // height: 200px;\r\n                    // width: 100%;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

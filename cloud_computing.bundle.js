@@ -35,9 +35,120 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 /* Portrait tablet to landscape and desktop */
 /* desktop */
 /* Large desktop */
-.content section .span-image,
-.content section .span-text {
-  flex: 1;
+/* Large desktop */
+@media (min-width: 1200px) {
+  .content section .container-1 p {
+    width: 52.5%;
+    border-left: 1px solid var(--blue-primary);
+    text-align: left;
+    padding-left: 2.5%;
+  }
+  .content .container-2 .span-image,
+  .content .container-2 .span-text {
+    flex: 1;
+  }
+}
+/*  desktop */
+@media (min-width: 980px) and (max-width: 1199.9px) {
+  .content section .container-1 p {
+    width: 52.5%;
+    border-left: 1px solid var(--blue-primary);
+    text-align: left;
+    padding-left: 2.5%;
+  }
+  .content section .container-2 {
+    display: flex;
+  }
+  .content section .container-2 .span-image,
+  .content section .container-2 .span-text {
+    flex: 1;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979.9px) {
+  .content h1 {
+    font-size: 35px;
+    margin-bottom: 80px;
+  }
+  .content section .container-1 p {
+    width: 95%;
+    border-left: 1px solid var(--blue-primary);
+    text-align: center;
+    padding-left: 15px;
+  }
+  .content section .container-2 {
+    flex-direction: column;
+  }
+  .content section .container-2 .span-image {
+    height: 300px;
+    margin-bottom: 25px;
+  }
+  .content section .container-2 .span-text {
+    margin-bottom: 25px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767.9px) {
+  .content h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .content section .container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content section .container-1 p {
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    padding-top: 25px;
+    text-align: center;
+  }
+  .content section .container-2 {
+    flex-direction: column;
+  }
+  .content section .container-2 .span-image {
+    height: 300px;
+    margin-bottom: 25px;
+  }
+  .content section .container-2 .span-text {
+    margin-bottom: 25px;
+  }
+}
+/* portrait phones and down */
+@media (max-width: 480.9px) {
+  .content h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .content section .container-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content section .container-1 p {
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    padding-top: 25px;
+    text-align: center;
+  }
+  .content section .container-2 {
+    flex-direction: column;
+  }
+  .content section .container-2 .span-image {
+    height: 200px;
+    margin-bottom: 25px;
+  }
+  .content section .container-2 .span-text {
+    margin-bottom: 25px;
+  }
+}
+.content section h2 {
+  text-align: center;
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content section .span-text p:first-child {
+  margin-top: 0;
 }
 .content section .span-text * {
   padding: 0 1rem;
@@ -46,6 +157,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 .content section .span-text * .blue-word {
   margin: 1rem -1rem;
   padding: 0;
+}
+.content .section-2 h2,
+.content .section-3 h2 {
+  margin-bottom: 80px;
 }
 .content .section-1 div,
 .content .section-2 div,
@@ -68,15 +183,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 .content .section-2 .container-1 p,
 .content .section-3 .container-1 p {
   box-sizing: border-box;
-  width: 50%;
-  border-left: 1px solid var(--blue-primary);
-  padding-left: 1rem;
-  text-align: left;
 }
 .content .section-1 .container-2 .span-text p,
 .content .section-2 .container-2 .span-text p,
 .content .section-3 .container-2 .span-text p {
   text-align: left;
+}
+.content .section-1 .container-2 .span-text ul li .blue-word,
+.content .section-2 .container-2 .span-text ul li .blue-word,
+.content .section-3 .container-2 .span-text ul li .blue-word {
+  padding-left: 16px;
+}
+.content .section-1 .container-2 .span-text ul li p,
+.content .section-2 .container-2 .span-text ul li p,
+.content .section-3 .container-2 .span-text ul li p {
+  padding-left: 16px;
 }
 .content .section-1 .span-image {
   background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/cover;
@@ -90,9 +211,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
 .content .section-2 .container-2 .span-image {
   background: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) center/cover;
 }
+.content .section-3 {
+  margin-bottom: 100px;
+}
 .content .section-3 .span-image {
   background: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) center/cover;
-}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_services/cloud_computing/cloud_computing.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;ACSQ;;EAEI,OAAA;AA/BZ;AAkCQ;EACI,eAAA;EACA,cAAA;AAhCZ;AAkCY;EACI,kBAAA;EACA,UAAA;AAhChB;AAyCQ;;;EACI,aAAA;AArCZ;AAwCQ;;;EACI,mBAAA;AApCZ;AAsCY;;;EACI,aAAA;EACA,UAAA;EACA,kBAAA;AAlChB;AAqCY;;;EACI,sBAAA;EACA,UAAA;EACA,0CAAA;EACA,kBAAA;EACA,gBAAA;AAjChB;AAuCgB;;;EACI,gBAAA;AAnCpB;AA2CQ;EACI,gEAAA;AAzCZ;AAiDgB;EACI,kBAAA;AA/CpB;AAkDgB;EACI,gBAAA;AAhDpB;AAoDY;EACI,gEAAA;AAlDhB;AAyDQ;EACI,gEAAA;AAvDZ","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n// /* Large desktop */\r\n// @include MQueries.xl {\r\n//     @import \"./responsive/xl\";\r\n// }\r\n\r\n\r\n// /*  desktop */\r\n// @include MQueries.standard {\r\n//     @import \"./responsive/standard\";\r\n// }\r\n\r\n\r\n// /* Portrait tablet to landscape and desktop */\r\n// @include MQueries.md {\r\n//     @import \"./responsive/md\";\r\n// }\r\n\r\n\r\n// /* Landscape phone to portrait tablet */\r\n// @include MQueries.sm {\r\n//     @import \"./responsive/sm\";\r\n// }\r\n\r\n\r\n// /* portrait phones and down */\r\n// @include MQueries.xs {\r\n//     @import \"./responsive/xs\";\r\n// }\r\n\r\n.content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1,\r\n    .section-2,\r\n    .section-3 {\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-0jw8g5-768x480.jpg') center/cover;\r\n        }\r\n    }\r\n\r\n    // section-2\r\n    .section-2 {\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n                background: url('../../../../assets/images/lignes_rouges.jpg') center/cover;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 3\r\n    .section-3 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-k7d7xm.jpg') center/cover;\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_services/cloud_computing/cloud_computing.scss","webpack://./src/pages/nos_services/cloud_computing/responsive/_xl.scss","webpack://./src/pages/nos_services/cloud_computing/responsive/_standard.scss","webpack://./src/pages/nos_services/cloud_computing/responsive/_md.scss","webpack://./src/pages/nos_services/cloud_computing/responsive/_sm.scss","webpack://./src/pages/nos_services/cloud_computing/responsive/_xs.scss"],"names":[],"mappings":"AAAA,6BAAA;AAOA,uCAAA;AAOA,6CAAA;AAOA,YAAA;AAOA,kBAAA;ACzBA,kBAAA;AD2BI;EEvBQ;IACI,YAAA;IACA,0CAAA;IACA,gBAAA;IACA,kBAAA;EDCd;ECMM;;IAEI,OAAA;EDJV;AACF;AARA,aAAA;ADcI;EGhBQ;IACI,YAAA;IACA,0CAAA;IACA,gBAAA;IACA,kBAAA;EFcd;EEVM;IACI,aAAA;EFYV;EEVU;;IAEI,OAAA;EFYd;AACF;AAlBA,6CAAA;ADCI;EIfA;IACI,eAAA;IACA,mBAAA;EHoCN;EG7BU;IACI,UAAA;IACA,0CAAA;IACA,kBAAA;IACA,kBAAA;EH+Bd;EG3BM;IACI,sBAAA;EH6BV;EG3BU;IACI,aAAA;IACA,mBAAA;EH6Bd;EG1BU;IACI,mBAAA;EH4Bd;AACF;AAnCA,uCAAA;ADZI;EKRA;IACI,eAAA;IACA,mBAAA;EJ2DN;EItDM;IACI,sBAAA;IACA,mBAAA;EJwDV;EItDU;IACI,UAAA;IACA,yCAAA;IACA,iBAAA;IACA,kBAAA;EJwDd;EIpDM;IACI,sBAAA;EJsDV;EIpDU;IACI,aAAA;IACA,mBAAA;EJsDd;EInDU;IACI,mBAAA;EJqDd;AACF;AAxDA,6BAAA;ADzBI;EMDA;IACI,eAAA;IACA,mBAAA;ELsFN;EKjFM;IACI,sBAAA;IACA,mBAAA;ELmFV;EKjFU;IACI,UAAA;IACA,yCAAA;IACA,iBAAA;IACA,kBAAA;ELmFd;EK/EM;IACI,sBAAA;ELiFV;EK/EU;IACI,aAAA;IACA,mBAAA;ELiFd;EK9EU;IACI,mBAAA;ELgFd;AACF;AAlEQ;EACI,kBAAA;EACA,cAAA;EACA,iBAAA;EACA,kBAAA;AAoEZ;AAhEQ;EACI,aAAA;AAkEZ;AA/DQ;EACI,eAAA;EACA,cAAA;AAiEZ;AA/DY;EACI,kBAAA;EACA,UAAA;AAiEhB;AA1DQ;;EACI,mBAAA;AA6DZ;AArDQ;;;EACI,aAAA;AAyDZ;AAtDQ;;;EACI,mBAAA;AA0DZ;AAxDY;;;EACI,aAAA;EACA,UAAA;EACA,kBAAA;AA4DhB;AAzDY;;;EACI,sBAAA;AA6DhB;AApDgB;;;EACI,gBAAA;AAwDpB;AAnDwB;;;EACI,kBAAA;AAuD5B;AApDwB;;;EACI,kBAAA;AAwD5B;AA7CQ;EACI,gEAAA;AA+CZ;AAvCgB;EACI,kBAAA;AAyCpB;AAtCgB;EACI,gBAAA;AAwCpB;AApCY;EACI,gEAAA;AAsChB;AAhCI;EACI,oBAAA;AAkCR;AAhCQ;EACI,gEAAA;AAkCZ","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n.content {\r\n\r\n\r\n    h1 {}\r\n\r\n    // & p {\r\n    //     font-size: 1.25rem;\r\n    // }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        h2 {\r\n            text-align: center;\r\n            max-width: 65%;\r\n            margin-left: auto;\r\n            margin-right: auto;\r\n        }\r\n\r\n\r\n        .span-text p:first-child {\r\n            margin-top: 0;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-2,\r\n    .section-3 {\r\n        h2 {\r\n            margin-bottom: 80px;\r\n        }\r\n    }\r\n\r\n    .section-1,\r\n    .section-2,\r\n    .section-3 {\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {}\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n\r\n                ul {\r\n                    li {\r\n                        .blue-word {\r\n                            padding-left: 16px;\r\n                        }\r\n\r\n                        p {\r\n                            padding-left: 16px;\r\n\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-0jw8g5-768x480.jpg') center/cover;\r\n        }\r\n    }\r\n\r\n    // section-2\r\n    .section-2 {\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n\r\n            .span-image {\r\n                background: url('../../../../assets/images/lignes_rouges.jpg') center/cover;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 3\r\n    .section-3 {\r\n        margin-bottom: 100px;\r\n\r\n        .span-image {\r\n            background: url('../../../../assets/images/wallhaven-k7d7xm.jpg') center/cover;\r\n        }\r\n    }\r\n\r\n}",".content {\r\n    h1 {}\r\n\r\n    section {\r\n\r\n        .container-1 {\r\n\r\n            p {\r\n                width: 52.5%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                text-align: left;\r\n                padding-left: 2.5%;\r\n            }\r\n        }\r\n    }\r\n\r\n    .container-2 {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n\r\n        }\r\n\r\n    }\r\n}",".content {\r\n    h1 {}\r\n\r\n    section {\r\n\r\n        .container-1 {\r\n\r\n            p {\r\n                width: 52.5%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                text-align: left;\r\n                padding-left: 2.5%;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            display: flex;\r\n\r\n            .span-image,\r\n            .span-text {\r\n                flex: 1;\r\n\r\n            }\r\n\r\n        }\r\n    }\r\n}",".content {\r\n    h1 {\r\n        font-size: 35px;\r\n        margin-bottom: 80px;\r\n    }\r\n\r\n    section {\r\n\r\n        .container-1 {\r\n\r\n            p {\r\n                width: 95%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                padding-left: 15px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            flex-direction: column;\r\n\r\n            .span-image {\r\n                height: 300px;\r\n                margin-bottom: 25px;\r\n            }\r\n\r\n            .span-text {\r\n                margin-bottom: 25px;\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    h1 {\r\n        font-size: 30px;\r\n        margin-bottom: 50px;\r\n    }\r\n\r\n    section {\r\n\r\n        .container-1 {\r\n            flex-direction: column;\r\n            align-items: center;\r\n\r\n            p {\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                padding-top: 25px;\r\n                text-align: center;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            flex-direction: column;\r\n\r\n            .span-image {\r\n                height: 300px;\r\n                margin-bottom: 25px;\r\n            }\r\n\r\n            .span-text {\r\n                margin-bottom: 25px;\r\n            }\r\n        }\r\n    }\r\n}",".content {\r\n    h1 {\r\n        font-size: 30px;\r\n        margin-bottom: 50px;\r\n    }\r\n\r\n    section {\r\n\r\n        .container-1 {\r\n            flex-direction: column;\r\n            align-items: center;\r\n\r\n            p {\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                padding-top: 25px;\r\n                text-align: center;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            flex-direction: column;\r\n\r\n            .span-image {\r\n                height: 200px;\r\n                margin-bottom: 25px;\r\n            }\r\n\r\n            .span-text {\r\n                margin-bottom: 25px;\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
