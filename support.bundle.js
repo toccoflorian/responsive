@@ -23,48 +23,391 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/2support.jpg */ "./assets/images/2support.jpg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../assets/images/3support.jpg */ "./assets/images/3support.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.content section .span-image,
-.content section .span-text {
-  flex: 1;
+___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* desktop */
+/* Large desktop */
+/* Large desktop */
+@media (min-width: 1200px) {
+  .content section .span-image,
+  .content section .span-text {
+    flex: 1;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text ul {
+    margin-left: 25px;
+  }
+  .content .section-1 {
+    margin-top: 10rem;
+  }
+  .content .section-1 div {
+    display: flex;
+  }
+  .content .section-1 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-1 .container-1 h2 {
+    margin-top: 0;
+    width: 50%;
+    text-align: center;
+  }
+  .content .section-1 .container-1 p {
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 1px solid var(--blue-primary);
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-2 {
+    margin-top: 10rem;
+  }
+  .content .section-2 div {
+    display: flex;
+  }
+  .content .section-2 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-2 .container-1 h2 {
+    margin-top: 0;
+    width: 50%;
+    text-align: center;
+  }
+  .content .section-2 .container-1 p {
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 1px solid var(--blue-primary);
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .content .section-2 .container-2 .span-text .blue-word.titre {
+    font-size: 25px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+  }
 }
-.content section .span-text * {
-  padding: 0 1rem;
-  margin: 1rem 0;
+/*  desktop */
+@media (min-width: 980px) and (max-width: 1199.9px) {
+  .content section .span-image,
+  .content section .span-text {
+    flex: 1;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text ul {
+    margin-left: 25px;
+  }
+  .content .section-1 {
+    margin-top: 10rem;
+  }
+  .content .section-1 div {
+    display: flex;
+  }
+  .content .section-1 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-1 .container-1 h2 {
+    margin-top: 0;
+    width: 50%;
+    text-align: center;
+  }
+  .content .section-1 .container-1 p {
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 1px solid var(--blue-primary);
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-2 {
+    margin-top: 10rem;
+  }
+  .content .section-2 div {
+    display: flex;
+  }
+  .content .section-2 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-2 .container-1 h2 {
+    margin-top: 0;
+    width: 50%;
+    text-align: center;
+  }
+  .content .section-2 .container-1 p {
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 1px solid var(--blue-primary);
+    padding-left: 1rem;
+    text-align: left;
+  }
+  .content .section-2 .container-2 .span-text .blue-word.titre {
+    font-size: 25px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+  }
 }
-.content section .span-text * .blue-word {
-  margin: 1rem -1rem;
-  padding: 0;
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979.9px) {
+  .content section .span-image,
+  .content section .span-text {
+    flex: 1;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text ul {
+    margin-left: 25px;
+  }
+  .content .section-1 {
+    margin-top: 10rem;
+  }
+  .content .section-1 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-1 .container-1 h2 {
+    margin-top: 0;
+    width: 95%;
+    text-align: center;
+  }
+  .content .section-1 .container-1 p {
+    box-sizing: border-box;
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 25px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-1 .span-image {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+  .content .section-2 {
+    margin-top: 10rem;
+  }
+  .content .section-2 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-2 .container-1 h2 {
+    margin-top: 0;
+    width: 95%;
+    text-align: center;
+  }
+  .content .section-2 .container-1 p {
+    box-sizing: border-box;
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 25px;
+  }
+  .content .section-2 .container-2 .span-text .blue-word.titre {
+    font-size: 25px;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-2 .span-image {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
 }
-.content .section-1 {
-  margin-top: 10rem;
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767.9px) {
+  .content section .span-image,
+  .content section .span-text {
+    flex: 1;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text ul {
+    margin-left: 25px;
+  }
+  .content .section-1 {
+    margin-top: 10rem;
+  }
+  .content .section-1 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-1 .container-1 h2 {
+    margin-top: 0;
+    width: 95%;
+    text-align: center;
+  }
+  .content .section-1 .container-1 p {
+    box-sizing: border-box;
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 25px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-1 .span-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+  }
+  .content .section-2 {
+    margin-top: 10rem;
+  }
+  .content .section-2 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-2 .container-1 h2 {
+    margin-top: 0;
+    width: 95%;
+    text-align: center;
+  }
+  .content .section-2 .container-1 p {
+    box-sizing: border-box;
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 25px;
+  }
+  .content .section-2 .container-2 .span-text .blue-word.titre {
+    font-size: 25px;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-2 .span-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+  }
 }
-.content .section-1 div {
-  display: flex;
-}
-.content .section-1 .container-1 {
-  margin-bottom: 5rem;
-}
-.content .section-1 .container-1 h2 {
-  margin-top: 0;
-  width: 50%;
-  text-align: center;
-}
-.content .section-1 .container-1 p {
-  box-sizing: border-box;
-  width: 50%;
-  border-left: 1px solid var(--blue-primary);
-  padding-left: 1rem;
-  text-align: left;
-}
-.content .section-1 .container-2 .span-text p {
-  text-align: left;
+/* portrait phones and down */
+@media (max-width: 480.9px) {
+  .content section .span-image,
+  .content section .span-text {
+    flex: 1;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text ul {
+    margin-left: 25px;
+  }
+  .content .section-1 {
+    margin-top: 10rem;
+  }
+  .content .section-1 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-1 .container-1 h2 {
+    margin-top: 0;
+    width: 95%;
+    text-align: center;
+  }
+  .content .section-1 .container-1 p {
+    box-sizing: border-box;
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 25px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-1 .span-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+  }
+  .content .section-2 {
+    margin-top: 10rem;
+  }
+  .content .section-2 .container-1 {
+    margin-bottom: 5rem;
+  }
+  .content .section-2 .container-1 h2 {
+    margin-top: 0;
+    width: 95%;
+    text-align: center;
+  }
+  .content .section-2 .container-1 p {
+    box-sizing: border-box;
+    width: 95%;
+    border-top: 1px solid var(--blue-primary);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding-top: 25px;
+  }
+  .content .section-2 .container-2 .span-text .blue-word.titre {
+    font-size: 25px;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+  }
+  .content .section-2 .span-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+  }
 }
 .content .section-1 .span-image {
   background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/cover;
-}`, "",{"version":3,"sources":["webpack://./src/pages/nos_services/support/support.scss"],"names":[],"mappings":"AAKQ;;EAEI,OAAA;AAJZ;AAOQ;EACI,eAAA;EACA,cAAA;AALZ;AAOY;EACI,kBAAA;EACA,UAAA;AALhB;AAUI;EACI,iBAAA;AARR;AAUQ;EACI,aAAA;AARZ;AAWQ;EACI,mBAAA;AATZ;AAWY;EACI,aAAA;EACA,UAAA;EACA,kBAAA;AAThB;AAYY;EACI,sBAAA;EACA,UAAA;EACA,0CAAA;EACA,kBAAA;EACA,gBAAA;AAVhB;AAgBgB;EACI,gBAAA;AAdpB;AAsBQ;EACI,gEAAA;AApBZ","sourcesContent":[".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    // image section 1\r\n    .section-1 {\r\n        .span-image {\r\n            background: url('../../../../assets/images/2support.jpg')center/cover;\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
+}
+.content .section-2 .span-image {
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) center/cover;
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_services/support/support.scss","webpack://./src/pages/nos_services/support/responsive/_xl.scss","webpack://./src/pages/nos_services/support/responsive/_standard.scss","webpack://./src/pages/nos_services/support/responsive/_md.scss","webpack://./src/pages/nos_services/support/responsive/_sm.scss","webpack://./src/pages/nos_services/support/responsive/_xs.scss"],"names":[],"mappings":"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","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n\r\n\r\n.content {\r\n\r\n\r\n\r\n    .section-1 {\r\n\r\n\r\n        .span-image {\r\n            background: url('../../../../assets/images/2support.jpg')center/cover;\r\n        }\r\n    }\r\n\r\n\r\n    .section-2 {\r\n\r\n\r\n\r\n        .span-image {\r\n            background: url('../../../../assets/images/3support.jpg')center/cover;\r\n        }\r\n    }\r\n\r\n}",".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n\r\n        .span-text {\r\n            ul {\r\n                margin-left: 25px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {}\r\n    }\r\n\r\n\r\n    .section-2 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                .blue-word.titre {\r\n                    font-size: 25px;\r\n                    text-align: center;\r\n                    margin-right: auto;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {}\r\n    }\r\n\r\n}",".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n\r\n        .span-text {\r\n            ul {\r\n                margin-left: 25px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {}\r\n    }\r\n\r\n\r\n    .section-2 {\r\n        margin-top: 10rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 50%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 50%;\r\n                border-left: 1px solid var(--blue-primary);\r\n                padding-left: 1rem;\r\n                text-align: left;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                .blue-word.titre {\r\n                    font-size: 25px;\r\n                    text-align: center;\r\n                    margin-right: auto;\r\n                    margin-left: auto;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {}\r\n    }\r\n\r\n}",".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n\r\n        .span-text {\r\n            ul {\r\n                margin-left: 25px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1 {\r\n        margin-top: 10rem;\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 95%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                margin: 0 auto 0 auto;\r\n                padding-top: 25px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n\r\n    .section-2 {\r\n        margin-top: 10rem;\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 95%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                margin: 0 auto 0 auto;\r\n                padding-top: 25px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                .blue-word.titre {\r\n                    font-size: 25px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n}",".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n\r\n        .span-text {\r\n            ul {\r\n                margin-left: 25px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1 {\r\n        margin-top: 10rem;\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 95%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                margin: 0 auto 0 auto;\r\n                padding-top: 25px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 300px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n\r\n    .section-2 {\r\n        margin-top: 10rem;\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 95%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                margin: 0 auto 0 auto;\r\n                padding-top: 25px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                .blue-word.titre {\r\n                    font-size: 25px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 300px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n}",".content {\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image,\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 1rem 0;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n        }\r\n\r\n        .span-text {\r\n            ul {\r\n                margin-left: 25px;\r\n            }\r\n        }\r\n    }\r\n\r\n    .section-1 {\r\n        margin-top: 10rem;\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 95%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                margin: 0 auto 0 auto;\r\n                padding-top: 25px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 300px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n\r\n    .section-2 {\r\n        margin-top: 10rem;\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            margin-bottom: 5rem;\r\n\r\n            h2 {\r\n                margin-top: 0;\r\n                width: 95%;\r\n                text-align: center;\r\n            }\r\n\r\n            p {\r\n                box-sizing: border-box;\r\n                width: 95%;\r\n                border-top: 1px solid var(--blue-primary);\r\n                text-align: center;\r\n                margin: 0 auto 0 auto;\r\n                padding-top: 25px;\r\n            }\r\n        }\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                .blue-word.titre {\r\n                    font-size: 25px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 300px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -553,6 +896,16 @@ module.exports = styleTagTransform;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "f7deb21a1c60c36a945f.jpg";
+
+/***/ }),
+
+/***/ "./assets/images/3support.jpg":
+/*!************************************!*\
+  !*** ./assets/images/3support.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "916c5d400b48f8d22c69.jpg";
 
 /***/ })
 

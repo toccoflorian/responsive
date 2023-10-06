@@ -163,9 +163,10 @@ header {
 
     // titres
     h1 {
-        font-size: 3rem;
         margin-top: 8rem;
         text-align: center;
+        font-size: 30px;
+        margin-bottom: 50px;
     }
 
     h2 {
@@ -201,6 +202,14 @@ header {
 
         .span-image {
             border-radius: 5px;
+        }
+
+        .span-text {
+            ul {
+                li {
+                    margin-bottom: 35px;
+                }
+            }
         }
 
         .tab p {
