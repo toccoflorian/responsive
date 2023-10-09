@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", event => {
     } else {
         setTimeout(() => {
             document.querySelector(".content").append(createCookiesModalHTML());
-        }, 1000);
+        }, 10000);
     }
 
 })

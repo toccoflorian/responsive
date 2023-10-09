@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../images/cropped-image_2023-08-10_142556159-removebg-preview.png */ "./assets/images/cropped-image_2023-08-10_142556159-removebg-preview.png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../images/cropped-image_2023-08-10_142556159-removebg-preview.webp */ "./assets/images/cropped-image_2023-08-10_142556159-removebg-preview.webp"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -72,7 +72,7 @@ html .loading-screen .section-0 .span-icon {
 }
 html .loading-screen .section-0 .span-icon * {
   height: 2.5rem;
-}`, "",{"version":3,"sources":["webpack://./assets/models/loading-screen/loading-screen.scss"],"names":[],"mappings":"AAEI;EACI,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;AADR;AAGQ;EACI,WAAA;EACA,YAAA;EACA,uBAAA;EACA,sBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;AADZ;AAIY;EACI,6DAAA;EACA,wBAAA;EACA,WAAA;EACA,UAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;EACA,gBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAFhB;AAOY;EAEI,8EAAA;EACA,6BAAA;EACA,kBAAA;EACA,iBAAA;EACA,SAAA;EACA,kBAAA;EACA,qCAAA;AANhB;AASY;EAEI,gBAAA;EACA,aAAA;EACA,6BAAA;EACA,UAAA;EACA,iBAAA;AARhB;AAUgB;EACI,cAAA;AARpB","sourcesContent":["// page de chargement\r\nhtml {\r\n    .loading-screen {\r\n        position: fixed;\r\n        height: 100%;\r\n        width: 100%;\r\n        z-index: 10;\r\n\r\n        .section-0 {\r\n            width: 100%;\r\n            height: 100%;\r\n            background-color: black;\r\n            padding: 10% 0 10rem 0;\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n\r\n\r\n            .span-image {\r\n                background: url('../../images/cropped-image_2023-08-10_142556159-removebg-preview.png') no-repeat;\r\n                background-size: contain;\r\n                height: 20%;\r\n                width: 25%;\r\n                min-height: 200px;\r\n                min-width: 240px;\r\n                margin: 4rem auto 0 auto;\r\n                overflow: hidden;\r\n                display: flex;\r\n                justify-content: center;\r\n                align-items: center;\r\n            }\r\n\r\n\r\n\r\n            p {\r\n\r\n                background-image: linear-gradient(to left, #94A4B0, #5F82A0, #3F6D97, #486078);\r\n                -webkit-background-clip: text;\r\n                color: transparent;\r\n                font-size: 1.5rem;\r\n                margin: 0;\r\n                text-align: center;\r\n                font-family: 'Times New Roman', serif;\r\n            }\r\n\r\n            .span-icon {\r\n\r\n                margin-top: 3rem;\r\n                display: flex;\r\n                justify-content: space-evenly;\r\n                width: 75%;\r\n                max-width: 1500px;\r\n\r\n                * {\r\n                    height: 2.5rem;\r\n                }\r\n            }\r\n        }\r\n\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./assets/models/loading-screen/loading-screen.scss"],"names":[],"mappings":"AAEI;EACI,eAAA;EACA,YAAA;EACA,WAAA;EACA,WAAA;AADR;AAGQ;EACI,WAAA;EACA,YAAA;EACA,uBAAA;EACA,sBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;AADZ;AAIY;EACI,6DAAA;EACA,wBAAA;EACA,WAAA;EACA,UAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;EACA,gBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAFhB;AAOY;EAEI,8EAAA;EACA,6BAAA;EACA,kBAAA;EACA,iBAAA;EACA,SAAA;EACA,kBAAA;EACA,qCAAA;AANhB;AASY;EAEI,gBAAA;EACA,aAAA;EACA,6BAAA;EACA,UAAA;EACA,iBAAA;AARhB;AAUgB;EACI,cAAA;AARpB","sourcesContent":["// page de chargement\r\nhtml {\r\n    .loading-screen {\r\n        position: fixed;\r\n        height: 100%;\r\n        width: 100%;\r\n        z-index: 10;\r\n\r\n        .section-0 {\r\n            width: 100%;\r\n            height: 100%;\r\n            background-color: black;\r\n            padding: 10% 0 10rem 0;\r\n            display: flex;\r\n            flex-direction: column;\r\n            align-items: center;\r\n\r\n\r\n            .span-image {\r\n                background: url('../../images/cropped-image_2023-08-10_142556159-removebg-preview.webp') no-repeat;\r\n                background-size: contain;\r\n                height: 20%;\r\n                width: 25%;\r\n                min-height: 200px;\r\n                min-width: 240px;\r\n                margin: 4rem auto 0 auto;\r\n                overflow: hidden;\r\n                display: flex;\r\n                justify-content: center;\r\n                align-items: center;\r\n            }\r\n\r\n\r\n\r\n            p {\r\n\r\n                background-image: linear-gradient(to left, #94A4B0, #5F82A0, #3F6D97, #486078);\r\n                -webkit-background-clip: text;\r\n                color: transparent;\r\n                font-size: 1.5rem;\r\n                margin: 0;\r\n                text-align: center;\r\n                font-family: 'Times New Roman', serif;\r\n            }\r\n\r\n            .span-icon {\r\n\r\n                margin-top: 3rem;\r\n                display: flex;\r\n                justify-content: space-evenly;\r\n                width: 75%;\r\n                max-width: 1500px;\r\n\r\n                * {\r\n                    height: 2.5rem;\r\n                }\r\n            }\r\n        }\r\n\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -554,13 +554,13 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./assets/images/cropped-image_2023-08-10_142556159-removebg-preview.png":
-/*!*******************************************************************************!*\
-  !*** ./assets/images/cropped-image_2023-08-10_142556159-removebg-preview.png ***!
-  \*******************************************************************************/
+/***/ "./assets/images/cropped-image_2023-08-10_142556159-removebg-preview.webp":
+/*!********************************************************************************!*\
+  !*** ./assets/images/cropped-image_2023-08-10_142556159-removebg-preview.webp ***!
+  \********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "0110caa060ca25a4c137.png";
+module.exports = __webpack_require__.p + "517a63e68ab9b1ea7eae.webp";
 
 /***/ })
 

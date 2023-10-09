@@ -214,7 +214,7 @@
                                 }
 
                                 .span-image {
-                                    background: url('../images/trefle.png') center/contain no-repeat;
+                                    background: url('../images/trefle.webp') center/contain no-repeat;
                                     display: block;
 
                                 }
@@ -378,7 +378,9 @@
                     display: flex;
 
                     img {
+                        cursor: pointer;
                         height: 48px;
+
                     }
                 }
 

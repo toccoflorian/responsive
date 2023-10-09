@@ -808,27 +808,27 @@ const createAvisHTML = (avis, index) => {
 const avisMap = [{
   'nom': "Wallskors",
   'text': "Travailler avec Victor était un plaisir. Nous avons su trouver des accords communs et faisons maintenant affaire l'un avec l'autre. Je recommande, il est motivé et sérieux et cela se reflète dans ParlonsPC.",
-  'logo': "Wallskors-4-arrondis.png",
+  'logo': "Wallskors-4-arrondis.webp",
   'detail': "Entreprise"
 }, {
   'nom': "Century21 Mercom Transactions",
   'text': "Parce qu'il est important de partager les contacts efficaces & professionnels... Si vous avez besoin d'un prestataire informatique...n'hésitez pas...vous pouvez contacter ParlonsPC",
-  'logo': "bjkr868ia2ohmp7b1dioraimkwhj.png",
+  'logo': "bjkr868ia2ohmp7b1dioraimkwhj.webp",
   'detail': "Entreprise"
 }, {
   'nom': "Nordine Amdouni - Réseau ACEH",
   'text': "Super expérience et travail efficace de professionnel. Vous pouvez déléguer vos projets informatique les yeux fermés. Concepteur innovant et très plaisant !",
-  'logo': "aceh.jpg",
+  'logo': "aceh.webp",
   'detail': "Commercial"
 }, {
   'nom': "S.Braza",
   'text': "Je recommande Parlons PC, et remercie Victor pour son aide et sa disponibilité.",
-  'logo': "law.jpg",
+  'logo': "law.webp",
   'detail': "Avocat"
 }, {
   'nom': "SMB Laywer",
   'text': "Nous avons travaillés ParlonsPC et sommes très heureux du résultat de notre collaboration. Nous souhaitons un bon développement à cet société informatique plein de ressources !",
-  'logo': "logo-smblawyer.png",
+  'logo': "logo-smblawyer.webp",
   'detail': "Cabinet d'Avocat"
 }];
 const avisContainerElement = document.getElementById('container');
