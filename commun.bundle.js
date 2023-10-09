@@ -5888,6 +5888,15 @@ window.addEventListener('DOMContentLoaded', event => {
   document.getElementById("footer-instagram").addEventListener("click", event => {
     location.href = "https://www.instagram.com/parlonspc/";
   });
+  document.getElementById("footer-linkedin").addEventListener("touchstart", event => {
+    location.href = "https://www.linkedin.com/company/parlonspc/";
+  });
+  document.getElementById("footer-facebook").addEventListener("touchstart", event => {
+    location.href = "https://www.facebook.com/Parlonspc/";
+  });
+  document.getElementById("footer-instagram").addEventListener("touchstart", event => {
+    location.href = "https://www.instagram.com/parlonspc/";
+  });
 });
 })();
 
