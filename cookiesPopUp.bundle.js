@@ -31,10 +31,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cookies-container {
   max-width: 1000px;
   position: fixed;
   bottom: 60px;
+  left: 25px;
   background-color: var(--background-color-primary);
   border-radius: 5px;
   box-shadow: 2px 2px 4px gray;
   padding: 10px 10px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.75);
 }
 .cookies-container .titre {
   display: flex;
@@ -47,10 +50,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cookies-container {
 .cookies-container .titre p {
   flex: 3;
   margin: 25px 0;
-  font-size: 12px;
+  font-size: 15px;
 }
 .cookies-container p {
-  font-size: 7px;
+  font-size: 9px;
   margin: 20px 0 20px 0;
 }
 .cookies-container .button-container {
@@ -97,6 +100,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cookies-container {
 @media (max-width: 700px) {
   .cookies-container .button-container {
     justify-content: space-evenly;
+    text-align: center;
   }
   .cookies-container .button-container p.yes-button {
     margin-left: 0;
@@ -106,7 +110,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.cookies-container {
   .cookies-container {
     width: 50%;
   }
-}`, "",{"version":3,"sources":["webpack://./assets/models/cookies-pop-up/cookies-pop-up.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,iBAAA;EACA,eAAA;EACA,YAAA;EACA,iDAAA;EACA,kBAAA;EACA,4BAAA;EACA,kBAAA;AACJ;AAKI;EACI,aAAA;EACA,uBAAA;AAHR;AAMQ;EACI,OAAA;EACA,4EAAA;AAJZ;AAOQ;EACI,OAAA;EACA,cAAA;EACA,eAAA;AALZ;AAUI;EACI,cAAA;EACA,qBAAA;AARR;AAWI;EACI,aAAA;EAEA,sBAAA;EACA,eAAA;EACA,mBAAA;AAVR;AAYQ;EACI,eAAA;EAEA,kBAAA;EACA,kBAAA;EACA,UAAA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,6BAAA;AAXZ;AAaY;EACI,qCAAA;EACA,YAAA;EACA,iBAAA;AAXhB;AAagB;EACI,uBAAA;EACA,0BAAA;AAXpB;AAeY;EACI,uBAAA;EACA,sCAAA;AAbhB;AAgBgB;EAEI,0BAAA;AAfpB;;AAwBA;EAGQ;IACI,cAAA;EAvBV;EAyBU;IACI,gBAAA;EAvBd;AACF;AA4BA;EAEQ;IACI,6BAAA;EA3BV;EA6BU;IACI,cAAA;EA3Bd;AACF;AAgCA;EACI;IACI,UAAA;EA9BN;AACF","sourcesContent":[".cookies-container {\r\n    width: 40%;\r\n    max-width: 1000px;\r\n    position: fixed;\r\n    bottom: 60px;\r\n    background-color: var(--background-color-primary);\r\n    border-radius: 5px;\r\n    box-shadow: 2px 2px 4px gray;\r\n    padding: 10px 10px;\r\n\r\n\r\n\r\n\r\n\r\n    .titre {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n\r\n        .span-image {\r\n            flex: 1;\r\n            background: url(\"../../images/cropped-image_2023-08-10_142556159-removebg-preview.webp\") center/contain no-repeat;\r\n        }\r\n\r\n        p {\r\n            flex: 3;\r\n            margin: 25px 0;\r\n            font-size: 12px;\r\n        }\r\n    }\r\n\r\n\r\n    p {\r\n        font-size: 7px;\r\n        margin: 20px 0 20px 0;\r\n    }\r\n\r\n    .button-container {\r\n        display: flex;\r\n        // width: 50%;\r\n        justify-content: right;\r\n        flex-wrap: wrap;\r\n        margin-bottom: 10px;\r\n\r\n        p {\r\n            cursor: pointer;\r\n\r\n            padding: 15px 35px;\r\n            border-radius: 5px;\r\n            left: 50px;\r\n            font-size: 10px;\r\n            font-weight: bold;\r\n            margin: 0 0 0 0;\r\n            transition: all 0.25s ease-in;\r\n\r\n            &.yes-button {\r\n                background-color: var(--blue-primary);\r\n                color: white;\r\n                margin-left: 35px;\r\n\r\n                &:hover {\r\n                    background-color: white;\r\n                    color: var(--blue-primary);\r\n                }\r\n            }\r\n\r\n            &.no-button {\r\n                background-color: white;\r\n                color: var(--background-color-primary);\r\n\r\n\r\n                &:hover {\r\n\r\n                    color: var(--blue-primary);\r\n\r\n                }\r\n            }\r\n        }\r\n\r\n    }\r\n}\r\n\r\n@media (max-width: 600px) {\r\n    .cookies-container {\r\n\r\n        .button-container {\r\n            display: block;\r\n\r\n            p.yes-button {\r\n                margin-top: 25px;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@media (max-width: 700px) {\r\n    .cookies-container {\r\n        .button-container {\r\n            justify-content: space-evenly;\r\n\r\n            p.yes-button {\r\n                margin-left: 0;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@media (max-width: 979.9px) {\r\n    .cookies-container {\r\n        width: 50%;\r\n    }\r\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./assets/models/cookies-pop-up/cookies-pop-up.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,iBAAA;EACA,eAAA;EACA,YAAA;EACA,UAAA;EACA,iDAAA;EACA,kBAAA;EACA,4BAAA;EACA,kBAAA;EACA,mBAAA;EACA,gCAAA;AACJ;AAGI;EACI,aAAA;EACA,uBAAA;AADR;AAIQ;EACI,OAAA;EACA,4EAAA;AAFZ;AAKQ;EACI,OAAA;EACA,cAAA;EACA,eAAA;AAHZ;AAQI;EACI,cAAA;EACA,qBAAA;AANR;AASI;EACI,aAAA;EAEA,sBAAA;EACA,eAAA;EACA,mBAAA;AARR;AAUQ;EACI,eAAA;EAEA,kBAAA;EACA,kBAAA;EACA,UAAA;EACA,eAAA;EACA,iBAAA;EACA,eAAA;EACA,6BAAA;AATZ;AAWY;EACI,qCAAA;EACA,YAAA;EACA,iBAAA;AAThB;AAWgB;EACI,uBAAA;EACA,0BAAA;AATpB;AAaY;EACI,uBAAA;EACA,sCAAA;AAXhB;AAcgB;EAEI,0BAAA;AAbpB;;AAsBA;EAGQ;IACI,cAAA;EArBV;EAuBU;IACI,gBAAA;EArBd;AACF;AA0BA;EAEQ;IACI,6BAAA;IACA,kBAAA;EAzBV;EA2BU;IACI,cAAA;EAzBd;AACF;AA8BA;EACI;IACI,UAAA;EA5BN;AACF","sourcesContent":[".cookies-container {\r\n    width: 40%;\r\n    max-width: 1000px;\r\n    position: fixed;\r\n    bottom: 60px;\r\n    left: 25px;\r\n    background-color: var(--background-color-primary);\r\n    border-radius: 5px;\r\n    box-shadow: 2px 2px 4px gray;\r\n    padding: 10px 10px;\r\n    letter-spacing: 2px;\r\n    color: rgba(255, 255, 255, 0.75);\r\n\r\n\r\n\r\n    .titre {\r\n        display: flex;\r\n        justify-content: center;\r\n\r\n\r\n        .span-image {\r\n            flex: 1;\r\n            background: url(\"../../images/cropped-image_2023-08-10_142556159-removebg-preview.webp\") center/contain no-repeat;\r\n        }\r\n\r\n        p {\r\n            flex: 3;\r\n            margin: 25px 0;\r\n            font-size: 15px;\r\n        }\r\n    }\r\n\r\n\r\n    p {\r\n        font-size: 9px;\r\n        margin: 20px 0 20px 0;\r\n    }\r\n\r\n    .button-container {\r\n        display: flex;\r\n        // width: 50%;\r\n        justify-content: right;\r\n        flex-wrap: wrap;\r\n        margin-bottom: 10px;\r\n\r\n        p {\r\n            cursor: pointer;\r\n\r\n            padding: 15px 35px;\r\n            border-radius: 5px;\r\n            left: 50px;\r\n            font-size: 10px;\r\n            font-weight: bold;\r\n            margin: 0 0 0 0;\r\n            transition: all 0.25s ease-in;\r\n\r\n            &.yes-button {\r\n                background-color: var(--blue-primary);\r\n                color: white;\r\n                margin-left: 35px;\r\n\r\n                &:hover {\r\n                    background-color: white;\r\n                    color: var(--blue-primary);\r\n                }\r\n            }\r\n\r\n            &.no-button {\r\n                background-color: white;\r\n                color: var(--background-color-primary);\r\n\r\n\r\n                &:hover {\r\n\r\n                    color: var(--blue-primary);\r\n\r\n                }\r\n            }\r\n        }\r\n\r\n    }\r\n}\r\n\r\n@media (max-width: 600px) {\r\n    .cookies-container {\r\n\r\n        .button-container {\r\n            display: block;\r\n\r\n            p.yes-button {\r\n                margin-top: 25px;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@media (max-width: 700px) {\r\n    .cookies-container {\r\n        .button-container {\r\n            justify-content: space-evenly;\r\n            text-align: center;\r\n\r\n            p.yes-button {\r\n                margin-left: 0;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n@media (max-width: 979.9px) {\r\n    .cookies-container {\r\n        width: 50%;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -785,7 +789,7 @@ const createCookiesModalHTML = () => {
 document.addEventListener("DOMContentLoaded", event => {
   if (localStorage.getItem("cookies-accepted")) {} else {
     setTimeout(() => {
-      document.querySelector(".content").append(createCookiesModalHTML());
+      document.querySelector("body").append(createCookiesModalHTML());
     }, 10000);
   }
 });
