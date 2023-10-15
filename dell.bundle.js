@@ -1,2 +1,1087 @@
-(()=>{"use strict";var n,r,t,e,i,A,a,o,c,s,p,m,C,g,l={8644:(n,r,t)=>{t.d(r,{Z:()=>u});var e=t(272),i=t.n(e),A=t(2609),a=t.n(A),o=t(8991),c=t.n(o),s=new URL(t(1517),t.b),p=new URL(t(6297),t.b),m=new URL(t(674),t.b),C=new URL(t(7163),t.b),g=a()(i()),l=c()(s),x=c()(p),d=c()(m),h=c()(C);g.push([n.id,`@media(min-width: 1200px){.content h2{text-align:center}.content h3{text-align:center}.content p{margin-bottom:120px}.content section .span-image{flex:1.5}.content section .span-text{flex:1}.content section .span-text *{padding:0 1rem;margin:0 0 0 15px}.content section .span-text * .blue-word{margin:1rem -1rem;padding:0}.content section .span-text * h2{margin-bottom:45px}.content section .span-text * li{margin-bottom:30px}.content .section-1{margin-top:7rem}.content .section-1 div{display:flex}.content .section-1 .container-2 .span-text h3{margin-bottom:25px}.content .section-1 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-2{margin-top:7rem}.content .section-2 div{display:flex}.content .section-2 .container-2 .span-text h2{text-align:center}.content .section-2 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-2 .container-2 .span-text ul{margin-bottom:60px}.content .section-3 .container-1{display:flex}.content .section-3 .container-1 .span-text h2{margin-bottom:35px}.content .section-3 .container-1 .span-text p{text-align:left}.content .span-image.finale{display:block;height:350px;width:80%;margin-right:auto;margin-left:auto}}@media(min-width: 980px)and (max-width: 1199.9px){.content h2{text-align:center}.content h3{text-align:center}.content p{margin-bottom:60px}.content section .span-text *{padding:0 1rem;margin:0 0 0 15px}.content section .span-text * .blue-word{margin:1rem -1rem;padding:0}.content section .span-text * h2{margin-bottom:45px}.content section .span-text * li{margin-bottom:30px}.content section .span-image{display:block;height:400px;width:100%}.content .section-1{margin-top:7rem}.content .section-1 .container-2 .span-text h3{margin-bottom:80px}.content .section-1 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-2{margin-top:7rem}.content .section-2 div{display:flex;flex-direction:column-reverse}.content .section-2 .container-2 .span-text h2{text-align:center}.content .section-2 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-3 .container-1 .span-text h2{margin-bottom:35px}.content .section-3 .container-1 .span-text p{text-align:left}.content .span-image.finale{display:block;height:350px;width:80%;margin-right:auto;margin-left:auto}}@media(min-width: 767px)and (max-width: 979.9px){.content h2{text-align:center}.content h3{text-align:center}.content p{margin-bottom:60px}.content section{margin-bottom:200px}.content section .span-text *{padding:0 1rem;margin:0 0 0 15px}.content section .span-text * .blue-word{margin:1rem -1rem;padding:0}.content section .span-text * h2{margin-bottom:45px}.content section .span-text * li{margin-bottom:30px}.content section .span-image{display:block;height:400px;width:100%}.content .section-1{margin-top:7rem}.content .section-1 .container-2 .span-text h3{margin-bottom:80px}.content .section-1 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-2{margin-top:7rem}.content .section-2 div{display:flex;flex-direction:column-reverse}.content .section-2 .container-2 .span-text h2{text-align:center}.content .section-2 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-3 .container-1 .span-text h2{margin-bottom:35px}.content .section-3 .container-1 .span-text p{text-align:left}.content .span-image.finale{display:block;height:350px;width:80%;margin-right:auto;margin-left:auto}}@media(min-width: 481px)and (max-width: 767.9px){.content h2{text-align:center}.content h3{text-align:center}.content p{margin-bottom:60px}.content section{margin-bottom:200px}.content section .span-text *{padding:0 1rem;margin:0 0 0 15px}.content section .span-text * .blue-word{margin:1rem -1rem;padding:0}.content section .span-text * h2{margin-bottom:45px}.content section .span-text * li{margin-bottom:30px}.content section .span-image{display:block;height:400px;width:100%}.content .section-1{margin-top:7rem}.content .section-1 .container-2 .span-text h3{margin-bottom:80px}.content .section-1 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-2{margin-top:7rem}.content .section-2 div{display:flex;flex-direction:column-reverse}.content .section-2 .container-2 .span-text h2{text-align:center}.content .section-2 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-3 .container-1 .span-text h2{margin-bottom:35px}.content .section-3 .container-1 .span-text p{text-align:left}.content .span-image.finale{display:block;height:350px;width:80%;margin-right:auto;margin-left:auto}}@media(max-width: 480.9px){.content h2{text-align:center}.content h3{text-align:center}.content p{margin-bottom:60px}.content section{margin-bottom:200px}.content section .span-text *{padding:0 1rem;margin:0 0 0 15px}.content section .span-text * .blue-word{margin:1rem -1rem;padding:0}.content section .span-text * h2{margin-bottom:45px}.content section .span-text * li{margin-bottom:30px}.content section .span-image{display:block;height:400px;width:100%}.content .section-1{margin-top:7rem}.content .section-1 .container-2 .span-text h3{margin-bottom:80px}.content .section-1 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-2{margin-top:7rem}.content .section-2 div{display:flex;flex-direction:column-reverse}.content .section-2 .container-2 .span-text h2{text-align:center}.content .section-2 .container-2 .span-text p{text-align:left;margin:35px 0 35px}.content .section-3 .container-1 .span-text h2{margin-bottom:35px}.content .section-3 .container-1 .span-text p{text-align:left}.content .span-image.finale{display:block;height:350px;width:100%;margin-right:auto;margin-left:auto}}.content .section-1 .container-1 h2{text-align:center}.content .section-1 .container-2 .span-image{background:url(${l}) center/contain no-repeat}.content .section-2 .container-1 h2{text-align:center}.content .section-2 .container-2 .span-image{background:url(${x}) center/contain no-repeat}.content .section-3 .container-1 .span-image{background:url(${d}) center/contain no-repeat}.content .span-image.finale{background:url(${h}) center/contain no-repeat}`,"",{version:3,sources:["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_xl.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_standard.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_md.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_sm.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_xs.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/dell.scss"],names:[],mappings:"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",sourcesContent:["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 120px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image {\r\n            flex: 1.5;\r\n        }\r\n\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 25px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n\r\n                ul {\r\n                    margin-bottom: 60px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n            display: flex;\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        margin-bottom: 200px;\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        margin-bottom: 200px;\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        margin-bottom: 200px;\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 100%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",'@use \'../../../../../assets/styles/media-queries\' as MQueries;\r\n\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import "./responsive/xl";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import "./responsive/standard";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import "./responsive/md";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import "./responsive/sm";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import "./responsive/xs";\r\n}\r\n\r\n\r\n.content {\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    // toutes les sections de la page\r\n    section {}\r\n\r\n    // section 1\r\n    .section-1 {\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            h2 {\r\n                text-align: center;\r\n            }\r\n\r\n            p {}\r\n        }\r\n\r\n        .container-2 {\r\n\r\n            .span-image {\r\n                background: url(\'../../../../../assets/images/image001\\ \\(1\\).png\') center/contain no-repeat;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            h2 {\r\n                text-align: center;\r\n            }\r\n\r\n            p {}\r\n        }\r\n\r\n        .container-2 {\r\n\r\n            .span-image {\r\n                background: url(\'../../../../../assets/images/image003\\ \\(1\\).png\') center/contain no-repeat;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {\r\n                background: url(\'../../../../../assets/images/image002\\ \\(1\\).png\') center/contain no-repeat;\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        background: url("../../../../../assets/images/Capture-decran-2023-09-05-a-17.41.21-1024x394.png") center/contain no-repeat;\r\n    }\r\n\r\n}'],sourceRoot:""}]);const u=g},2609:n=>{n.exports=function(n){var r=[];return r.toString=function(){return this.map((function(r){var t="",e=void 0!==r[5];return r[4]&&(t+="@supports (".concat(r[4],") {")),r[2]&&(t+="@media ".concat(r[2]," {")),e&&(t+="@layer".concat(r[5].length>0?" ".concat(r[5]):""," {")),t+=n(r),e&&(t+="}"),r[2]&&(t+="}"),r[4]&&(t+="}"),t})).join("")},r.i=function(n,t,e,i,A){"string"==typeof n&&(n=[[null,n,void 0]]);var a={};if(e)for(var o=0;o<this.length;o++){var c=this[o][0];null!=c&&(a[c]=!0)}for(var s=0;s<n.length;s++){var p=[].concat(n[s]);e&&a[p[0]]||(void 0!==A&&(void 0===p[5]||(p[1]="@layer".concat(p[5].length>0?" ".concat(p[5]):""," {").concat(p[1],"}")),p[5]=A),t&&(p[2]?(p[1]="@media ".concat(p[2]," {").concat(p[1],"}"),p[2]=t):p[2]=t),i&&(p[4]?(p[1]="@supports (".concat(p[4],") {").concat(p[1],"}"),p[4]=i):p[4]="".concat(i)),r.push(p))}},r}},8991:n=>{n.exports=function(n,r){return r||(r={}),n?(n=String(n.__esModule?n.default:n),/^['"].*['"]$/.test(n)&&(n=n.slice(1,-1)),r.hash&&(n+=r.hash),/["'() \t\n]|(%20)/.test(n)||r.needQuotes?'"'.concat(n.replace(/"/g,'\\"').replace(/\n/g,"\\n"),'"'):n):n}},272:n=>{n.exports=function(n){var r=n[1],t=n[3];if(!t)return r;if("function"==typeof btoa){var e=btoa(unescape(encodeURIComponent(JSON.stringify(t)))),i="sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(e),A="/*# ".concat(i," */");return[r].concat([A]).join("\n")}return[r].join("\n")}},6062:n=>{var r=[];function t(n){for(var t=-1,e=0;e<r.length;e++)if(r[e].identifier===n){t=e;break}return t}function e(n,e){for(var A={},a=[],o=0;o<n.length;o++){var c=n[o],s=e.base?c[0]+e.base:c[0],p=A[s]||0,m="".concat(s," ").concat(p);A[s]=p+1;var C=t(m),g={css:c[1],media:c[2],sourceMap:c[3],supports:c[4],layer:c[5]};if(-1!==C)r[C].references++,r[C].updater(g);else{var l=i(g,e);e.byIndex=o,r.splice(o,0,{identifier:m,updater:l,references:1})}a.push(m)}return a}function i(n,r){var t=r.domAPI(r);return t.update(n),function(r){if(r){if(r.css===n.css&&r.media===n.media&&r.sourceMap===n.sourceMap&&r.supports===n.supports&&r.layer===n.layer)return;t.update(n=r)}else t.remove()}}n.exports=function(n,i){var A=e(n=n||[],i=i||{});return function(n){n=n||[];for(var a=0;a<A.length;a++){var o=t(A[a]);r[o].references--}for(var c=e(n,i),s=0;s<A.length;s++){var p=t(A[s]);0===r[p].references&&(r[p].updater(),r.splice(p,1))}A=c}}},6793:n=>{var r={};n.exports=function(n,t){var e=function(n){if(void 0===r[n]){var t=document.querySelector(n);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(n){t=null}r[n]=t}return r[n]}(n);if(!e)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");e.appendChild(t)}},1173:n=>{n.exports=function(n){var r=document.createElement("style");return n.setAttributes(r,n.attributes),n.insert(r,n.options),r}},7892:(n,r,t)=>{n.exports=function(n){var r=t.nc;r&&n.setAttribute("nonce",r)}},4036:n=>{n.exports=function(n){if("undefined"==typeof document)return{update:function(){},remove:function(){}};var r=n.insertStyleElement(n);return{update:function(t){!function(n,r,t){var e="";t.supports&&(e+="@supports (".concat(t.supports,") {")),t.media&&(e+="@media ".concat(t.media," {"));var i=void 0!==t.layer;i&&(e+="@layer".concat(t.layer.length>0?" ".concat(t.layer):""," {")),e+=t.css,i&&(e+="}"),t.media&&(e+="}"),t.supports&&(e+="}");var A=t.sourceMap;A&&"undefined"!=typeof btoa&&(e+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(A))))," */")),r.styleTagTransform(e,n,r.options)}(r,n,t)},remove:function(){!function(n){if(null===n.parentNode)return!1;n.parentNode.removeChild(n)}(r)}}}},2464:n=>{n.exports=function(n,r){if(r.styleSheet)r.styleSheet.cssText=n;else{for(;r.firstChild;)r.removeChild(r.firstChild);r.appendChild(document.createTextNode(n))}}},7163:(n,r,t)=>{n.exports=t.p+"ea51de1e24e57306348f.png"},1517:(n,r,t)=>{n.exports=t.p+"edc379366edc988347c8.png"},674:(n,r,t)=>{n.exports=t.p+"dd94b29044dc1e1339ff.png"},6297:(n,r,t)=>{n.exports=t.p+"6a72fcd91e3e0ebbfd91.png"}},x={};function d(n){var r=x[n];if(void 0!==r)return r.exports;var t=x[n]={id:n,exports:{}};return l[n](t,t.exports,d),t.exports}d.m=l,d.n=n=>{var r=n&&n.__esModule?()=>n.default:()=>n;return d.d(r,{a:r}),r},d.d=(n,r)=>{for(var t in r)d.o(r,t)&&!d.o(n,t)&&Object.defineProperty(n,t,{enumerable:!0,get:r[t]})},d.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(n){if("object"==typeof window)return window}}(),d.o=(n,r)=>Object.prototype.hasOwnProperty.call(n,r),(()=>{var n;d.g.importScripts&&(n=d.g.location+"");var r=d.g.document;if(!n&&r&&(r.currentScript&&(n=r.currentScript.src),!n)){var t=r.getElementsByTagName("script");if(t.length)for(var e=t.length-1;e>-1&&!n;)n=t[e--].src}if(!n)throw new Error("Automatic publicPath is not supported in this browser");n=n.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),d.p=n})(),d.b=document.baseURI||self.location.href,d.nc=void 0,n=d(6062),r=d.n(n),t=d(4036),e=d.n(t),i=d(6793),A=d.n(i),a=d(7892),o=d.n(a),c=d(1173),s=d.n(c),p=d(2464),m=d.n(p),C=d(8644),(g={}).styleTagTransform=m(),g.setAttributes=o(),g.insert=A().bind(null,"head"),g.domAPI=e(),g.insertStyleElement=s(),r()(C.Z,g),C.Z&&C.Z.locals&&C.Z.locals})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_produits/materiel-neuf/dell/dell.scss":
+/*!**************************************************************************************************************************************************!*\
+  !*** ../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_produits/materiel-neuf/dell/dell.scss ***!
+  \**************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "../../node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "../../node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/images/image001 (1).png */ "./assets/images/image001 (1).png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/images/image003 (1).png */ "./assets/images/image003 (1).png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/images/image002 (1).png */ "./assets/images/image002 (1).png"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../assets/images/Capture-decran-2023-09-05-a-17.41.21-1024x394.png */ "./assets/images/Capture-decran-2023-09-05-a-17.41.21-1024x394.png"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `/* portrait phones and down */
+/* Landscape phone to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* desktop */
+/* Large desktop */
+/* Large desktop */
+@media (min-width: 1200px) {
+  .content h2 {
+    text-align: center;
+  }
+  .content h3 {
+    text-align: center;
+  }
+  .content p {
+    margin-bottom: 120px;
+  }
+  .content section .span-image {
+    flex: 1.5;
+  }
+  .content section .span-text {
+    flex: 1;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 0 0 0 15px;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text * h2 {
+    margin-bottom: 45px;
+  }
+  .content section .span-text * li {
+    margin-bottom: 30px;
+  }
+  .content .section-1 {
+    margin-top: 7rem;
+  }
+  .content .section-1 div {
+    display: flex;
+  }
+  .content .section-1 .container-2 .span-text h3 {
+    margin-bottom: 25px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-2 {
+    margin-top: 7rem;
+  }
+  .content .section-2 div {
+    display: flex;
+  }
+  .content .section-2 .container-2 .span-text h2 {
+    text-align: center;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-2 .container-2 .span-text ul {
+    margin-bottom: 60px;
+  }
+  .content .section-3 .container-1 {
+    display: flex;
+  }
+  .content .section-3 .container-1 .span-text h2 {
+    margin-bottom: 35px;
+  }
+  .content .section-3 .container-1 .span-text p {
+    text-align: left;
+  }
+  .content .span-image.finale {
+    display: block;
+    height: 350px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*  desktop */
+@media (min-width: 980px) and (max-width: 1199.9px) {
+  .content h2 {
+    text-align: center;
+  }
+  .content h3 {
+    text-align: center;
+  }
+  .content p {
+    margin-bottom: 60px;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 0 0 0 15px;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text * h2 {
+    margin-bottom: 45px;
+  }
+  .content section .span-text * li {
+    margin-bottom: 30px;
+  }
+  .content section .span-image {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+  .content .section-1 {
+    margin-top: 7rem;
+  }
+  .content .section-1 .container-2 .span-text h3 {
+    margin-bottom: 80px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-2 {
+    margin-top: 7rem;
+  }
+  .content .section-2 div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content .section-2 .container-2 .span-text h2 {
+    text-align: center;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-3 .container-1 .span-text h2 {
+    margin-bottom: 35px;
+  }
+  .content .section-3 .container-1 .span-text p {
+    text-align: left;
+  }
+  .content .span-image.finale {
+    display: block;
+    height: 350px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 767px) and (max-width: 979.9px) {
+  .content h2 {
+    text-align: center;
+  }
+  .content h3 {
+    text-align: center;
+  }
+  .content p {
+    margin-bottom: 60px;
+  }
+  .content section {
+    margin-bottom: 200px;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 0 0 0 15px;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text * h2 {
+    margin-bottom: 45px;
+  }
+  .content section .span-text * li {
+    margin-bottom: 30px;
+  }
+  .content section .span-image {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+  .content .section-1 {
+    margin-top: 7rem;
+  }
+  .content .section-1 .container-2 .span-text h3 {
+    margin-bottom: 80px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-2 {
+    margin-top: 7rem;
+  }
+  .content .section-2 div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content .section-2 .container-2 .span-text h2 {
+    text-align: center;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-3 .container-1 .span-text h2 {
+    margin-bottom: 35px;
+  }
+  .content .section-3 .container-1 .span-text p {
+    text-align: left;
+  }
+  .content .span-image.finale {
+    display: block;
+    height: 350px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767.9px) {
+  .content h2 {
+    text-align: center;
+  }
+  .content h3 {
+    text-align: center;
+  }
+  .content p {
+    margin-bottom: 60px;
+  }
+  .content section {
+    margin-bottom: 200px;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 0 0 0 15px;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text * h2 {
+    margin-bottom: 45px;
+  }
+  .content section .span-text * li {
+    margin-bottom: 30px;
+  }
+  .content section .span-image {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+  .content .section-1 {
+    margin-top: 7rem;
+  }
+  .content .section-1 .container-2 .span-text h3 {
+    margin-bottom: 80px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-2 {
+    margin-top: 7rem;
+  }
+  .content .section-2 div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content .section-2 .container-2 .span-text h2 {
+    text-align: center;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-3 .container-1 .span-text h2 {
+    margin-bottom: 35px;
+  }
+  .content .section-3 .container-1 .span-text p {
+    text-align: left;
+  }
+  .content .span-image.finale {
+    display: block;
+    height: 350px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* portrait phones and down */
+@media (max-width: 480.9px) {
+  .content h2 {
+    text-align: center;
+  }
+  .content h3 {
+    text-align: center;
+  }
+  .content p {
+    margin-bottom: 60px;
+  }
+  .content section {
+    margin-bottom: 200px;
+  }
+  .content section .span-text * {
+    padding: 0 1rem;
+    margin: 0 0 0 15px;
+  }
+  .content section .span-text * .blue-word {
+    margin: 1rem -1rem;
+    padding: 0;
+  }
+  .content section .span-text * h2 {
+    margin-bottom: 45px;
+  }
+  .content section .span-text * li {
+    margin-bottom: 30px;
+  }
+  .content section .span-image {
+    display: block;
+    height: 400px;
+    width: 100%;
+  }
+  .content .section-1 {
+    margin-top: 7rem;
+  }
+  .content .section-1 .container-2 .span-text h3 {
+    margin-bottom: 80px;
+  }
+  .content .section-1 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-2 {
+    margin-top: 7rem;
+  }
+  .content .section-2 div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content .section-2 .container-2 .span-text h2 {
+    text-align: center;
+  }
+  .content .section-2 .container-2 .span-text p {
+    text-align: left;
+    margin: 35px 0 35px;
+  }
+  .content .section-3 .container-1 .span-text h2 {
+    margin-bottom: 35px;
+  }
+  .content .section-3 .container-1 .span-text p {
+    text-align: left;
+  }
+  .content .span-image.finale {
+    display: block;
+    height: 350px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.content .section-1 .container-1 h2 {
+  text-align: center;
+}
+.content .section-1 .container-2 .span-image {
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) center/contain no-repeat;
+}
+.content .section-2 .container-1 h2 {
+  text-align: center;
+}
+.content .section-2 .container-2 .span-image {
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_1___}) center/contain no-repeat;
+}
+.content .section-3 .container-1 .span-image {
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_2___}) center/contain no-repeat;
+}
+.content .span-image.finale {
+  background: url(${___CSS_LOADER_URL_REPLACEMENT_3___}) center/contain no-repeat;
+}`, "",{"version":3,"sources":["webpack://./assets/styles/_media-queries.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/dell.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_xl.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_standard.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_md.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_sm.scss","webpack://./src/pages/nos_produits/materiel-neuf/dell/responsive/_xs.scss"],"names":[],"mappings":"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","sourcesContent":["/* portrait phones and down */\r\n@mixin xs {\r\n    @media (max-width: 480.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Landscape phone to portrait tablet */\r\n@mixin sm {\r\n    @media (min-width: 481px) and (max-width: 767.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@mixin md {\r\n    @media (min-width: 767px) and (max-width: 979.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* desktop */\r\n@mixin standard {\r\n    @media (min-width: 980px) and (max-width: 1199.9px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n/* Large desktop */\r\n@mixin xl {\r\n    @media (min-width: 1200px) {\r\n        @content;\r\n    }\r\n}","@use '../../../../../assets/styles/media-queries' as MQueries;\r\n\r\n\r\n/* Large desktop */\r\n@include MQueries.xl {\r\n    @import \"./responsive/xl\";\r\n}\r\n\r\n\r\n/*  desktop */\r\n@include MQueries.standard {\r\n    @import \"./responsive/standard\";\r\n}\r\n\r\n\r\n/* Portrait tablet to landscape and desktop */\r\n@include MQueries.md {\r\n    @import \"./responsive/md\";\r\n}\r\n\r\n\r\n/* Landscape phone to portrait tablet */\r\n@include MQueries.sm {\r\n    @import \"./responsive/sm\";\r\n}\r\n\r\n\r\n/* portrait phones and down */\r\n@include MQueries.xs {\r\n    @import \"./responsive/xs\";\r\n}\r\n\r\n\r\n.content {\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n    // toutes les sections de la page\r\n    section {}\r\n\r\n    // section 1\r\n    .section-1 {\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            h2 {\r\n                text-align: center;\r\n            }\r\n\r\n            p {}\r\n        }\r\n\r\n        .container-2 {\r\n\r\n            .span-image {\r\n                background: url('../../../../../assets/images/image001\\ \\(1\\).png') center/contain no-repeat;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n\r\n        div {}\r\n\r\n        .container-1 {\r\n            h2 {\r\n                text-align: center;\r\n            }\r\n\r\n            p {}\r\n        }\r\n\r\n        .container-2 {\r\n\r\n            .span-image {\r\n                background: url('../../../../../assets/images/image003\\ \\(1\\).png') center/contain no-repeat;\r\n            }\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {\r\n                background: url('../../../../../assets/images/image002\\ \\(1\\).png') center/contain no-repeat;\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        background: url(\"../../../../../assets/images/Capture-decran-2023-09-05-a-17.41.21-1024x394.png\") center/contain no-repeat;\r\n    }\r\n\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 120px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        .span-image {\r\n            flex: 1.5;\r\n        }\r\n\r\n        .span-text {\r\n            flex: 1;\r\n        }\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 25px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n\r\n                ul {\r\n                    margin-bottom: 60px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n            display: flex;\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        margin-bottom: 200px;\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        margin-bottom: 200px;\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 80%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}",".content {\r\n\r\n    h2 {\r\n        text-align: center;\r\n    }\r\n\r\n    h3 {\r\n        text-align: center;\r\n    }\r\n\r\n    p {\r\n        margin-bottom: 60px;\r\n    }\r\n\r\n    // toutes les sections de la page\r\n    section {\r\n\r\n        margin-bottom: 200px;\r\n\r\n        .span-text * {\r\n            padding: 0 1rem;\r\n            margin: 0 0 0 15px;\r\n\r\n            .blue-word {\r\n                margin: 1rem -1rem;\r\n                padding: 0;\r\n            }\r\n\r\n            h2 {\r\n                margin-bottom: 45px;\r\n            }\r\n\r\n            li {\r\n                margin-bottom: 30px;\r\n            }\r\n        }\r\n\r\n        .span-image {\r\n            display: block;\r\n            height: 400px;\r\n            width: 100%;\r\n        }\r\n    }\r\n\r\n    // section 1\r\n    .section-1 {\r\n        margin-top: 7rem;\r\n\r\n        div {}\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h3 {\r\n                    margin-bottom: 80px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n    // section 2\r\n    .section-2 {\r\n        margin-top: 7rem;\r\n\r\n        div {\r\n            display: flex;\r\n            flex-direction: column-reverse;\r\n        }\r\n\r\n\r\n\r\n        .container-2 {\r\n            .span-text {\r\n                h2 {\r\n                    text-align: center;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                    margin: 35px 0 35px;\r\n                }\r\n            }\r\n\r\n            .span-image {}\r\n        }\r\n    }\r\n\r\n\r\n\r\n    .section-3 {\r\n        .container-1 {\r\n\r\n            .span-image {}\r\n\r\n            .span-text {\r\n                h2 {\r\n                    margin-bottom: 35px;\r\n                }\r\n\r\n                p {\r\n                    text-align: left;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\r\n    .span-image.finale {\r\n        display: block;\r\n        height: 350px;\r\n        width: 100%;\r\n        margin-right: auto;\r\n        margin-left: auto;\r\n    }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "../../node_modules/css-loader/dist/runtime/api.js":
+/*!*********************************************************!*\
+  !*** ../../node_modules/css-loader/dist/runtime/api.js ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = [];
+
+  // return the list of modules as css string
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+      content += cssWithMappingToString(item);
+      if (needLayer) {
+        content += "}";
+      }
+      if (item[2]) {
+        content += "}";
+      }
+      if (item[4]) {
+        content += "}";
+      }
+      return content;
+    }).join("");
+  };
+
+  // import a list of modules into the list
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+    var alreadyImportedModules = {};
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+      list.push(item);
+    }
+  };
+  return list;
+};
+
+/***/ }),
+
+/***/ "../../node_modules/css-loader/dist/runtime/getUrl.js":
+/*!************************************************************!*\
+  !*** ../../node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \************************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ }),
+
+/***/ "../../node_modules/css-loader/dist/runtime/sourceMaps.js":
+/*!****************************************************************!*\
+  !*** ../../node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
+  if (!cssMapping) {
+    return content;
+  }
+  if (typeof btoa === "function") {
+    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
+    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+    var sourceMapping = "/*# ".concat(data, " */");
+    return [content].concat([sourceMapping]).join("\n");
+  }
+  return [content].join("\n");
+};
+
+/***/ }),
+
+/***/ "./src/pages/nos_produits/materiel-neuf/dell/dell.scss":
+/*!*************************************************************!*\
+  !*** ./src/pages/nos_produits/materiel-neuf/dell/dell.scss ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "../../node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "../../node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "../../node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_dell_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../../node_modules/sass-loader/dist/cjs.js!./dell.scss */ "../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./src/pages/nos_produits/materiel-neuf/dell/dell.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_dell_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_dell_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_dell_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_dell_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!********************************************************************************!*\
+  !*** ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \********************************************************************************/
+/***/ ((module) => {
+
+
+
+var stylesInDOM = [];
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+    identifiers.push(identifier);
+  }
+  return identifiers;
+}
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+  return updater;
+}
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+    var newLastIdentifiers = modulesToDom(newList, options);
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+      var _index = getIndexByIdentifier(_identifier);
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+
+/***/ "../../node_modules/style-loader/dist/runtime/insertBySelector.js":
+/*!************************************************************************!*\
+  !*** ../../node_modules/style-loader/dist/runtime/insertBySelector.js ***!
+  \************************************************************************/
+/***/ ((module) => {
+
+
+
+var memo = {};
+
+/* istanbul ignore next  */
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target);
+
+    // Special case to return head of iframe instead of iframe itself
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+    memo[target] = styleTarget;
+  }
+  return memo[target];
+}
+
+/* istanbul ignore next  */
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+  target.appendChild(style);
+}
+module.exports = insertBySelector;
+
+/***/ }),
+
+/***/ "../../node_modules/style-loader/dist/runtime/insertStyleElement.js":
+/*!**************************************************************************!*\
+  !*** ../../node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
+  \**************************************************************************/
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+module.exports = insertStyleElement;
+
+/***/ }),
+
+/***/ "../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
+/*!**************************************************************************************!*\
+  !*** ../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
+  \**************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+module.exports = setAttributesWithoutAttributes;
+
+/***/ }),
+
+/***/ "../../node_modules/style-loader/dist/runtime/styleDomAPI.js":
+/*!*******************************************************************!*\
+  !*** ../../node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
+  \*******************************************************************/
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+  var needLayer = typeof obj.layer !== "undefined";
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+  css += obj.css;
+  if (needLayer) {
+    css += "}";
+  }
+  if (obj.media) {
+    css += "}";
+  }
+  if (obj.supports) {
+    css += "}";
+  }
+  var sourceMap = obj.sourceMap;
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  }
+
+  // For old IE
+  /* istanbul ignore if  */
+  options.styleTagTransform(css, styleElement, options.options);
+}
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+  styleElement.parentNode.removeChild(styleElement);
+}
+
+/* istanbul ignore next  */
+function domAPI(options) {
+  if (typeof document === "undefined") {
+    return {
+      update: function update() {},
+      remove: function remove() {}
+    };
+  }
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+module.exports = domAPI;
+
+/***/ }),
+
+/***/ "../../node_modules/style-loader/dist/runtime/styleTagTransform.js":
+/*!*************************************************************************!*\
+  !*** ../../node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+module.exports = styleTagTransform;
+
+/***/ }),
+
+/***/ "./assets/images/Capture-decran-2023-09-05-a-17.41.21-1024x394.png":
+/*!*************************************************************************!*\
+  !*** ./assets/images/Capture-decran-2023-09-05-a-17.41.21-1024x394.png ***!
+  \*************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "ea51de1e24e57306348f.png";
+
+/***/ }),
+
+/***/ "./assets/images/image001 (1).png":
+/*!****************************************!*\
+  !*** ./assets/images/image001 (1).png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "edc379366edc988347c8.png";
+
+/***/ }),
+
+/***/ "./assets/images/image002 (1).png":
+/*!****************************************!*\
+  !*** ./assets/images/image002 (1).png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "dd94b29044dc1e1339ff.png";
+
+/***/ }),
+
+/***/ "./assets/images/image003 (1).png":
+/*!****************************************!*\
+  !*** ./assets/images/image003 (1).png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "6a72fcd91e3e0ebbfd91.png";
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"dell": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!***********************************************************!*\
+  !*** ./src/pages/nos_produits/materiel-neuf/dell/dell.js ***!
+  \***********************************************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _dell_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dell.scss */ "./src/pages/nos_produits/materiel-neuf/dell/dell.scss");
+
+})();
+
+/******/ })()
+;
 //# sourceMappingURL=dell.bundle.js.map

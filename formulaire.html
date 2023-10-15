@@ -1,6 +1,136 @@
-<!doctype html><html lang="fr"><head><link rel="preload" href="loading_page.bundle.js" as="script"><script src="loading_page.bundle.js"></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Restez connecté avec l'équipe experte de ParlonsPC ! Nous 
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <link rel="preload" href="loading_page.bundle.js" as="script">
+    <script src="loading_page.bundle.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Restez connecté avec l'équipe experte de ParlonsPC ! Nous 
         sommes ici pour répondre à toutes vos interrogations concernant la 
         cybersécurité, l'infogérance, et nos solutions de téléphonie et internet. 
         Remplissez notre formulaire de contact et attendez-vous à une réponse 
         rapide et professionnelle de notre équipe dédiée, toujours à l'écoute 
-        de vos besoins spécifiques en informatique et communication."><title>ParlonsPC - Formulaire</title><script defer="defer" src="commun.bundle.js"></script><script defer="defer" src="cookiesPopUp.bundle.js"></script><script defer="defer" src="formulaire.bundle.js"></script></head><body><top-bar></top-bar><div class="content"><p>Pour toute question en informatique ou en affaire, n'hésitez pas à contacter notre entreprise</p><div class="container-1"><span class="span-icon"></span><p><span class="blue-word">Nous vous répondrons sous 24h</span></p></div><div class="container-2"><div class="formulaire"><h1>Formulaire de contact</h1><form id="formulaire" name="formulaire"><div class="inputs"><span><input name="given-name" id="given-name" class="firstname" placeholder="Prénom" autocomplete="given-name"> <input name="family-name" id="family-name" class="lastname" placeholder="Nom" autocomplete="family-name"> </span><input name="societe" id="societe" class="societe" placeholder="Société"></div><div class="inputs"><input type="tel" name="tel" id="tel" class="tel" placeholder="Telephone" autocomplete="tel"> <input type="email" name="email" id="email" class="mail" placeholder="Adresse mail" autocomplete="email"></div><div class="selects"><span><select name="cette-personne-veut" id="selecteur-1" title="De quoi s'agit-il ?"><option value="null">De quoi s'agit-il ?</option><option value="question">Poser une question</option><option value="devis">Demander un devis gratuit</option></select> </span><span><select name="en-rapport-avec" id="selecteur-2" title="En rapport avec ?"><option value="null" name="">En rapport avec quel service ?</option><option value="auditInformatique" name="">Audit Informatique</option><option value="auditCybersecurite" name="">Audit Cybersécurité</option><option value="infogerance" name="">Infogerance</option><option value="cloudComputing" name="">Cloud Computing</option><option value="maintenance" name="">Maintenance Informatique</option><option value="support" name="">Support Informatique</option><option value="siteInternet" name="">Conception de site internet</option><option value="venteNeuf" name="">Vente de matériel neuf</option><option value="venteReconditionné" name="">Vente de matériel reconditionné</option><option value="telephoneInternet" name="">Téléphonie et Internet</option><option value="autre" name="">Autre</option></select></span></div><div class="options" id="form-options"></div><textarea type="text" name="message" id="message" class="message" placeholder="Message"></textarea><div class="check-box"><input type="checkbox" name="audit-parc-informatique" id="checkbox" checked="checked"> <label for="checkbox">Je souhaite un devis pour un audit de mon parc informatique</label></div><div class="submit-container"><p class="submit-button" id="formulaire-submit-button">Envoyer</p><p class="invalid-error" id="empty-error-text">Merci de renseigner tous les champs.</p><p class="invalid-error" id="invalid-mail-error-text">Merci de renseigner une adresse e-mail valide.</p><p class="invalid-error" id="invalid-phone-error-text">Merci de renseigner un numéro de téléphone valide.</p><p class="submited-modal" id="submited-modal-text">Formulaire envoyé avec succès</p><p class="failed-submit-modal" id="failed-submit-modal-text">Une erreur s'est produite lors de l'envoie du formulaire.<br>Veuillez nous excusez de la gène occasionnée<br><br>Vous pouvez nous contacter par mail à contact@parlonspc.fr<br>ou par téléphone au +33 (0)7 64 36 89 08</p></div></form></div></div></div><pied-de-page></pied-de-page></body></html>
+        de vos besoins spécifiques en informatique et communication.">
+
+    <title>ParlonsPC - Formulaire</title>
+<script defer src="commun.bundle.js"></script><script defer src="cookiesPopUp.bundle.js"></script><script defer src="formulaire.bundle.js"></script></head>
+
+<body>
+    <!-- top-bar -->
+    <top-bar></top-bar>
+
+    <div class="content">
+        <p>
+            Pour toute question en informatique ou en affaire, n'hésitez pas à contacter notre entreprise
+        </p>
+        <div class="container-1">
+            <span class="span-icon">
+                <!-- icon -->
+            </span>
+            <p><span class="blue-word">Nous vous répondrons sous 24h</span> </p>
+        </div>
+
+        <div class="container-2">
+            <div class="formulaire">
+                <h1>Formulaire de contact</h1>
+                <form id="formulaire" name="formulaire">
+
+
+
+                    <div class="inputs">
+                        <span>
+                            <input type="text" name="given-name" id="given-name" class="firstname" placeholder="Prénom"
+                                autocomplete="given-name">
+                            <input type="text" name="family-name" id="family-name" class="lastname" placeholder="Nom"
+                                autocomplete="family-name">
+                        </span>
+                        <input type="text" name="societe" id="societe" class="societe" placeholder="Société">
+                    </div>
+
+                    <div class="inputs">
+                        <input type="tel" name="tel" id="tel" class="tel" placeholder="Telephone" autocomplete="tel">
+                        <input type="email" name="email" id="email" class="mail" placeholder="Adresse mail"
+                            autocomplete="email">
+                    </div>
+
+                    <div class="selects">
+
+                        <span>
+                            <!-- <label for="selecteur">De quoi s'agit-il ?</label> -->
+                            <select name="cette-personne-veut" id="selecteur-1" title="De quoi s'agit-il ?">
+                                <option value="null">De quoi s'agit-il ?</option>
+                                <option value="question">Poser une question</option>
+                                <option value="devis">Demander un devis gratuit</option>
+                            </select>
+                        </span>
+
+                        <span>
+                            <!-- <label for="selecteur2">En rapport avec quel service ?</label> -->
+                            <select name="en-rapport-avec" id="selecteur-2" title="En rapport avec ?">
+                                <option value="null" name="">En rapport avec quel service ?</option>
+                                <option value="auditInformatique" name="">Audit Informatique</option>
+                                <option value="auditCybersecurite" name="">Audit Cybersécurité</option>
+                                <option value="infogerance" name="">Infogerance</option>
+                                <option value="cloudComputing" name="">Cloud Computing</option>
+                                <option value="maintenance" name="">Maintenance Informatique</option>
+                                <option value="support" name="">Support Informatique</option>
+                                <option value="siteInternet" name="">Conception de site internet</option>
+                                <option value="venteNeuf" name="">Vente de matériel neuf</option>
+                                <option value="venteReconditionné" name="">Vente de matériel reconditionné</option>
+                                <option value="telephoneInternet" name="">Téléphonie et Internet</option>
+                                <option value="autre" name="">Autre</option>
+                            </select>
+                        </span>
+
+                    </div>
+
+                    <div class="options" id="form-options">
+                        <!-- javascript -->
+                    </div>
+
+                    <textarea type="text" name="message" id="message" class="message" placeholder="Message"></textarea>
+
+                    <div class="check-box">
+                        <input type="checkbox" name="audit-parc-informatique" id="checkbox" checked>
+                        <label for="checkbox">Je souhaite un devis pour un audit de mon parc informatique</label>
+                    </div>
+
+                    <div class="submit-container">
+                        <p class="submit-button" id="formulaire-submit-button">Envoyer</p>
+
+                        <p class="invalid-error" id="empty-error-text">Merci de renseigner tous les champs.</p>
+                        <p class="invalid-error" id="invalid-mail-error-text">Merci de renseigner une adresse
+                            e-mail valide.</p>
+                        <p class="invalid-error" id="invalid-phone-error-text">Merci de renseigner un numéro de
+                            téléphone valide.</p>
+
+
+                        <p class="submited-modal" id="submited-modal-text">Formulaire envoyé avec succès</p>
+                        <p class="failed-submit-modal" id="failed-submit-modal-text">Une erreur s'est produite lors
+                            de
+                            l'envoie du formulaire. <br> Veuillez nous excusez de la gène occasionnée <br><br> Vous
+                            pouvez nous contacter par mail à contact@parlonspc.fr <br> ou par téléphone au +33 (0)7 64
+                            36 89
+                            08</p>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- <div class="coordonnees">
+                <p>Venez nous dire bonjour</p>
+            </div> -->
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <pied-de-page></pied-de-page>
+
+</body>
+
+</html>
