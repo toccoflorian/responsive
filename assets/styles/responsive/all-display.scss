@@ -328,7 +328,9 @@
 
                     input {}
 
-                    p.submit-button {}
+                    p.submit-button {
+                        cursor: pointer;
+                    }
                 }
 
                 .footer-coordonnees {
